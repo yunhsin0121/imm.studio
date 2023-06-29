@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員註冊-imm.studio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet/all.css">
+</head>
+<body class="font-family-castro">
+    <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top">
+        <div class="container-md container-fluid px-3 px-md-0">
+                <a class="navbar-brand" href="index.html" class="text">
+                    <img src="images/logo-white.png" alt="logo" width="200" class="pb-1">
+                    <h1 class="d-none">imm.studio</h1>
+                </a>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa-solid fa-bars fs-1 text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center font-main">
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link link-secondary" aria-current="page" href="eyelash.html">日式美睫</a>
+                    </li>
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link link-secondary" href="eyebrow.html">粉霧眉</a>
+                    </li>
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link link-secondary" href="colorRemoval.html">無創除色</a>
+                    </li>
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link link-secondary" href="price.html">價目表</a>
+                    </li>
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link link-secondary" href="#">Q&A</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="login.html">預約</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="login.html">會員</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container p-md-5 p-4 my-4 bg-light shadow col-md-8 col-11 animate__animated animate__slideInLeft">
+            <div class="position-relative">
+                <h2 class="text-secondary mb-4 de-co">註冊會員</h2>
+            </div>
+            <form action="#" class="needs-validation" novalidate>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="name" placeholder="姓名" required>
+                    <label for="name">姓名</label>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
+                </div>
+                <div class="row row-cols-md-2 row-cols-1 gx-2">
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="gender" aria-label="Floating label select example" required>
+                              <option>女生</option>
+                              <option value="1">男生</option>
+                            </select>
+                            <label for="gender">性別</label>
+                            <div class="valid-feedback"></div>
+                            <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="born" placeholder="生日" required>
+                        <label for="born">生日</label>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
+                    </div>
+                </div>    
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="tel" placeholder="手機號碼"  required>
+                    <label for="tel">手機號碼</label>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="電子郵件" required>
+                    <label for="email">電子郵件</label>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="password" placeholder="設定密碼" required>
+                    <label for="password">設定密碼(6到10位數且含英文及數字)</label>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="password" placeholder="再次輸入密碼" required>
+                    <label for="password">再次輸入密碼</label>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
+                </div>
+                <div class="lh-lg overflow-auto p-2 border rounded-2 bg-white p-md-3 p-2 mb-3" style="height: 200px;">
+                    <h3 class="h4 text-secondary">隱私權政策</h3>
+                    <p class="text-indent">本網站所蒐集足以識別使用者身分的個人資料，均僅供本網站於其內部、依照蒐集之目的進行處理和利用，
+                            除非事先說明、或為完成提供服務或履行合約義務之必要、或依照相關法令規定或有權主管機關之命令或要求，
+                            否則本網站不會將足以識別使用者身分的個人資料提供給第三人（包括境內及境外）、或移作蒐集目的以外之使用。
+                            在會員有效期間內，以及法令所定應保存之期間內，本網站會持續保管、處理及利用。</p>
+                    <p class="text-indent">依個人資料保護法第3條規定，您就您的個人資料享有查詢或請求閱覽、請求製給複製本、請求補充或更正、請求停止蒐集、處理或利用、請求刪除之權利。
+                            您可以透過本公司官方<a href="#" class="link-brown mx-1">instagram</a>
+                            私訊客服要求行使上開權利，將於接收您的請求後，儘速處理。但因本網站執行職務、業務所必須，以及依相關法令規定，必須存檔備查之交易資料，不在此限。</p>
+                </div>
+                <input type="checkbox" name="privacyPolicy" id="privacyPolicy" class="form-check-input form-check-inline me-2" required>已閱讀並接收隱私權政策之內容
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請確認內容</div>
+                <button type="submit" class="btn btn-outline-brown w-100 py-2 mt-5">送出</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer bg-light-gray">
+        <div class="container pt-4 pt-mb-5 pb-1 pb-md-3">
+            <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+                <div class="col d-flex flex-column align-items-center info">
+                    <h3>- 聯絡資訊 -</h3>
+                    <ul class="list-unstyled text-center text-md-start mt-2"> 
+                        <li><a href="tel:+886-912345678" class="text-decoration-none link-secondary">0912345678</a></li>
+                        <li><a href="mailto:hexschool@gmail.com" class="text-decoration-none link-secondary">immstudio@gmail.com</a></li>
+                        <li>新竹市東大路二段</li>
+                    </ul>
+                </div>
+                <div class="col d-flex flex-column align-items-center mt-2 mt-md-0">
+                    <h3>- 營業時間 -</h3>
+                    <ul class="list-unstyled mt-2">
+                        <li>平日10:00 ~ 21:00 </li>
+                        <li>週日10:00 ~ 19:00</li>
+                        <li>皆採預約制</li>
+                    </ul>
+                </div>
+                <div class="col d-flex flex-column align-items-center socialMedia">
+                    <img src="images/footer-logo.png" class="img-fluid w-75" alt="footer-logo">
+                <ul class="list-unstyled d-flex justify-content-center mt-2">
+                    <li><a href="#" class="text-decoration-none link-secondary fs-2"><i class="bi bi-facebook me-3"></i></a></li>
+                    <li><a href="#" class="text-decoration-none link-secondary fs-2"><i class="bi bi-line me-3"></i></a></li>
+                    <li><a href="#" class="text-decoration-none link-secondary fs-2"><i class="bi bi-instagram me-3"></i></a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-bg-brown text-secondary fs-6 py-2 mb-0 font-spacing  w-100">Copyright © 2023 imm.studio.All rights reserved.</p>
+    </footer>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="javascript/jquery-3.6.4.min.js"></script>
+    <script src="javascript/js.js"></script>
+    </body>
+</html>
