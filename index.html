@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="stylesheet/all.css">
 </head>
 <style>
-    .header:before{
+    /* .header:before{
         content: ' ';
         position: fixed;
         z-index: -1;
@@ -24,6 +24,11 @@
         left: 0;
         background: url(images/order.jpg) center 0 repeat;
         background-size: cover;
+} */
+@supports (-webkit-touch-callout: inherit) {
+	.header {
+		background-attachment: scroll !important;
+	}
 }
 </style>
 <body class="font-family-castro">
