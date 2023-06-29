@@ -8,6 +8,17 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-color: #e6e6e2;
+    :before {
+        content: ' ';
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        // background: url(img地址) center 0 repeat;
+        background-size: cover;
+      }
 }
 .bg-position-cc{
     background-position: center center;
@@ -38,14 +49,3 @@
 .bg-attachment-fixed{
     background-attachment: fixed;
 }
-body:before {
-    content: ' ';
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url(path/to/image) center 0 no-repeat;
-    background-size: cover;
-  }
