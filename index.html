@@ -13,6 +13,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet/all.css">
 </head>
+<style>
+    .head:before:before {
+        content: ' ';
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url(img地址) center 0 repeat;
+        background-size: cover;
+}
+</style>
 <body class="font-family-castro">
     <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top">
         <div class="container-md container-fluid px-3 px-md-0">
@@ -51,7 +64,7 @@
         </div>
     </nav>
     <header class="min-vh-100 position-relative mb-5 container-xl">
-        <div class="bg-position-bc position-absolute bg-attachment-fixed" style="top:0px;left:0px;right:0px;bottom:0px;background-image: url(images/order.jpg);">
+        <div class="header bg-position-bc position-absolute bg-attachment-fixed" style="top:0px;left:0px;right:0px;bottom:0px;background-image: url(images/order.jpg);">
             <div class="container-fluid py-5 position-absolute top-50 start-50 translate-middle bg-light-gray bg-opacity-50 shadow-lg">
                 <div class="row row-cols-1">
                     <div class="col mb-5 d-flex flex-column align-items-center position-relative animate__animated animate__fadeInLeft">
