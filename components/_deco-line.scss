@@ -1,40 +1,50 @@
 .deco-line-top-left{
     &::after{
         content: "";
-        width: 10%;
+        width: 15%;
         height:15%;
         border-top: 3px solid #BAB2AB;
         border-left: 3px solid #BAB2AB;
         border-top-left-radius: 5px;
         position: absolute;
-        top:8%;
+        top:5%;
         left:5%;
     }
     @media (max-width:992px) {
         &::after{
-            top:10%;
             width: 10%;
-            height:23%;
+            height:10%;
+        }
+    }
+    @media (max-width:768px) {
+        &::after{
+            width: 10%;
+            height:20%;
         }
     }
 }
 .deco-line-bottom-right{
     &::after{
         content: "";
-        width: 10%;
+        width: 15%;
         height:15%;
         border-bottom: 3px solid #BAB2AB;
         border-right: 3px solid #BAB2AB;
         border-bottom-right-radius: 5px;
         position: absolute;
-        bottom:8%;
+        bottom:5%;
         right:5%;
     }
     @media (max-width:992px) {
         &::after{
-            bottom:10%;
             width: 10%;
-            height:23%;
+            height:10%;
+        }
+    }
+    @media (max-width:768px) {
+        &::after{
+            width: 10%;
+            height:20%;
         }
     }
 }
