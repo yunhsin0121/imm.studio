@@ -74,8 +74,8 @@
                                     <img src="images/index-eyelash.png" class="card-img-top h-75 d-none d-md-block"  alt="">
                                     <div class="card-body py-3">
                                         <h3 class="card-title fs-5 text-center">日式美睫</h3>
-                                        <div class="form-check">
-                                            <input type="radio" class="btn-check" class="btn-check" name="options" id="option1" autocomplete="off" required>
+                                        <div class="form-check px-0">
+                                            <input type="radio" class="btn-check" class="btn-check" name="option" id="option1" autocomplete="off" required>
                                             <label class="btn btn-outline-brown w-100" for="option1">選擇</label>
                                             <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請選擇一個項目</div>
                                         </div>
@@ -88,9 +88,9 @@
                                     <img src="images/index-eyebrow.png" class="card-img-top h-75 d-none d-md-block"  alt="">
                                     <div class="card-body py-3">
                                         <h3 class="card-title fs-5 text-center">粉霧眉</h3>
-                                        <div class="form-check">
-                                            <input type="radio" class="btn-check" class="btn-check" name="options" id="option2" autocomplete="off">
-                                            <label class="btn btn-outline-brown w-100" for="option2">選擇</label>
+                                        <div class="form-check px-0">
+                                            <input type="radio" class="btn-check" class="btn-check" name="option" id="option2" autocomplete="off">
+                                            <label class="btn btn-outline-brown w-100" for="option2" value="eyebrow">選擇</label>
                                             <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請選擇一個項目</div>
                                         </div>
                                     </div>
@@ -101,8 +101,8 @@
                                     <img src="images/index-colorRemoval.png" class="card-img-top h-75 d-none d-md-block"  alt="">
                                     <div class="card-body py-3">
                                         <h3 class="card-title fs-5 text-center">無創除色</h3>
-                                        <div class="form-check">
-                                            <input type="radio" class="btn-check" class="btn-check" name="options" id="option3" autocomplete="off">
+                                        <div class="form-check px-0">
+                                            <input type="radio" class="btn-check" class="btn-check" name="option" id="option3" autocomplete="off">
                                             <label class="btn btn-outline-brown w-100" for="option3">選擇</label>
                                             <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請選擇一個項目</div>
                                         </div>
@@ -114,31 +114,31 @@
                             <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請選擇一個項目</div>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="name" placeholder="預約人姓名" required>
+                            <input type="text" class="form-control" id="name" name="name"  placeholder="預約人姓名" required>
                             <label for="name">預約人姓名</label>
                             <div class="valid-feedback"></div>
                             <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="number" class="form-control" id="tel" placeholder="手機號碼"  required>
+                            <input type="number" class="form-control" id="tel" name="tel" placeholder="手機號碼"  required>
                             <label for="tel">手機號碼</label>
                             <div class="valid-feedback"></div>
                             <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="email" placeholder="電子郵件" required>
+                            <input type="email" class="form-control" id="email" name="emqil" placeholder="電子郵件" required>
                             <label for="email">電子郵件</label>
                             <div class="valid-feedback"></div>
                             <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="date" class="form-control" id="date" placeholder="日期" required>
+                            <input type="date" class="form-control" id="date" name="date" placeholder="日期" required>
                             <label for="date">日期</label>
                             <div class="valid-feedback"></div>
                             <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
                         </div>
                         <div class="form-floating mb-3">
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" name="time" aria-label="Default select example">
                                 <option selected>10:30</option>
                                 <option value="1">13:30</option>
                                 <option value="2">15:30</option>
