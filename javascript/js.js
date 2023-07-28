@@ -10,7 +10,7 @@ $(document).ready(function () {
     }); 
     $('.reserved .link-secondary,.login .link-secondary').hover(function () {
         $(this).toggleClass('link-hover-decoration');
-    }); 
+    });
     // 上拉按鈕
     $("a[href$='.zip']").addClass('fa-solid fa-circle-chevron-up text-brown fs-1') ;
 
