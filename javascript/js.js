@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.navbar .nav-link,.navbar-toggler,.serviceItems .btn,.reserved a,.reserve button,.footer .info li,.footer .socialMedia li,.btn-up,.login .btn,.login a').hover(function () {
+    $('.navbar .nav-link,.navbar-toggler,header .btn,.header-icon a img,.serviceItems .btn,.reserved a,.reserve button,.footer .info li,.footer .socialMedia li,.btn-up,.login .btn,.login a').hover(function () {
             $(this).toggleClass('animate__animated  animate__pulse');
         });
     $('.navbar-brand').hover(function () {

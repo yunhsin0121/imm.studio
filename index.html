@@ -26,9 +26,13 @@ body{
     letter-spacing:2px;
     /* font-family: 'Noto Serif TC', serif; */
 }
+.deco-row-line{
+    border-top: 3px solid #eaeaea;
+    width: 15%;
+}
 </style>
 <body> 
-    <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top border-bottom border-white">
         <div class="container-md container-fluid px-3 px-md-0">
                 <a class="navbar-brand" href="index.html" class="text">
                     <img src="images/logo-white.png" alt="logo" width="200" class="pb-1">
@@ -64,39 +68,51 @@ body{
             </div>
         </div>
     </nav>
-    <header class="min-vh-100 position-relative mb-5 container-xl">
+    <header class="bg-brown">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-7 mb-n7 mb-md-0 z-3">
+                    <div class="header-text animate__animated animate__fadeInDown">
+                        <div class="d-flex mb-3 mb-lg-5">
+                            <div class="deco-row-line me-3 mt-2 d-none d-md-block"></div>
+                            <h2 class="fw-bold fs-5 text-light-gray text-uppercase">Dedicated to curating beauty<br class="d-none d-md-block"> exclusively for you</h2>
+                        </div>
+                        <h2 class="fw-bold display-5 text-light-gray mb-3 mb-lg-5">我們專注於為您創造美麗!</h2>
+                        <div class="header-icon d-flex justify-content-around mb-3 mb-lg-5">
+                            <a href="#" class="animate__animated animate__zoomIn"><img src="images/header-icon1.png" alt="" class="img-fluid rounded-circle shadow" width="200"></a>
+                            <a href="#" class="animate__animated animate__zoomIn"><img src="images/header-icon2.png" alt="" class="img-fluid rounded-circle shadow" width="300"></a>
+                            <a href="#" class="animate__animated animate__zoomIn"><img src="images/header-icon3.png" alt="" class="img-fluid rounded-circle shadow" width="200"></a>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <a href="reserved.html" class="btn btn-secondary w-25 py-2 fs-5 d-none d-md-block">預約</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 z-0 animate__animated animate__fadeInUp">
+                    <div class="position-relative">
+                        <img src="images/header-bg.jpg" alt="" class="img-fluid rounded-top-pill d-block ms-auto" width="500">
+                        <a href="reserved.html" class="btn btn-brown text-light fs-3 px-5 py-3 fw-bold rounded-end-pill top-40 start-0 position-absolute d-md-none animate__animated animate__fadeInLeft">預約</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>
+    <!-- <header class="min-vh-100 position-relative mb-5 container-xl">
         <div class="header bg-position-rc position-absolute bg-attachment-fixed" style="top:0px;left:0px;right:0px;bottom:0px;background-image: url(images/order.jpg);">
             <div class="container-fluid py-5 position-absolute top-50 start-50 translate-middle bg-light-gray bg-opacity-50 shadow-lg">
                 <div class="col-10 mx-auto animate__animated animate__fadeInLeft">
                     <h2 class="mt-3 mb-5 mb-lg-0">歡迎來到<img src="images/logo-white.png" alt="logo" style="width: 250px;" class="mb-3 mx-2 img-fluid"> <br class="d-block d-lg-none">我們專注於為您創造美麗!</h2>
                     <p class="fs-5 d-none d-md-block"> 在 imm.studio裡，<br class="d-block d-lg-none">將為您提供最優質的嫁接睫毛、手工霧眉以及除色服務，<br>
                         我們使用高品質的材料和先進的技術，<br class="d-block d-lg-none">打造符合您喜好的睫毛及眉型設計，<br>
-                        <!-- 提供舒適放鬆的環境，<br class="d-block d-lg-none"> -->
                         讓您在我們專業的服務下享受別具一格的美妝體驗。<br><br></p> 
                         <p class="fs-5 d-md-none">為您提供最優質的嫁接睫毛、手工霧眉以及除色服務，<br>
                             使用高品質材料和先進技術，<br>打造理想中的睫毛及眉型設計，<br>
                             在我們專業的服務下享受別具一格的美妝體驗。</p>
                 </div>
-                <!-- <div class="row row-cols-1">
-                    <div class="col mb-5 d-flex flex-column align-items-center position-relative animate__animated animate__fadeInLeft">
-                        <h2 class="de-co-long-middle d-inline">- 最新活動 -</h2>
-                        <ul class="mt-3 fs-5">  
-                            <li>睫毛初次嫁接享<span class="text-danger">8</span>折 <br>(含spa泡泡洗)</li>
-                            <li>精緻妝感霧眉單次<span class="text-danger">$3299</span></li>
-                            <li>日式美睫(黑色圓毛)100本<span class="text-danger">$799</span></li>
-                        </ul>  
-                    </div>
-                    <div class="col d-flex flex-column align-items-center animate__animated animate__fadeInRight">
-                        <h2>- 優惠須知 -</h2>
-                        <ul class="mt-3 fs-5">
-                            <li>每個項目<span class="text-danger">優惠不得併用</span></li>
-                            <li>imm.studio享有最終變更活動之權利</li>
-                        </ul>
-                    </div>
-                </div> -->
             </div>   
         </div>       
-    </header>
+    </header> -->
     <main>
         <section>
             <div class="container py-5">
