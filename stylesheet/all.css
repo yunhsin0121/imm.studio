@@ -24604,6 +24604,12 @@ textarea.form-control-lg {
   background-attachment: fixed;
 }
 
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @font-face {
   font-family: "NotoSerif";
   src: url("./fonts/NotoSerifHK-VariableFont_wght.ttf");
