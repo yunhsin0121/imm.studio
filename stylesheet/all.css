@@ -7994,8 +7994,16 @@ textarea.form-control-lg {
   top: 40% !important;
 }
 
+.top-45 {
+  top: 45% !important;
+}
+
 .top-50 {
   top: 50% !important;
+}
+
+.top-55 {
+  top: 55% !important;
 }
 
 .top-60 {
@@ -8074,8 +8082,16 @@ textarea.form-control-lg {
   bottom: 40% !important;
 }
 
+.bottom-45 {
+  bottom: 45% !important;
+}
+
 .bottom-50 {
   bottom: 50% !important;
+}
+
+.bottom-55 {
+  bottom: 55% !important;
 }
 
 .bottom-60 {
@@ -8154,8 +8170,16 @@ textarea.form-control-lg {
   left: 40% !important;
 }
 
+.start-45 {
+  left: 45% !important;
+}
+
 .start-50 {
   left: 50% !important;
+}
+
+.start-55 {
+  left: 55% !important;
 }
 
 .start-60 {
@@ -8234,8 +8258,16 @@ textarea.form-control-lg {
   right: 40% !important;
 }
 
+.end-45 {
+  right: 45% !important;
+}
+
 .end-50 {
   right: 50% !important;
+}
+
+.end-55 {
+  right: 55% !important;
 }
 
 .end-60 {
@@ -16424,8 +16456,16 @@ textarea.form-control-lg {
   top: 40% !important;
 }
 
+.top-45 {
+  top: 45% !important;
+}
+
 .top-50 {
   top: 50% !important;
+}
+
+.top-55 {
+  top: 55% !important;
 }
 
 .top-60 {
@@ -16504,8 +16544,16 @@ textarea.form-control-lg {
   bottom: 40% !important;
 }
 
+.bottom-45 {
+  bottom: 45% !important;
+}
+
 .bottom-50 {
   bottom: 50% !important;
+}
+
+.bottom-55 {
+  bottom: 55% !important;
 }
 
 .bottom-60 {
@@ -16584,8 +16632,16 @@ textarea.form-control-lg {
   left: 40% !important;
 }
 
+.start-45 {
+  left: 45% !important;
+}
+
 .start-50 {
   left: 50% !important;
+}
+
+.start-55 {
+  left: 55% !important;
 }
 
 .start-60 {
@@ -16664,8 +16720,16 @@ textarea.form-control-lg {
   right: 40% !important;
 }
 
+.end-45 {
+  right: 45% !important;
+}
+
 .end-50 {
   right: 50% !important;
+}
+
+.end-55 {
+  right: 55% !important;
 }
 
 .end-60 {
@@ -24607,6 +24671,12 @@ textarea.form-control-lg {
 .bg-cover {
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-contain {
+  background-position: center center;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
