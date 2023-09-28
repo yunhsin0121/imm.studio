@@ -1,0 +1,11 @@
+.deco-bg{
+    background-color:white;
+    opacity: 0.8;
+    transition: all 1s;
+    border-radius: 50%;
+    box-shadow: 4px;
+    &:hover{
+        opacity: 1;
+        transition: all 1s;
+    }
+}

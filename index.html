@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet/all.css">
 </head>
@@ -29,6 +30,59 @@ body{
 .deco-row-line{
     border-top: 3px solid #6c757e;
     width: 10%;
+}
+.deco-link-transition{
+    position:relative;
+    padding :15px;
+    color:#000;
+    background-color:#BAB2AB;
+    opacity:0.8;
+    border-radius:40px 0px 0px 40px;
+    transition:0.4s ease-in;
+        &:hover{
+        padding:15px 20px;
+        color:#fff;
+        border-radius:0px;
+        transition:0.6s ease-in;
+    }
+}
+.deco-link-small-transition{
+    position:relative;
+    padding :15px;
+    color:#000;
+    background-color:#BAB2AB;
+    opacity:0.8;
+    border-radius:0px 40px 40px 0px;
+    transition:0.4s ease-in;
+        &:hover{
+        padding:15px 25px;
+        color:#fff;
+        border-radius:0px;
+        transition:0.6s ease-in;
+    }
+}
+/* * {
+  outline: 1px solid red;
+} */
+/* .ls-1{
+    letter-spacing: 1rem;
+} */
+.background {
+    background: url("../images/background-lg.png") no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    @media (max-width:768px) {
+        background-image: url("../images/background-md.png");
+        background-position: 80%;
+        background-position-x: 80%;
+    }
 }
 </style>
 <body> 
@@ -68,6 +122,7 @@ body{
             </div>
         </div>
     </nav>
+    <!-- header -->
     <header class="mb-5 bg-cover" style="background-image: url(images/bg2.jpg)">
         <div class="container">
             <div class="row">
@@ -75,7 +130,7 @@ body{
                     <div class="header-text py-5 animate__animated animate__fadeInDown">
                         <div class="d-flex mb-3 mb-lg-5">
                             <div class="deco-row-line me-3 mt-2 d-none d-md-block"></div>
-                            <p class="fw-bold fs-5 text-secondary text-uppercase  d-none d-md-block">Dedicated to curating beauty <br> exclusively for you</p>
+                            <p class="fw-bold fs-5 text-secondary text-uppercase  d-none d-md-block">Dedicated to curating beauty <br> exclusively for you.</p>
                         </div>
                         <h2 class="fw-bold display-6 text-secondary mb-3 mb-lg-5 d-none d-md-block">我們專注為您創造美麗!</h2>
                         <div class="header-icon d-flex justify-content-around mb-3 mb-md-4">
@@ -83,8 +138,8 @@ body{
                             <a href="eyelash.html" class="animate__animated animate__zoomIn"><img src="images/header-icon2.png" alt="" class="img-fluid rounded-circle shadow" width="300"></a>
                             <a href="colorRemoval.html" class="animate__animated animate__zoomIn"><img src="images/header-icon3.png" alt="" class="img-fluid rounded-circle shadow" width="200"></a>
                         </div>
-                        <div class="d-flex justify-content-end">
-                            <a href="reserved.html" class="btn btn-secondary w-25 py-2 fs-5 d-none d-md-block">預約</a>
+                        <div class="d-flex justify-content-end me-n4">
+                            <a href="reserved.html" class="deco-link-transition fw-bold fs-3 d-none d-md-block shadow"><i class="fa-solid fa-arrow-left-long"></i> 立即預約<span class="fs-6 d-block">Reservation Now</span></a>                       
                         </div>
                     </div>
                 </div>
@@ -94,24 +149,24 @@ body{
                         <div class="text-dark top-30 start-0 position-absolute d-md-none">
                             <p class="fw-bold  text-uppercase ms-3">Dedicated to curating beauty<br> exclusively for you</p>
                             <h2 class="fw-bold mb-4 ms-2">我們專注為您創造美麗!</h2>
-                            <!-- <a href="registered.html"><img src="images/resever-icon.png" class="img-fluid animate__animated animate__fadeInLeft" width="200" alt=""></a> -->
-                            <a href="reserved.html" class="btn btn-brown text-light fs-4 px-5 py-3 fw-bold rounded-end-pill animate__animated animate__fadeInLeft">預約</a>
+                            <a href="reserved.html" class="deco-link-small-transition fw-bold fs-4 d-inline-block d-md-none shadow">立即預約 <i class="fa-solid fa-arrow-right-long"></i> <span class="fs-6 d-block">Reservation Now</span></a>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
         </div>
     </header>
     <main>
+        <div class="background"></div>
+        <!-- 還在為這些煩腦嗎？ -->
         <section class="mb-5">
             <div class="container py-5">
                 <div class="row g-3 justify-content-center">
-                    <div class="col-10 col-md-4 d-flex flex-column align-items-center animate__animated animate__zoomIn">
+                    <div class="col-10 col-md-4 d-flex flex-column align-items-center" data-aos="fade-up">
                         <h2 class="mb-4">還在為這些煩腦嗎？</h2>
                         <img src="images/why2.png" class="img-fluid" alt="" style="width: 200px;">
                     </div>
-                    <div class="col-10 col-md-8 fs-5">
+                    <div class="col-10 col-md-8 fs-5" data-aos="fade-up">
                         <div class="animate__animated animate__zoomIn">
                             <p class="bg-light-gray py-3 px-2 mb-5 d-inline-block shadow">本身的睫毛又短又稀疏，<br class="d-block d-md-none">
                                 素顏眼睛超無神
@@ -131,28 +186,55 @@ body{
                 </div>
             </div>
         </section>
-        <section class="bg-cover mb-5" style="background-image: url(images/bg1.jpg);">
-            <div class="container py-5 py-md-7">
-                    <div class="bg-light-gray bg-opacity-50 py-5 d-flex justify-content-center position-relative shadow animate__animated animate__zoomIn">
-                        <span class="display-3 fw-bold text-white position-absolute top-0 start-0 translate-middle-y">PROFESSIONAL</span>
-                        <div class="col-10 px-md-4">
-                        <p class="fs-5 my-3">我們為您提供最優質的嫁接睫毛、手工霧眉以及除色服務，
-                            使用高品質材料和先進技術，打造您理想中的睫毛及眉型設計，
-                            在我們專業的服務下享受別具一格的美妝體驗。
-                        </p>
-                        <img src="images/logo-white.png" alt="logo" class="img-fluid d-block ms-auto" width="200">
+        <!--  "ABOUT" -->
+
+        <section class="mb-5 bg-cover bg-position-bc  bg-attachment-fixed" style="background-image: url(images/deco-image2.png)">
+            <div class="bg-light bg-opacity-75">
+            <div class="container-fluid position-relative">
+                <div class="position-absolute top-35 top-md-75 top-lg-70 start-50 start-md-30 start-lg-40 translate-middle-y">
+                    <h2 class="fs-1 fs-lg-big">ABOUT US</h2>
+                </div>
+                <div class="row align-items-center flex-md-row-reverse">
+                    <div class="col-12 col-md-6 mb-n3 mb-md-0">
+                        <div class="row flex-column">
+                            <div class="col-7 mb-md-n5 z-3" data-aos="fade-down">
+                                <img src="./images/deco-image3.png" class="img-fluid shadow rounded-bottom-pill" alt="deco-image">
+                            </div>
+                            <div class="col-6 ms-auto d-none d-md-block"  data-aos="fade-up">
+                                <img src="./images/deco-image4.png" class="img-fluid shadow rounded-top-pill" alt="deco-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 px-0">
+                        <div class="d-flex align-items-center">
+                        <div class="bg-light-gray rounded-end-pill p-5 p-md-5 p-xxl-7 shadow w-100">
+                            <p class="fw-bold fs-lg-5 fs-xl-4">
+                                使用高品質材料和先進技術，<br>為您打造理想的睫毛及眉型設計，<br>
+                                讓每位顧客在我們工作室中都能享受別具一格的美妝體驗，<br>
+                                展現屬於自己的美麗與自信！
+                                <!-- 如果您對我們的服務感興趣或有任何疑問，請隨時聯繫我們。我們期待著能夠為您帶來獨特的美麗體驗。
+                                謝謝您選擇我們，讓我們一同創造美麗的故事！ -->
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-12 d-md-none mt-n3"  data-aos="fade-up">
+                        <div class="col-6 ms-auto">
+                            <img src="./images/deco-image4.png" class="img-fluid shadow rounded-top-pill" alt="deco-image">
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
         </section>
+        <!--為您提供這些服務！  -->
         <section class="serviceItems mb-5">
             <div class="container">
-                <h2 class="text-center mb-3">為您提供這些服務！</h2>
+                <h2 class="text-center mb-3" data-aos="fade-up">為您提供這些服務！</h2>
                 <div class="d-flex flex-column align-items-center">
-                    <div class="row align-items-center justify-content-center py-3 animate__animated animate__zoomIn">
+                    <div class="row align-items-center justify-content-center py-3" data-aos="fade-up">
                         <div class="col-10 col-md-4 mb-5 mb-md-0 d-flex justify-content-center">     
-                            <div class="position-relative">
+                            <div class="position-relative deco-bg">
                                 <img src="images/index-server1.png" class="img-fluid rounded-circle shadow" alt="eyelash-img" width="300">
                                 <a href="eyelash.html" class="stretched-link"><img src="images/more-icon.png" class="img-fluid position-absolute top-90 start-70 translate-middle-y" width="100" alt="arrow-icon"></a>
                             </div>  
@@ -162,7 +244,7 @@ body{
                                     呈現出根根分明、自然清新且輕盈的效果。</p>
                         </div>
                     </div>
-                    <div class="row align-items-center justify-content-center flex-row-reverse py-3 animate__animated animate__zoomIn">
+                    <div class="row align-items-center justify-content-center flex-row-reverse py-3" data-aos="fade-up">
                         <div class="col-10 col-md-4 mb-5 mb-md-0 d-flex justify-content-center">                                
                             <div class="position-relative">
                                 <img src="images/index-server2.png" class="img-fluid rounded-circle shadow" alt="eyebrow-img" width="300">
@@ -174,7 +256,7 @@ body{
                                     兼顧細緻度與留色度，過程不痛讓你一覺起來就美麗。</p>
                         </div>
                     </div>
-                    <div class="row align-items-center justify-content-center py-3 animate__animated animate__zoomIn">
+                    <div class="row align-items-center justify-content-center py-3" data-aos="fade-up">
                         <div class="col-10 col-md-4 mb-5 mb-md-0 d-flex justify-content-center">                                
                             <div class="position-relative">
                                 <img src="images/index-server3.png" class="img-fluid rounded-circle shadow" alt="colorRemoval-img" width="300">
@@ -189,7 +271,15 @@ body{
                 </div>
             </div>        
         </section>
-        <section class="bg-light-gray bg-cover" style="background-image: url(images/bg2.jpg);">
+
+        <!-- 最新活動 -->
+        <section>
+            <div class="container">
+                <h2 class="text-center">感謝水水們的支持</h2>
+
+            </div>
+        </section>
+        <!-- <section class="bg-light-gray bg-cover" style="background-image: url(images/bg2.jpg);" data-aos="fade-up">
             <div class="container pt-6 pb-6 pb-lg-9">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-12 col-lg-5 position-relative">
@@ -212,7 +302,7 @@ body{
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- <section class="serviceItems">
             <div class="container">
                 <h2 class="text-center mb-3">我們為您提供這些服務！</h2>
@@ -300,13 +390,13 @@ body{
                 </div>
             </div>
         </section> -->
-        <section class="slideUp">
+        <!-- <section class="slideUp">
             <a href=".zip" class="btn-up text-decoration-none position-fixed bottom-10 end-3"></a>
-        </section>
+        </section> -->
     </main>
     <footer class="footer bg-light-gray">
         <div class="container pt-5 pt-mb-5 pb-1 pb-md-4 ">
-            <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+            <div class="row row-cols-1 row-cols-md-3 justify-content-center" data-aos="fade-up">
                 <div class="col d-flex flex-column align-items-center info">
                     <h3>- 聯絡資訊 -</h3>
                     <ul class="list-unstyled text-center text-md-start mt-2"> 
@@ -337,6 +427,10 @@ body{
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="javascript/jquery-3.6.4.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="javascript/js.js"></script>
+    <script>
+        AOS.init();
+      </script>
     </body>
 </html>
