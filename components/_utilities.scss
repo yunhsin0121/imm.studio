@@ -75,6 +75,7 @@ $utilities: map-merge(
     // scss-docs-start utils-shadow
     "shadow": (
       property: box-shadow,
+      responsive: true,
       class: shadow,
       values: (
         null: $box-shadow,
@@ -670,6 +671,7 @@ $utilities: map-merge(
     "background-color": (
       property: background-color,
       class: bg,
+      responsive: true,
       local-vars: (
         "bg-opacity": 1
       ),
@@ -735,6 +737,7 @@ $utilities: map-merge(
     "rounded-top": (
       property: border-top-left-radius border-top-right-radius,
       class: rounded-top,
+      responsive: true,
       values: (
         null: var(--#{$prefix}border-radius),
         0: 0,
@@ -750,6 +753,7 @@ $utilities: map-merge(
     "rounded-end": (
       property: border-top-right-radius border-bottom-right-radius,
       class: rounded-end,
+      responsive: true,
       values: (
         null: var(--#{$prefix}border-radius),
         0: 0,
@@ -765,6 +769,7 @@ $utilities: map-merge(
     "rounded-bottom": (
       property: border-bottom-right-radius border-bottom-left-radius,
       class: rounded-bottom,
+      responsive: true,
       values: (
         null: var(--#{$prefix}border-radius),
         0: 0,
@@ -780,6 +785,7 @@ $utilities: map-merge(
     "rounded-start": (
       property: border-bottom-left-radius border-top-left-radius,
       class: rounded-start,
+      responsive: true,
       values: (
         null: var(--#{$prefix}border-radius),
         0: 0,
