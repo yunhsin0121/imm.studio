@@ -279,7 +279,7 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 abbr[title] {
@@ -16534,24 +16534,6 @@ textarea.form-control-lg {
   justify-content: center;
   border-radius: 55% 55% 0% 0%;
   background-color: transparent;
-}
-
-.bg-hover {
-  background-color: transparent;
-}
-.bg-hover:hover {
-  background-color: rgb(255, 255, 255);
-}
-
-.link-gray-bg {
-  background-color: transparent;
-  transition: all 1s;
-  color: #6c757d;
-}
-.link-gray-bg:hover {
-  background-color: rgba(108, 117, 125, 0.3960784314);
-  color: white;
-  transition: all 1s;
 }
 
 .accordion-item-hover {

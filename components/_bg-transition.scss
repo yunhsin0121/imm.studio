@@ -10,22 +10,3 @@
   border-radius: 55% 55% 0% 0%;
   background-color: transparent;
 }
-
-.bg-hover{
-    background-color: transparent;
-    &:hover{
-        background-color: rgb(255, 255, 255);
-    }
-}
-.link-gray-bg{
-    background-color: transparent;
-    transition: all 1s;
-    color:#6c757d;
-    // border-bottom: 3px solid #6c757d;
-    &:hover{
-        // padding: 16px;
-        background-color: #6c757d65;
-        color:white;
-        transition: all 1s;
-    }
-}
