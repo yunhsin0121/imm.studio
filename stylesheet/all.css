@@ -16389,116 +16389,9 @@ textarea.form-control-lg {
   background: #8A8A8B;
 }
 
-.deco-line-top-left::after {
-  content: "";
-  width: 15%;
-  height: 15%;
-  border-top: 3px solid #BAB2AB;
-  border-left: 3px solid #BAB2AB;
-  border-top-left-radius: 5px;
-  position: absolute;
-  top: 5%;
-  left: 5%;
-}
-@media (max-width: 992px) {
-  .deco-line-top-left::after {
-    width: 10%;
-    height: 10%;
-  }
-}
-@media (max-width: 768px) {
-  .deco-line-top-left::after {
-    width: 10%;
-    height: 20%;
-  }
-}
-
-.deco-line-bottom-right::after {
-  content: "";
-  width: 15%;
-  height: 15%;
-  border-bottom: 3px solid #BAB2AB;
-  border-right: 3px solid #BAB2AB;
-  border-bottom-right-radius: 5px;
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
-}
-@media (max-width: 992px) {
-  .deco-line-bottom-right::after {
-    width: 10%;
-    height: 10%;
-  }
-}
-@media (max-width: 768px) {
-  .deco-line-bottom-right::after {
-    width: 10%;
-    height: 20%;
-  }
-}
-
-.process-deco-line-top-left::after {
-  content: "";
+.deco-row-line {
+  border-top: 3px solid #6c757e;
   width: 10%;
-  height: 15%;
-  border-top: 3px solid #BAB2AB;
-  border-left: 3px solid #BAB2AB;
-  border-top-left-radius: 10px;
-  position: absolute;
-  top: -5%;
-  left: 0%;
-}
-
-.process-deco-line-bottom-right::after {
-  content: "";
-  width: 10%;
-  height: 15%;
-  border-bottom: 3px solid #BAB2AB;
-  border-right: 3px solid #BAB2AB;
-  border-bottom-right-radius: 10px;
-  position: absolute;
-  bottom: -5%;
-  right: 0%;
-}
-
-.works-deco-top-left-line::after {
-  content: "";
-  width: 8%;
-  height: 20%;
-  border-top: 3px solid #BAB2AB;
-  border-left: 3px solid #BAB2AB;
-  border-top-left-radius: 5px;
-  position: absolute;
-  top: 3%;
-  left: 1%;
-}
-@media (max-width: 992px) {
-  .works-deco-top-left-line::after {
-    top: 2%;
-    left: 2%;
-    width: 10%;
-    height: 10%;
-  }
-}
-
-.works-deco-bottom-right-line::after {
-  content: "";
-  width: 8%;
-  height: 20%;
-  border-bottom: 3px solid #BAB2AB;
-  border-right: 3px solid #BAB2AB;
-  border-bottom-right-radius: 5px;
-  position: absolute;
-  bottom: 3%;
-  right: 1%;
-}
-@media (max-width: 992px) {
-  .works-deco-bottom-right-line::after {
-    bottom: 2%;
-    right: 2%;
-    width: 10%;
-    height: 10%;
-  }
 }
 
 .deco-box {
@@ -16523,6 +16416,35 @@ textarea.form-control-lg {
   transition: all 1s;
 }
 
+.bg-hover {
+  background-color: transparent;
+  transition: all 1s;
+  color: white;
+  font-size: 32px;
+}
+
+.bg-hover:hover {
+  background-color: white;
+  opacity: 0.6;
+  transition: all 1s;
+  color: #000;
+  font-size: 36px;
+}
+
+.link-gray-bg {
+  background-color: transparent;
+  transition: 0.6s all;
+  color: #6c757d;
+  font-size: 20px;
+}
+
+.link-gray-bg:hover {
+  background-color: rgba(108, 117, 125, 0.3960784314);
+  color: white;
+  transition: 0.6s all;
+  font-size: 22px;
+}
+
 .swiper {
   max-width: 85%;
   max-height: 100%;
@@ -16542,6 +16464,40 @@ textarea.form-control-lg {
 
 .link-hover-decoration {
   text-decoration: underline !important;
+}
+
+.deco-link-transition {
+  position: relative;
+  padding: 15px;
+  color: #000;
+  background-color: #BAB2AB;
+  opacity: 0.8;
+  border-radius: 40px 0px 0px 40px;
+  transition: 0.4s ease-in;
+}
+
+.deco-link-transition:hover {
+  padding: 15px 20px;
+  color: #fff;
+  border-radius: 0px;
+  transition: 0.6s ease-in;
+}
+
+.deco-link-small-transition {
+  position: relative;
+  padding: 15px;
+  color: #000;
+  background-color: #BAB2AB;
+  opacity: 0.8;
+  border-radius: 0px 40px 40px 0px;
+  transition: all 0.4s ease-in;
+}
+
+.deco-link-small-transition:hover {
+  padding: 15px 25px;
+  color: #fff;
+  border-radius: 0px;
+  transition: 0.6s ease-in;
 }
 
 .form-control {

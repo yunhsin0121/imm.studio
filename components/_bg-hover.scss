@@ -1,0 +1,13 @@
+.bg-hover{
+    background-color: transparent;
+    transition: all 1s;
+    color: white;
+    font-size: 32px;
+}
+.bg-hover:hover{
+    background-color: white;
+        opacity: 0.6;
+        transition: all 1s;
+        color: #000;
+        font-size: 36px;
+}
