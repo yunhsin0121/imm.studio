@@ -1,0 +1,29 @@
+.bg-circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    @include pad(){
+        width: 150px;
+        height: 150px;
+    }
+    @include mobile(){
+        width: 100px;
+        height: 100px;
+    }
+}
+.font-deco{
+    font-size: 160px;
+    letter-spacing: 10px;
+    line-height: 1;
+    color: #bab2ab7f;
+    font-family: 'Young Serif', serif;
+    @include pad(){
+        font-size: 100px;
+        letter-spacing: 5px;
+    }
+    @include mobile(){
+        font-size: 70px;
+        letter-spacing: 5px;
+        color: #6362604f;
+    }
+}

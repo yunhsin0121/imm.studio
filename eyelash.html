@@ -17,8 +17,7 @@
     @supports (-webkit-touch-callout: inherit) {
 	.header {
 		background-attachment: scroll !important;
-	}
-}
+	}}
 @font-face{
         font-family: 'ThePeakFontBeta';
         src: url('./fonts/ThePeakFontBeta_V0_101.ttf');
@@ -66,88 +65,67 @@ body{
         </div>
     </nav>
 <main>
-    <section class="bg-cover pb-5 mb-5" style="background-image: url(images/bg8.png);">
+    <section class="container-fluid position-relative pb-5" style="background-image: url(images/bg2.png); ">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-10 col-md-4 animate__animated animate__fadeInDown">
-                    <img src="images/lash-header.png" class="img-fluid rounded-bottom-pill" alt="">
+        <span class="d-none d-md-block font-deco position-absolute top-md-40 start-40 start-lg-35 start-xl-40 z-2">eyelash</span>
+        <span class="position-absolute top-15 start-50 translate-middle fs-1 fw-bold text-light">日式美睫</span>
+        <img src="./images/circle-bg-gray.png" class="img-fluid top-30 start-60 start-xl-70 position-absolute z-1 d-none d-md-block opacity-50" alt="" width="300">
+        <img src="./images/circle-bg-broen.png" class="img-fluid top-60 start-70 start-xl-80 position-absolute z-1 d-none d-md-block opacity-75" alt="" width="200">
+            <div class="row flex-row-reverse justify-content-between">
+                <div class="col-md-5 z-3">
+                    <img src="images/lash-header.png" class="img-fluid rounded-bottom-pill shadow" alt="">
                 </div>
-                <div class="col-12 col-md-2 z-3 mt-n7 mt-md-3  mt-lg-6 animate__animated animate__zoomIn">
-                    <div class="bg-brown bg-opacity-75 p-4 p-md-3 mb-4 mb-md-3 d-inline-block ms-md-n6 shadow">
-                        <h2 class="fw-bold text-white">日式美睫</h2>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 align-self-center">
-                    <div class="row justify-content-center ms-n6 ms-md-n8 gx-0 animate__animated animate__zoomIn">
-                        <div class="col-4 position-relative me-n5 me-md-n5 me-lg-n6">
-                            <img src="images/circle-brown.png" class="img-fluid" alt="">
-                            <p class="text-center text-white position-absolute top-40 start-50 translate-middle w-75 z-2">似真睫毛的柔細材質</p>
-                        </div>
-                        <div class="col-5 position-relative me-n5 align-self-end">
-                            <img src="images/circle-brown.png" class="img-fluid" alt="">
-                            <p class="text-center text-white position-absolute top-50 start-50 translate-middle w-75 z-3">採用單根的嫁接手法</p>
-                        </div>
-                        <div class="col-4 position-relative me-n6">
-                            <img src="images/circle-brown.png" class="img-fluid" alt="">
-                            <p class="text-center text-white  position-absolute top-40 start-50 translate-middle w-75">根根分明且自然輕盈</p>
+                <div class="col-md-7 align-self-end py-2 py-md-3 py-lg-5">
+                    <div class="row justify-content-center z-3">
+                        <div class="position-relative">
+                            <img src="./images/circle-bg.png" class="img-fluid" alt="">
+                            <div class="position-absolute top-50 start-18 translate-middle">
+                                <div class="mb-2 mb-md-3">
+                                    <img src="images/eyelash1.png" class="img-fluid d-block mx-auto" alt="" width="80">
+                                </div>
+                                <p class="text-center fw-bold">讓睫毛<br class="d-lg-none">纖長濃密</p>
+                            </div>
+                            <div class="position-absolute top-45 start-50 translate-middle">
+                                <div class="mb-2 mb-md-3">
+                                    <img src="images/eyelash2.png" class="img-fluid d-block mx-auto" alt="" width="80">
+                                </div>
+                                <p class="text-center fw-bold">打造自然<br class="d-lg-none">有神的雙眼</p>
+                            </div>
+                            <div class="position-absolute top-45 start-82 translate-middle">
+                                <div class="mb-2 mb-md-3">
+                                    <img src="images/eyelash3.png" class="img-fluid d-block mx-auto" alt="" width="80">
+                                </div>
+                                <p class="text-center fw-bold">縮短<br class="d-lg-none">化妝時間</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="mb-5">
-        <div class="container">
-            <div class="mb-4 position-relative animate__animated animate__zoomIn">
-                <img src="images/header-bg1.png" class="img-fluid d-block mx-auto" alt="" width="250">
-                <h2 class="text-center mb-0 position-absolute top-30 start-50 translate-middle-x">優點</h2>
-                <span class="text-secondary fw-bold text-center fs-5 position-absolute top-60 start-55">ADVANTAGE</span>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 bg-light-brown bg-opacity-25 py-5 px-2 px-lg-5 rounded-end-pill shadow z-3">
+                    <div class="d-flex flex-column align-items-lg-center">
+                        <h2 class="fw-bold mb-3 text-secondary">ATTENTION.</h2>
+                        <ul class="list-unstyled animate__animated animate__zoomIn">
+                            <li><i class="bi bi-1-circle"></i> 嫁接完成後<span class="text-dark">不要擦睫毛膏及夾睫毛</span></li>
+                            <li><i class="bi bi-2-circle"></i> 卸妝時盡量<span class="text-dark">不要使用油性卸妝油</span></li>
+                            <li><i class="bi bi-3-circle"></i> 三天內，<span class="text-dark">不要去高溫場所</span>，以免黑膠溶解或導致睫毛變形</li>
+                            <li><i class="bi bi-4-circle"></i> <span class="text-dark">四小時內睫毛不可以碰到水</span>，以免影響黑膠黏著度</li>
+                            <li><i class="bi bi-5-circle"></i> <span class="text-dark">應避免揉眼睛</span>，否則真睫毛可能會斷裂</li>
+                            <li><i class="bi bi-6-circle"></i> 嫁接完成後，2天內若有5~20根睫毛掉落，<span class="text-dark">屬於睫毛本身正常代謝情況</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col  d-none d-md-flex align-items-center z-3">
+                    <!-- <div class=""> -->
+                        <img src="./images/arrow-big.png" class="img-fluid" width="300" alt="arrow-image" >
+                    <!-- </div> -->
+                </div>
             </div>
-            <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 list-unstyled justify-content-center">
-                <li class="col-6">
-                    <div class="d-flex flex-column align-items-center justify-content-center pt-3 pt-md-5 h-100 text-center mb-3 border-0 shadow rounded-top-pill bg-light-gray bg-opacity-50 animate__animated animate__fadeInUp">
-                        <div class="col-4 col-md-12 mb-3">
-                            <img src="images/eyelash1.png" class="img-fluid" alt="" width="80">
-                        </div>
-                        <div class="col-8 col-md-12 p-0 p-md-3">
-                            <p>讓睫毛更加纖長濃密</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-6">
-                    <div class="d-flex flex-column align-items-center justify-content-center pt-3 pt-md-5 h-100 text-center mb-3 border-0 shadow rounded-top-pill bg-light-gray bg-opacity-50 animate__animated animate__fadeInUp">
-                        <div class="col-4 col-md-12 mb-3">
-                            <img src="images/eyelash2.png" class="img-fluid" alt="" width="80">
-                        </div>
-                        <div class="col-8 col-md-12 p-0 p-md-3">
-                            <p>打造自然有神的雙眼</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-6">
-                    <div class="d-flex flex-column align-items-center justify-content-center pt-3 pt-md-5 h-100 text-center mb-3 border-0 shadow rounded-top-pill bg-light-gray bg-opacity-50 animate__animated animate__fadeInUp">
-                        <div class="col-4 col-md-12 mb-3">
-                            <img src="images/eyelash3.png" class="img-fluid" alt="" width="80">
-                        </div>
-                        <div class="col-8 col-md-12 p-0 p-md-3">
-                            <p class="mb-0">大幅縮短<br>化妝時間</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-6">
-                    <div class="d-flex flex-column align-items-center pt-3 pt-md-5 h-100 text-center mb-3 border-0 shadow rounded-top-pill bg-light-gray bg-opacity-50 animate__animated animate__fadeInUp">
-                        <div class="col-4 col-md-12 mb-3">
-                            <img src="images/eyelash4.png" class="img-fluid" alt="" width="50">
-                        </div>
-                        <div class="col-8 col-md-12 p-0 p-md-3">
-                            <p class="mb-0">免刷睫毛膏就<br>有捲翹睫毛</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
         </div>
     </section>
-    <section class="bg-cover" style="background-image: url(images/bg1.png);">
+    <!-- <section class="bg-cover" style="background-image: url(images/bg1.png);">
         <div class="container py-4 lh-lg text-secondary">
             <h2 class="text-center display-5 mb-3 animate__animated animate__zoomIn">ATTENTION</h2>
             <div class="d-flex justify-content-center">
@@ -161,7 +139,7 @@ body{
                 </ol>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="bg-5">
         <div class="container py-4">
             <div class="mb-4 position-relative animate__animated animate__zoomIn">

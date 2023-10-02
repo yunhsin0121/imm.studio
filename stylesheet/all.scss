@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import "../node_modules/bootstrap/scss/functions";
 @import"../helpers/variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import"../components/utilities";
+@import"../components/_grid.scss";
 @import"../components/_bg-position";
 @import"../components/_font-family";
 @import"../components/_text-indent";
@@ -16,5 +18,6 @@
 @import"../components/_bg-transition";
 @import"../components/_accordion-item-hover";
 @import"../components/_deco-link-transition";
+@import"../components/_circle.scss";
 @import"../helpers/_form-control.scss";
 @import "../node_modules/bootstrap/scss/utilities/api";

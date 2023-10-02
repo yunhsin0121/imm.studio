@@ -29,6 +29,12 @@ $(document).ready(function () {
             $('.btn-up').fadeOut();
         }
     });
-    // form驗證
-     
+     $('.circle-link').hover(function () {
+            // over
+            $('.circle-item').addClass('is-active');
+        }, function () {
+            // out
+            $('.circle-item').removeClass('is-active');
+        }
+     );
 });
