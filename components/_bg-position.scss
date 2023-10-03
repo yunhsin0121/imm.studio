@@ -11,7 +11,6 @@
 }
 .bg-position-cc{
     background-position: center center;
-    background-size: cover;
     background-repeat: no-repeat;
     background-color: #e6e6e2;
 }
@@ -37,6 +36,7 @@
 }
 .bg-attachment-fixed{
     background-attachment: fixed;
+    background-size: cover;
 }
 .bg-cover{
     background-position: center center;
