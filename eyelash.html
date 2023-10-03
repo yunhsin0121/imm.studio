@@ -30,24 +30,24 @@ body{
 .background {
     background: url("images/bg2.png") no-repeat;
     opacity: 0.6;
-    background-size: cover;
-    -webkit-background-size: cover;
+    background-size: contain;
+    -webkit-background-size: contain;
     background-position: center;
     background-position-x: 50%;
     background-position-y: 50%;
     position: fixed;
     height: 100%;
     width: 100%;
-
+/* 
     @media (max-width:768px) {
         background-image: url("../images/background-md.png");
         background-position: 80%;
         background-position-x: 80%;
-    }
+    } */
 }
 </style>
 <body>
-<!-- <div class="background d-md-none"></div> -->
+<div class="background d-md-none"></div>
 <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top border-bottom border-white">
     <div class="container-md container-fluid px-3 px-md-0">
             <a class="navbar-brand" href="index.html" class="text">
@@ -84,7 +84,7 @@ body{
         </div>
     </div>
 </nav>
-<main style="background: url(images/bg2.png),repeat; ">
+<main class="bg-attachment-fixed" style="background-image: url(images/bg2.png) ">
     <!--注意事項 -->
     <section class="container-fluid position-relative pb-5">
         <div class="container">
@@ -204,12 +204,12 @@ body{
                 </div>
                 <div class="col-lg-5 ms-auto">
                     <p class="display-3 text-secondary fw-bold">PRICE LIST.</p>
-                    <h2 class="fw-bold ">價目表</h2>
+                    <h2 class="fw-bold">價目表</h2>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="ms-auto col-md-6 col-lg-5">
-                    <table class="table table-hover table-light-gray table-bordered border border-white caption-top">
+                    <table class="table table-hover table-light-gray table-bordered border-white caption-top">
                         <caption class="text-bg-brown text-center fs-5">日式美睫</caption>
                             <thead>
                                 <th colspan="2">經典黑色圓毛-上睫毛</th>
