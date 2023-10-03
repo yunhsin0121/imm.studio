@@ -464,12 +464,15 @@ $position-values: (
   43:43%,
   45:45%,
   50:50%,
+  53:53%,
   55:55%,
+  58:58%,
   60:60%,
   65:65%,
   70:70%,
   75:75%,
   80:80%,
+  81:81%,
   82:82%,
   85:85%,
   90:90%,
@@ -1202,7 +1205,9 @@ $zindex-levels: (
   0: 0,
   1: 1,
   2: 2,
-  3: 3
+  3: 3,
+  4: 4,
+  5: 5,
 ) !default;
 // scss-docs-end zindex-levels-map
 
@@ -1419,11 +1424,14 @@ $card-group-margin:                 $grid-gutter-width * .5 !default;
 $accordion-padding-y:                     1rem !default;
 $accordion-padding-x:                     1.25rem !default;
 $accordion-color:                         var(--#{$prefix}body-color) !default;
-$accordion-bg:                            var(--#{$prefix}body-bg) !default;
-$accordion-border-width:                  var(--#{$prefix}border-width) !default;
+$accordion-bg:                            transparent;
+// var(--#{$prefix}body-bg) !default;
+$accordion-border-width:                  0px;
+// var(--#{$prefix}border-width) !default;
 $accordion-border-color:                  #ddd8d5!default;
 // var(--#{$prefix}border-color) !default;
-$accordion-border-radius:                 var(--#{$prefix}border-radius) !default;
+$accordion-border-radius:                 0px;
+// var(--#{$prefix}border-radius) !default;
 $accordion-inner-border-radius:           subtract($accordion-border-radius, $accordion-border-width) !default;
 
 $accordion-body-padding-y:                $accordion-padding-y !default;

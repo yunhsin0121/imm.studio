@@ -12,18 +12,17 @@
     }
 }
 .font-deco{
-    font-size: 160px;
+    font-size: 100px;
     letter-spacing: 10px;
     line-height: 1;
-    color: #bab2ab7f;
+    color: #414040;
     font-family: 'Young Serif', serif;
     @include pad(){
-        font-size: 100px;
+        font-size: 110px;
         letter-spacing: 5px;
     }
     @include mobile(){
-        font-size: 70px;
-        letter-spacing: 5px;
-        color: #6362604f;
+        font-size: 60px;
+        color: #636260;
     }
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>日式美睫-imm.studio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -26,56 +27,78 @@ body{
     font-family: 'ThePeakFontBeta';
     letter-spacing:2px;
 }
+.background {
+    background: url("images/bg2.png") no-repeat;
+    opacity: 0.6;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    @media (max-width:768px) {
+        background-image: url("../images/background-md.png");
+        background-position: 80%;
+        background-position-x: 80%;
+    }
+}
 </style>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top border-bottom border-white">
-        <div class="container-md container-fluid px-3 px-md-0">
-                <a class="navbar-brand" href="index.html" class="text">
-                    <img src="images/logo-white.png" alt="logo" width="200" class="pb-1">
-                    <h1 class="d-none">imm.studio</h1>
-                </a>
-            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fa-solid fa-bars fs-1 text-white"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-center">
-                    <li class="nav-item me-lg-3">
-                        <a class="nav-link btn btn-light-gray text-secondary" aria-current="page" href="eyelash.html">日式美睫</a>
-                    </li>
-                    <li class="nav-item me-lg-3">
-                        <a class="nav-link btn btn-light-gray text-secondary" href="eyebrow.html">粉霧眉</a>
-                    </li>
-                    <li class="nav-item me-lg-3">
-                        <a class="nav-link btn btn-light-gray text-secondary" href="colorRemoval.html">無創除色</a>
-                    </li>
-                    <li class="nav-item me-lg-3">
-                        <a class="nav-link btn btn-light-gray text-secondary" href="price.html">價目表</a>
-                    </li>
-                    <li class="nav-item me-lg-3">
-                        <a class="nav-link btn btn-light-gray text-secondary" href="q&a.html">Q&A</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-light-gray text-dark" href="reserved.html">預約</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-light-gray text-dark" href="login.html">會員</a>
-                    </li>
-                </ul>
-            </div>
+<div class="background d-md-none"></div>
+<nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top border-bottom border-white">
+    <div class="container-md container-fluid px-3 px-md-0">
+            <a class="navbar-brand" href="index.html" class="text">
+                <img src="images/logo-white.png" alt="logo" width="200" class="pb-1">
+                <h1 class="d-none">imm.studio</h1>
+            </a>
+        <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa-solid fa-bars fs-1 text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item me-lg-3">
+                    <a class="nav-link btn btn-light-gray text-secondary" aria-current="page" href="eyelash.html">日式美睫</a>
+                </li>
+                <li class="nav-item me-lg-3">
+                    <a class="nav-link btn btn-light-gray text-secondary" href="eyebrow.html">粉霧眉</a>
+                </li>
+                <li class="nav-item me-lg-3">
+                    <a class="nav-link btn btn-light-gray text-secondary" href="colorRemoval.html">無創除色</a>
+                </li>
+                <li class="nav-item me-lg-3">
+                    <a class="nav-link btn btn-light-gray text-secondary" href="price.html">價目表</a>
+                </li>
+                <li class="nav-item me-lg-3">
+                    <a class="nav-link btn btn-light-gray text-secondary" href="q&a.html">Q&A</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-light-gray text-dark" href="reserved.html">預約</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-light-gray text-dark" href="login.html">會員</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-<main>
-    <section class="container-fluid position-relative pb-5" style="background-image: url(images/bg2.png); ">
+    </div>
+</nav>
+<main class="bg-attachment-fixed" style="background-image: url(images/bg2.png); ">
+    <!--注意事項 -->
+    <section class="container-fluid position-relative pb-5">
         <div class="container">
-        <span class="d-none d-md-block font-deco position-absolute top-md-40 start-40 start-lg-35 start-xl-40 z-2">eyelash</span>
-        <span class="position-absolute top-15 start-50 translate-middle fs-1 fw-bold text-light">日式美睫</span>
-        <img src="./images/circle-bg-gray.png" class="img-fluid top-30 start-60 start-xl-70 position-absolute z-1 d-none d-md-block opacity-50" alt="" width="300">
-        <img src="./images/circle-bg-broen.png" class="img-fluid top-60 start-70 start-xl-80 position-absolute z-1 d-none d-md-block opacity-75" alt="" width="200">
-            <div class="row flex-row-reverse justify-content-between">
-                <div class="col-md-5 z-3">
+            <span class="d-none d-md-block font-deco position-absolute top-md-58 top-lg-40 start-md-40 end-0 z-4">日式美睫</span>
+            <img src="./images/circle-bg-gray.png" class="img-fluid top-30 start-60 start-xl-70 position-absolute z-1 d-none d-lg-block opacity-50" alt="" width="300">
+            <img src="./images/circle-bg-broen.png" class="img-fluid top-60 start-70 start-xl-80 position-absolute z-1 d-none d-lg-block opacity-75" alt="" width="200">
+            <div class="row flex-row-reverse justify-content-center justify-content-lg-between position-relative">
+                <div class="col-md-11 col-lg-5 z-3">
                     <img src="images/lash-header.png" class="img-fluid rounded-bottom-pill shadow" alt="">
+                    <div class="d-flex justify-content-end position-absolute me-n2 top-30 end-0 d-lg-none">
+                        <a href="reserved.html" class="deco-link-transition fw-bold fs-3 shadow"><i class="fa-solid fa-arrow-left-long"></i> 立即預約<span class="fs-6 d-block">Reservation Now</span></a>                       
+                    </div>
                 </div>
-                <div class="col-md-7 align-self-end py-2 py-md-3 py-lg-5">
+                <div class="col-md-11 col-lg-7 align-self-end mt-md-n4 mt-lg-0 py-4 py-lg-5">
                     <div class="row justify-content-center z-3">
                         <div class="position-relative">
                             <img src="./images/circle-bg.png" class="img-fluid" alt="">
@@ -83,299 +106,287 @@ body{
                                 <div class="mb-2 mb-md-3">
                                     <img src="images/eyelash1.png" class="img-fluid d-block mx-auto" alt="" width="80">
                                 </div>
-                                <p class="text-center fw-bold">讓睫毛<br class="d-lg-none">纖長濃密</p>
+                                <p class="text-center">讓睫毛<br class="d-lg-none">纖長濃密</p>
                             </div>
                             <div class="position-absolute top-45 start-50 translate-middle">
                                 <div class="mb-2 mb-md-3">
                                     <img src="images/eyelash2.png" class="img-fluid d-block mx-auto" alt="" width="80">
                                 </div>
-                                <p class="text-center fw-bold">打造自然<br class="d-lg-none">有神的雙眼</p>
+                                <p class="text-center">打造自然<br class="d-lg-none">有神的雙眼</p>
                             </div>
-                            <div class="position-absolute top-45 start-82 translate-middle">
+                            <div class="position-absolute top-45 start-80 start-md-82 translate-middle">
                                 <div class="mb-2 mb-md-3">
                                     <img src="images/eyelash3.png" class="img-fluid d-block mx-auto" alt="" width="80">
                                 </div>
-                                <p class="text-center fw-bold">縮短<br class="d-lg-none">化妝時間</p>
+                                <p class="text-center">縮短<br class="d-lg-none">化妝時間</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-7 bg-light-brown bg-opacity-25 py-5 px-2 px-lg-5 rounded-end-pill shadow z-3">
-                    <div class="d-flex flex-column align-items-lg-center">
-                        <h2 class="fw-bold mb-3 text-secondary">ATTENTION.</h2>
-                        <ul class="list-unstyled animate__animated animate__zoomIn">
-                            <li><i class="bi bi-1-circle"></i> 嫁接完成後<span class="text-dark">不要擦睫毛膏及夾睫毛</span></li>
-                            <li><i class="bi bi-2-circle"></i> 卸妝時盡量<span class="text-dark">不要使用油性卸妝油</span></li>
-                            <li><i class="bi bi-3-circle"></i> 三天內，<span class="text-dark">不要去高溫場所</span>，以免黑膠溶解或導致睫毛變形</li>
-                            <li><i class="bi bi-4-circle"></i> <span class="text-dark">四小時內睫毛不可以碰到水</span>，以免影響黑膠黏著度</li>
-                            <li><i class="bi bi-5-circle"></i> <span class="text-dark">應避免揉眼睛</span>，否則真睫毛可能會斷裂</li>
-                            <li><i class="bi bi-6-circle"></i> 嫁接完成後，2天內若有5~20根睫毛掉落，<span class="text-dark">屬於睫毛本身正常代謝情況</span></li>
-                        </ul>
-                    </div>
+        <div class="row">
+            <div class="col-lg-7 bg-light-brown bg-opacity-50 py-5 px-4 px-md-5 rounded-end-pill shadow z-3 position-relative">
+                <span class="d-md-none font-deco position-absolute top-0 end-0 z-5 translate-middle-y">日式美睫</span>
+                <div>
+                    <p class="display-3 text-secondary fw-bold">ATTENTION.</p>
+                    <h2 class="fw-bold mb-3">注意事項</h2>
                 </div>
-                <div class="col  d-none d-md-flex align-items-center z-3">
-                    <!-- <div class=""> -->
-                        <img src="./images/arrow-big.png" class="img-fluid" width="300" alt="arrow-image" >
-                    <!-- </div> -->
+                <div class="d-flex flex-column align-items-lg-center">
+                    <!-- <h2 class="fw-bold mb-3 text-secondary">ATTENTION.</h2> -->
+                    <ul class="fw-bold list-unstyled animate__animated animate__zoomIn">
+                        <li class="mb-1"><i class="bi bi-1-circle"></i> 嫁接完成後<span class="text-dark">不要擦睫毛膏及夾睫毛</span></li>
+                        <li class="mb-1"><i class="bi bi-2-circle"></i> 卸妝時盡量<span class="text-dark">不要使用油性卸妝油</span></li>
+                        <li class="mb-1"><i class="bi bi-3-circle"></i> 三天內，<span class="text-dark">不要去高溫場所</span>，以免黑膠溶解或導致睫毛變形</li>
+                        <li class="mb-1"><i class="bi bi-4-circle"></i> <span class="text-dark">四小時內睫毛不可以碰到水</span>，以免影響黑膠黏著度</li>
+                        <li class="mb-1"><i class="bi bi-5-circle"></i> <span class="text-dark">應避免揉眼睛</span>，否則真睫毛可能會斷裂</li>
+                        <li class="mb-1"><i class="bi bi-6-circle"></i> 嫁接完成後，2天內若有5~20根睫毛掉落，<span class="text-dark">屬於睫毛本身正常代謝情況</span></li>
+                    </ul>
                 </div>
+            </div>
+            <div class="col d-none d-lg-flex align-items-md-end align-items-lg-center">
+                <div class="d-flex justify-content-end position-absolute top-45 end-0 z-5">
+                    <a href="reserved.html" class="deco-link-transition fw-bold fs-3 shadow"><i class="fa-solid fa-arrow-left-long"></i> 立即預約<span class="fs-6 d-block">Reservation Now</span></a>                       
+                </div>
+                <img src="./images/arrow-big.png" class="img-fluid" width="300" alt="arrow-image">
             </div>
         </div>
     </section>
-    <!-- <section class="bg-cover" style="background-image: url(images/bg1.png);">
-        <div class="container py-4 lh-lg text-secondary">
-            <h2 class="text-center display-5 mb-3 animate__animated animate__zoomIn">ATTENTION</h2>
-            <div class="d-flex justify-content-center">
-                <ol class="animate__animated animate__zoomIn">
-                    <li>嫁接完成後<span class="text-dark">不要擦睫毛膏及夾睫毛</span></li>
-                    <li>卸妝時盡量<span class="text-dark">不要使用油性卸妝油</span></li>
-                    <li>三天內，<span class="text-dark">不要去高溫場所</span>，以免黑膠溶解或導致睫毛變形</li>
-                    <li><span class="text-dark">四小時內睫毛不可以碰到水</span>，以免影響黑膠黏著度</li>
-                    <li><span class="text-dark">應避免揉眼睛</span>，否則真睫毛可能會斷裂</li>
-                    <li>嫁接完成後，2天內若有5~20根睫毛掉落，<span class="text-dark">屬於睫毛本身正常代謝情況</span></li>
-                </ol>
-            </div>
-        </div>
-    </section> -->
-    <section class="bg-5">
+    <!-- 施作流程 -->
+    <section>
         <div class="container py-4">
             <div class="mb-4 position-relative animate__animated animate__zoomIn">
-                <img src="images/header-bg1.png" class="img-fluid d-block mx-auto" alt="" width="250">
-                <h2 class="text-center mb-0 position-absolute top-30 start-50 translate-middle-x">流程</h2>
-                <span class="text-secondary fw-bold text-center fs-5 position-absolute top-60 start-55">PROCESS</span>
+                <p class="display-3 text-secondary fw-bold text-center text-md-start">PROCESS.</p>
+                <h2 class="fw-bold text-center text-md-start">施作流程</h2>
             </div>
             <div class="row align-items-center justify-content-center py-3 animate__animated animate__zoomIn">
                 <div class="col-10 col-md-5 mb-5 mb-md-0 d-flex justify-content-center">     
-                    <div class="position-relative">
-                        <img src="images/eyelash5.png" class="img-fluid rounded-circle shadow" alt="eyelash-img" width="300">
-                        <img src="images/number-circle1.png" class="img-fluid position-absolute top-10 start-0 translate-middle-y" width="80" alt="number-img">
-                        <img src="images/header-bg2.png" class="img-fluid position-absolute top-80 start-45" alt="" width="200">
-                        <h3 class="text-white text-center mb-0 position-absolute top-90 start-75 translate-middle-y">討論</h3>
+                    <div>
+                        <img src="images/eyelash5.png" class="img-fluid rounded-circle shadow animate__animated animate__zoomIn" alt="eyelash-img" width="300">
                     </div>  
                 </div>
                 <div class="col-10 col-md-7">
+                    <h3 class="text-secondary fw-bold mb-3"><i class="bi bi-1-circle"></i> 討論</h3>
                     <p class="fs-5">操作前與美睫師討論要選擇的睫毛材料及顏色，
                         根據您的預算，選擇自然或著豔麗的造型，一起挑選出最適合您的睫毛樣式。</p>
                 </div>
             </div>
-            <div class="row flex-row-reverse align-items-center justify-content-center py-3 animate__animated animate__zoomIn">
+            <div class="row  align-items-center justify-content-center py-3 animate__animated animate__zoomIn">
                 <div class="col-10 col-md-5 mb-5 mb-md-0 d-flex justify-content-center">     
-                    <div class="position-relative">
+                    <div>
                         <img src="images/eyelash6.png" class="img-fluid rounded-circle shadow" alt="eyelash-img" width="300">
-                        <img src="images/number-circle2.png" class="img-fluid position-absolute top-10 start-70 translate-middle-y" width="80" alt="number-img">
-                        <img src="images/header-bg2.png" class="img-fluid position-absolute top-80 end-45" alt="" width="200">
-                        <h3 class="text-white text-center mb-0 position-absolute top-90 end-55 translate-middle-y">前置作業</h3>
                     </div>  
                 </div>
                 <div class="col-10 col-md-7">
+                    <h3 class="text-secondary fw-bold mb-3"><i class="bi bi-2-circle"></i> 前置作業</h3>
                     <p class="fs-5">挑選出適合的睫毛樣式後，接著開始清潔眼部和眼妝，將睫毛梳順，並將下睫毛貼上透氣膠帶固定。</p>
                 </div>
             </div>
             <div class="row align-items-center justify-content-center py-3 animate__animated animate__zoomIn">
                 <div class="col-10 col-md-5 mb-5 mb-md-0 d-flex justify-content-center">     
-                    <div class="position-relative">
+                    <div>
                         <img src="images/eyelash7.png" class="img-fluid rounded-circle shadow" alt="eyelash-img" width="300">
-                        <img src="images/number-circle3.png" class="img-fluid position-absolute top-10 start-0 translate-middle-y" width="80" alt="number-img">
-                        <img src="images/header-bg2.png" class="img-fluid position-absolute top-80 start-45" alt="" width="200">
-                        <h3 class="text-white text-center mb-0 position-absolute top-90 start-75 translate-middle-y">操作</h3>
-                    </div>  
+                    </div>
                 </div>
                 <div class="col-10 col-md-7">
+                    <h3 class="text-secondary fw-bold mb-3"><i class="bi bi-3-circle"></i> 操作</h3>
                     <p class="fs-5">先用酒精將所有工具消毒，用夾子夾取睫毛並沾上黑膠，依照眼中眼尾眼頭的順序，將睫毛嫁接在真睫毛的根部，嫁接完成後，將睫毛梳順及可。</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-cover py-4 mb-5" style="background-image: url(images/bg8.png);">
-        <div class="card container col-12 col-lg-8 py-4 text-center shadow border-0 animate__animated animate__zoomIn"> 
-            <div class="card-header">
-                <h2 class="text-center text-secondary display-5 py-2 mb-0">PRICE LIST</h2>
+    <!--價目表  -->
+    <section class="bg-secondary bg-brown bg-opacity-50 py-5 mb-1 rounded-start-pill">
+        <div class="container">
+            <div class="row flex-row-reverse pb-3 pb-md-5">
+                <div class="col-5 col-lg-4 mb-3 mb-md-0 me-lg-auto d-none d-md-block">
+                    <img src="./images/arrow-big.png" class="img-fluid mt-n7" alt="arrow-image">
+                </div>
+                <div class="col-lg-5 ms-auto">
+                    <p class="display-3 text-secondary fw-bold">PRICE LIST.</p>
+                    <h2 class="fw-bold ">價目表</h2>
+                </div>
             </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="mx-auto col-12 col-md-6">
-                        <table class="table table-hover table-light-gray table-bordered border border-white caption-top">
-                            <caption class="text-bg-brown text-center fs-5">日式美睫</caption>
-                                <thead>
-                                    <th colspan="2">經典黑色圓毛-上睫毛</th>
-                                    <th colspan="2">經典黑色圓毛-下睫毛</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th class="text-secondary">80本</th>
-                                        <td>$1000</td>
-                                        <th class="text-secondary">20本</th>
-                                        <td>$200</td>
-                                    </tr>
-                                    <tr> 
-                                        <th class="text-secondary">100本</th>
-                                        <td>$1200</td>
-                                        <th class="text-secondary">30本</th>
-                                        <td>$300</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="text-secondary">120本</th>
-                                        <td>$1400</td>
-                                        <th class="text-secondary">40本</th>
-                                        <td>$400</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="text-secondary">140本</th>
-                                        <td>$1600</td>
-                                        <td colspan="2"></td>
-                                    </tr>
-                                </tbody>
-                        </table>
-                        <table class="table table-hover table-light-gray table-bordered border border-white caption-top">
-                            <caption class="text-bg-brown text-center fs-5">加購項目</caption>
+            <div class="row justify-content-center">
+                <div class="ms-auto col-md-6 col-lg-5">
+                    <table class="table table-hover table-light-gray table-bordered border border-white caption-top">
+                        <caption class="text-bg-brown text-center fs-5">日式美睫</caption>
+                            <thead>
+                                <th colspan="2">經典黑色圓毛-上睫毛</th>
+                                <th colspan="2">經典黑色圓毛-下睫毛</th>
+                            </thead>
                             <tbody>
                                 <tr>
-                                    <th class="text-secondary">抗菌扁毛</th>
-                                    <td>+$200</td>
+                                    <th class="text-secondary">80本</th>
+                                    <td>$1000</td>
+                                    <th class="text-secondary">20本</th>
+                                    <td>$200</td>
                                 </tr>
-                            </tbody>   
-                        </table>
-                    </div>
-                    <div class="mx-auto col-12 col-md-6">   
-                        <table class="table table-hover table-light-gray table-bordered border border-white caption-top">
-                            <caption class="text-bg-brown text-center fs-5">卸除</caption>
-                            <tbody>
-                                <tr>
-                                    <th class="text-secondary">本店卸除且重接</th>
-                                    <td>FREE</td>
-                                </tr>
-                                <tr>
-                                    <th class="text-secondary">本店卸除不續接</th>
+                                <tr> 
+                                    <th class="text-secondary">100本</th>
+                                    <td>$1200</td>
+                                    <th class="text-secondary">30本</th>
                                     <td>$300</td>
                                 </tr>
-                            </tbody>   
-                        </table>
-                        <table class="table table-hover table-light-gray  table-bordered border border-white caption-top mb-3">
-                            <caption class="text-bg-brown text-center fs-5">優惠活動</caption>
-                            <tbody>
                                 <tr>
-                                    <th class="text-secondary">初次嫁接享</th>
-                                    <td>85折</td>
+                                    <th class="text-secondary">120本</th>
+                                    <td>$1400</td>
+                                    <th class="text-secondary">40本</th>
+                                    <td>$400</td>
                                 </tr>
                                 <tr>
-                                    <th class="text-secondary">當月壽星個人享</th>
-                                    <td>9折</td>
-                                </tr>
-                                <tr>
-                                    <th class="text-secondary">學生憑學生證個人享</th>
-                                    <td>9折</td>
+                                    <th class="text-secondary">140本</th>
+                                    <td>$1600</td>
+                                    <td colspan="2"></td>
                                 </tr>
                             </tbody>
-                        </table>
-                        <p class="text-danger">*以上優惠皆不可重複併用</p>
-                    </div>
-                </div> 
-            </div>   
+                    </table>
+                    <table class="table table-hover table-light-gray table-bordered border border-white caption-top">
+                        <caption class="text-bg-brown text-center fs-5">加購項目</caption>
+                        <tbody>
+                            <tr>
+                                <th class="text-secondary">抗菌扁毛</th>
+                                <td>+$200</td>
+                            </tr>
+                        </tbody>   
+                    </table>
+                </div>
+                <div class="me-auto col-md-6 col-lg-5">   
+                    <table class="table table-hover table-light-gray table-bordered border border-white caption-top">
+                        <caption class="text-bg-brown text-center fs-5">卸除</caption>
+                        <tbody>
+                            <tr>
+                                <th class="text-secondary">本店卸除且重接</th>
+                                <td>FREE</td>
+                            </tr>
+                            <tr>
+                                <th class="text-secondary">本店卸除不續接</th>
+                                <td>$300</td>
+                            </tr>
+                        </tbody>   
+                    </table>
+                    <table class="table table-hover table-light-gray  table-bordered border border-white caption-top mb-3">
+                        <caption class="text-bg-brown text-center fs-5">優惠活動</caption>
+                        <tbody>
+                            <tr>
+                                <th class="text-secondary">初次嫁接享</th>
+                                <td>85折</td>
+                            </tr>
+                            <tr>
+                                <th class="text-secondary">當月壽星個人享</th>
+                                <td>9折</td>
+                            </tr>
+                            <tr>
+                                <th class="text-secondary">學生憑學生證個人享</th>
+                                <td>9折</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-danger"><i class="bi bi-exclamation-circle"></i> 以上優惠皆不可重複併用</p>
+                </div>
+            </div> 
         </div>
     </section>
-    <section class="mb-5">
+    <!-- 常見問答 -->
+    <section class="py-4 mb-5 position-relative">
         <div class="container">
-            <div class="mb-4 position-relative animate__animated animate__zoomIn">
-                <img src="images/header-bg1.png" class="img-fluid d-block mx-auto" alt="" width="250">
-                <h2 class="text-center mb-0 position-absolute top-30 start-50 translate-middle-x">常見問答</h2>
-                <span class="text-secondary fw-bold text-center fs-5 position-absolute top-60 start-55">Q&A</span>
+            <div class="mb-5">
+                <p class="display-3 text-secondary fw-bold text-center">Q&A.</p>
+                <h2 class="fw-bold text-center">常見問答</h2>
             </div>
-            <div class="accordion border border-5 border-light-gray rounded-3 animate__animated animate__zoomIn" id="accordionExample">
+            <div class="accordion fs-5 animate__animated animate__zoomIn" id="accordionExample">
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h2 class="accordion-header border-bottom" id="headingOne">
+                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Q1.嫁接睫毛完後，多久需要再重接睫毛呢？
                         </button>
                     </h2> 
                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
+                        <div class="accordion-body border-bottom">
                             建議是一個月到一個半月左右，因為如果黑膠殘留在睫毛太久容易產生汙垢，時間過久可能會造成毛囊炎。
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h2 class="accordion-header border-bottom" id="headingTwo">
+                    <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Q2.請問如果本身的睫毛很稀疏還是可以接睫毛呢?
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
+                    <div class="accordion-body border-bottom">
                         可以的，美睫師會視個人情況及喜好接適合款式的睫毛。
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h2 class="accordion-header border-bottom" id="headingThree">
+                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             Q3.請問接睫毛整個過程需要花多久時間呢？
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
+                        <div class="accordion-body border-bottom">
                             由於每位顧客所選的睫毛長度以及嫁接根數皆不相同，但通常約2～3個小時內即可結束。
                     </div>
                 </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <h2 class="accordion-header border-bottom" id="headingFour">
+                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                             Q4.嫁接睫毛會不會傷害真睫毛嗎？
                         </button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
+                        <div class="accordion-body border-bottom">
                             睫毛本來就會有一定的生長週期，所以到了一個循環週期，原生的睫毛就會掉落再重新生長，我們嫁接睫毛是把假睫毛是接在原生睫毛上，因此假睫毛也會隨著原生睫毛正常掉落，只是原本的睫毛較短，所以掉了不太明顯，因此接了假睫毛之後，才比較容易注意到睫毛掉落。
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <h2 class="accordion-header border-bottom" id="headingFive">
+                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                             Q5.嫁接睫毛後眼睛紅腫怎麼辦？
                         </button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
+                        <div class="accordion-body border-bottom">
                             睫毛剛嫁接完，眼睛會因黑膠尚未乾固，有可能讓眼睛發紅，通常3~5個小時就會好轉。
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <h2 class="accordion-header border-bottom" id="headingSix">
+                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                             Q6.請問可以自行卸掉假睫毛嗎？
                         </button>
                     </h2>
                     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
+                        <div class="accordion-body border-bottom fs-5">
                             由於假睫毛上塗有黑膠，建議還是尋找專業的美睫師使用專用卸除劑來去除喔！
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSeven">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <h2 class="accordion-header border-bottom" id="headingSeven">
+                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                             Q7.請問接睫毛之後要怎麼卸妝？
                         </button>
                     </h2>
                     <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
+                        <div class="accordion-body border-bottom fs-5">
                             建議使用卸妝水或卸妝乳，絕對不要使用卸妝油，因為油容易讓黑膠失效，導致假睫毛掉落。
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingEight">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <h2 class="accordion-header border-bottom" id="headingEight">
+                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                             Q8.請問嫁接睫毛時會有不適感嗎？接完會有異物感嗎？
                         </button>
                     </h2>
                     <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
+                        <div class="accordion-body border-bottom">
                             嫁接的睫毛是不會直接碰觸肌膚，所以是完全沒有感覺的，本店接睫毛所選用的黑膠也是較為溫和、不刺激的。過程中如果有因為黑膠尚未揮發完全，進而造成燻眼或是眼睛癢的狀況，都可以馬上跟美睫師反應喔！
                         </div>
                     </div>
@@ -383,19 +394,47 @@ body{
             </div>
         </div>
     </section>
-    <section class="bg-cover" style="background-image: url(images/bg1.png);">
-        <div class="container p-4 animate__animated animate__zoomIn">
-            <h2 class="text-center text-secondary display-5 mb-3">PORTFOLIO</h2>
-            <ul class="row row-cols-2 row-cols-lg-4 list-unstyled flex-nowrap overflow-auto px-3 py-4">
-                <li class="col"><img src="images/works-eyebrow.jpg" class="img-fluid rounded shadow" alt=""></li>
-                <li class="col"><img src="images/works-eyebrow.jpg" class="img-fluid rounded shadow" alt=""></li>
-                <li class="col"><img src="images/works-eyebrow.jpg" class="img-fluid rounded shadow" alt=""></li>
-                <li class="col"><img src="images/works-eyebrow.jpg" class="img-fluid rounded shadow" alt=""></li>
-                <li class="col"><img src="images/works-eyebrow.jpg" class="img-fluid rounded shadow" alt=""></li>
-                <li class="col"><img src="images/works-eyebrow.jpg" class="img-fluid rounded shadow" alt=""></li>
-            </ul>
-        </div>
+    <!-- 作品 -->
+    <section class="pb-5">
+        <div class="swiper mySwiper">
+            <div class="d-md-none">
+                <p class="fs-1 text-secondary fw-bold text-center">PORTFOLIO.</p>
+                <h2 class="fw-bold text-center">作品</h2>
+            </div>
+            <div class="swiper-wrapper d-flex py-5">
+                <div class="align-self-center me-3 me-lg-5 d-none d-md-block">
+                    <p class="fs-1 text-secondary fw-bold text-center">PORTFOLIO.</p>
+                    <h2 class="fw-bold text-center">作品</h2>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/guest4.png" class="img-fluid" alt="guest-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/guest2.png" class="img-fluid" alt="guest-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/guest1.png" class="img-fluid" alt="guest-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/guest3.png" class="img-fluid" alt="guest-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/guest1.png" class="img-fluid" alt="guest-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/guest2.png" class="img-fluid" alt="guest-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/guest1.png" class="img-fluid" alt="guest-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/guest3.png" class="img-fluid" alt="guest-image">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
     </section>
+    <!-- GoToTop -->
     <section class="slideUp">
         <a href=".zip" class="btn-up text-decoration-none position-fixed bottom-10 end-3"></a>
     </section>
@@ -431,8 +470,41 @@ body{
     </div>
     <p class="text-center text-bg-brown text-secondary fs-6 py-2 mb-0 font-spacing  w-100">Copyright © 2023 imm.studio.All rights reserved.</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 <script src="javascript/jquery-3.6.4.min.js"></script>
 <script src="javascript/js.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        centeredSlides: true,
+        cssMode:true,
+        mousewheel: {
+            invert: true,
+        }   ,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+            },
+            768: {
+            slidesPerView: 3,
+            spaceBetween: 20
+            },
+            // when window width is >= 480px
+            991: {
+            slidesPerView: 3,
+            spaceBetween: 20
+            },
+            // when window width is >= 640px
+        }
+    });
+  </script>
 </body>
 </html>

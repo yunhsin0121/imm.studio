@@ -4981,12 +4981,12 @@ textarea.form-control-lg {
 
 .accordion {
   --bs-accordion-color: var(--bs-body-color);
-  --bs-accordion-bg: var(--bs-body-bg);
+  --bs-accordion-bg: transparent;
   --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   --bs-accordion-border-color: #ddd8d5;
-  --bs-accordion-border-width: var(--bs-border-width);
-  --bs-accordion-border-radius: var(--bs-border-radius);
-  --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+  --bs-accordion-border-width: 0px;
+  --bs-accordion-border-radius: 0px;
+  --bs-accordion-inner-border-radius: 0px;
   --bs-accordion-btn-padding-x: 1.25rem;
   --bs-accordion-btn-padding-y: 1rem;
   --bs-accordion-btn-color: var(--bs-body-color);
@@ -8092,8 +8092,16 @@ textarea.form-control-lg {
   top: 50% !important;
 }
 
+.top-53 {
+  top: 53% !important;
+}
+
 .top-55 {
   top: 55% !important;
+}
+
+.top-58 {
+  top: 58% !important;
 }
 
 .top-60 {
@@ -8114,6 +8122,10 @@ textarea.form-control-lg {
 
 .top-80 {
   top: 80% !important;
+}
+
+.top-81 {
+  top: 81% !important;
 }
 
 .top-82 {
@@ -8208,8 +8220,16 @@ textarea.form-control-lg {
   bottom: 50% !important;
 }
 
+.bottom-53 {
+  bottom: 53% !important;
+}
+
 .bottom-55 {
   bottom: 55% !important;
+}
+
+.bottom-58 {
+  bottom: 58% !important;
 }
 
 .bottom-60 {
@@ -8230,6 +8250,10 @@ textarea.form-control-lg {
 
 .bottom-80 {
   bottom: 80% !important;
+}
+
+.bottom-81 {
+  bottom: 81% !important;
 }
 
 .bottom-82 {
@@ -8324,8 +8348,16 @@ textarea.form-control-lg {
   left: 50% !important;
 }
 
+.start-53 {
+  left: 53% !important;
+}
+
 .start-55 {
   left: 55% !important;
+}
+
+.start-58 {
+  left: 58% !important;
 }
 
 .start-60 {
@@ -8346,6 +8378,10 @@ textarea.form-control-lg {
 
 .start-80 {
   left: 80% !important;
+}
+
+.start-81 {
+  left: 81% !important;
 }
 
 .start-82 {
@@ -8440,8 +8476,16 @@ textarea.form-control-lg {
   right: 50% !important;
 }
 
+.end-53 {
+  right: 53% !important;
+}
+
 .end-55 {
   right: 55% !important;
+}
+
+.end-58 {
+  right: 58% !important;
 }
 
 .end-60 {
@@ -8462,6 +8506,10 @@ textarea.form-control-lg {
 
 .end-80 {
   right: 80% !important;
+}
+
+.end-81 {
+  right: 81% !important;
 }
 
 .end-82 {
@@ -10959,6 +11007,14 @@ textarea.form-control-lg {
 
 .z-3 {
   z-index: 3 !important;
+}
+
+.z-4 {
+  z-index: 4 !important;
+}
+
+.z-5 {
+  z-index: 5 !important;
 }
 
 @media (min-width: 576px) {
@@ -16539,6 +16595,10 @@ textarea.form-control-lg {
   background-color: transparent;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: #BAB2AB;
+}
+
 .accordion-item-hover {
   color: #ddd8d5;
 }
@@ -16600,23 +16660,22 @@ textarea.form-control-lg {
 }
 
 .font-deco {
-  font-size: 160px;
+  font-size: 100px;
   letter-spacing: 10px;
   line-height: 1;
-  color: rgba(186, 178, 171, 0.4980392157);
+  color: #414040;
   font-family: "Young Serif", serif;
 }
 @media (max-width: 997px) {
   .font-deco {
-    font-size: 100px;
+    font-size: 110px;
     letter-spacing: 5px;
   }
 }
 @media (max-width: 767px) {
   .font-deco {
-    font-size: 70px;
-    letter-spacing: 5px;
-    color: rgba(99, 98, 96, 0.3098039216);
+    font-size: 60px;
+    color: #636260;
   }
 }
 
@@ -17104,8 +17163,16 @@ textarea.form-control-lg {
   top: 50% !important;
 }
 
+.top-53 {
+  top: 53% !important;
+}
+
 .top-55 {
   top: 55% !important;
+}
+
+.top-58 {
+  top: 58% !important;
 }
 
 .top-60 {
@@ -17126,6 +17193,10 @@ textarea.form-control-lg {
 
 .top-80 {
   top: 80% !important;
+}
+
+.top-81 {
+  top: 81% !important;
 }
 
 .top-82 {
@@ -17220,8 +17291,16 @@ textarea.form-control-lg {
   bottom: 50% !important;
 }
 
+.bottom-53 {
+  bottom: 53% !important;
+}
+
 .bottom-55 {
   bottom: 55% !important;
+}
+
+.bottom-58 {
+  bottom: 58% !important;
 }
 
 .bottom-60 {
@@ -17242,6 +17321,10 @@ textarea.form-control-lg {
 
 .bottom-80 {
   bottom: 80% !important;
+}
+
+.bottom-81 {
+  bottom: 81% !important;
 }
 
 .bottom-82 {
@@ -17336,8 +17419,16 @@ textarea.form-control-lg {
   left: 50% !important;
 }
 
+.start-53 {
+  left: 53% !important;
+}
+
 .start-55 {
   left: 55% !important;
+}
+
+.start-58 {
+  left: 58% !important;
 }
 
 .start-60 {
@@ -17358,6 +17449,10 @@ textarea.form-control-lg {
 
 .start-80 {
   left: 80% !important;
+}
+
+.start-81 {
+  left: 81% !important;
 }
 
 .start-82 {
@@ -17452,8 +17547,16 @@ textarea.form-control-lg {
   right: 50% !important;
 }
 
+.end-53 {
+  right: 53% !important;
+}
+
 .end-55 {
   right: 55% !important;
+}
+
+.end-58 {
+  right: 58% !important;
 }
 
 .end-60 {
@@ -17474,6 +17577,10 @@ textarea.form-control-lg {
 
 .end-80 {
   right: 80% !important;
+}
+
+.end-81 {
+  right: 81% !important;
 }
 
 .end-82 {
@@ -19981,6 +20088,14 @@ textarea.form-control-lg {
   z-index: 3 !important;
 }
 
+.z-4 {
+  z-index: 4 !important;
+}
+
+.z-5 {
+  z-index: 5 !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -20107,8 +20222,14 @@ textarea.form-control-lg {
   .top-sm-50 {
     top: 50% !important;
   }
+  .top-sm-53 {
+    top: 53% !important;
+  }
   .top-sm-55 {
     top: 55% !important;
+  }
+  .top-sm-58 {
+    top: 58% !important;
   }
   .top-sm-60 {
     top: 60% !important;
@@ -20124,6 +20245,9 @@ textarea.form-control-lg {
   }
   .top-sm-80 {
     top: 80% !important;
+  }
+  .top-sm-81 {
+    top: 81% !important;
   }
   .top-sm-82 {
     top: 82% !important;
@@ -20194,8 +20318,14 @@ textarea.form-control-lg {
   .bottom-sm-50 {
     bottom: 50% !important;
   }
+  .bottom-sm-53 {
+    bottom: 53% !important;
+  }
   .bottom-sm-55 {
     bottom: 55% !important;
+  }
+  .bottom-sm-58 {
+    bottom: 58% !important;
   }
   .bottom-sm-60 {
     bottom: 60% !important;
@@ -20211,6 +20341,9 @@ textarea.form-control-lg {
   }
   .bottom-sm-80 {
     bottom: 80% !important;
+  }
+  .bottom-sm-81 {
+    bottom: 81% !important;
   }
   .bottom-sm-82 {
     bottom: 82% !important;
@@ -20281,8 +20414,14 @@ textarea.form-control-lg {
   .start-sm-50 {
     left: 50% !important;
   }
+  .start-sm-53 {
+    left: 53% !important;
+  }
   .start-sm-55 {
     left: 55% !important;
+  }
+  .start-sm-58 {
+    left: 58% !important;
   }
   .start-sm-60 {
     left: 60% !important;
@@ -20298,6 +20437,9 @@ textarea.form-control-lg {
   }
   .start-sm-80 {
     left: 80% !important;
+  }
+  .start-sm-81 {
+    left: 81% !important;
   }
   .start-sm-82 {
     left: 82% !important;
@@ -20368,8 +20510,14 @@ textarea.form-control-lg {
   .end-sm-50 {
     right: 50% !important;
   }
+  .end-sm-53 {
+    right: 53% !important;
+  }
   .end-sm-55 {
     right: 55% !important;
+  }
+  .end-sm-58 {
+    right: 58% !important;
   }
   .end-sm-60 {
     right: 60% !important;
@@ -20385,6 +20533,9 @@ textarea.form-control-lg {
   }
   .end-sm-80 {
     right: 80% !important;
+  }
+  .end-sm-81 {
+    right: 81% !important;
   }
   .end-sm-82 {
     right: 82% !important;
@@ -21815,8 +21966,14 @@ textarea.form-control-lg {
   .top-md-50 {
     top: 50% !important;
   }
+  .top-md-53 {
+    top: 53% !important;
+  }
   .top-md-55 {
     top: 55% !important;
+  }
+  .top-md-58 {
+    top: 58% !important;
   }
   .top-md-60 {
     top: 60% !important;
@@ -21832,6 +21989,9 @@ textarea.form-control-lg {
   }
   .top-md-80 {
     top: 80% !important;
+  }
+  .top-md-81 {
+    top: 81% !important;
   }
   .top-md-82 {
     top: 82% !important;
@@ -21902,8 +22062,14 @@ textarea.form-control-lg {
   .bottom-md-50 {
     bottom: 50% !important;
   }
+  .bottom-md-53 {
+    bottom: 53% !important;
+  }
   .bottom-md-55 {
     bottom: 55% !important;
+  }
+  .bottom-md-58 {
+    bottom: 58% !important;
   }
   .bottom-md-60 {
     bottom: 60% !important;
@@ -21919,6 +22085,9 @@ textarea.form-control-lg {
   }
   .bottom-md-80 {
     bottom: 80% !important;
+  }
+  .bottom-md-81 {
+    bottom: 81% !important;
   }
   .bottom-md-82 {
     bottom: 82% !important;
@@ -21989,8 +22158,14 @@ textarea.form-control-lg {
   .start-md-50 {
     left: 50% !important;
   }
+  .start-md-53 {
+    left: 53% !important;
+  }
   .start-md-55 {
     left: 55% !important;
+  }
+  .start-md-58 {
+    left: 58% !important;
   }
   .start-md-60 {
     left: 60% !important;
@@ -22006,6 +22181,9 @@ textarea.form-control-lg {
   }
   .start-md-80 {
     left: 80% !important;
+  }
+  .start-md-81 {
+    left: 81% !important;
   }
   .start-md-82 {
     left: 82% !important;
@@ -22076,8 +22254,14 @@ textarea.form-control-lg {
   .end-md-50 {
     right: 50% !important;
   }
+  .end-md-53 {
+    right: 53% !important;
+  }
   .end-md-55 {
     right: 55% !important;
+  }
+  .end-md-58 {
+    right: 58% !important;
   }
   .end-md-60 {
     right: 60% !important;
@@ -22093,6 +22277,9 @@ textarea.form-control-lg {
   }
   .end-md-80 {
     right: 80% !important;
+  }
+  .end-md-81 {
+    right: 81% !important;
   }
   .end-md-82 {
     right: 82% !important;
@@ -23523,8 +23710,14 @@ textarea.form-control-lg {
   .top-lg-50 {
     top: 50% !important;
   }
+  .top-lg-53 {
+    top: 53% !important;
+  }
   .top-lg-55 {
     top: 55% !important;
+  }
+  .top-lg-58 {
+    top: 58% !important;
   }
   .top-lg-60 {
     top: 60% !important;
@@ -23540,6 +23733,9 @@ textarea.form-control-lg {
   }
   .top-lg-80 {
     top: 80% !important;
+  }
+  .top-lg-81 {
+    top: 81% !important;
   }
   .top-lg-82 {
     top: 82% !important;
@@ -23610,8 +23806,14 @@ textarea.form-control-lg {
   .bottom-lg-50 {
     bottom: 50% !important;
   }
+  .bottom-lg-53 {
+    bottom: 53% !important;
+  }
   .bottom-lg-55 {
     bottom: 55% !important;
+  }
+  .bottom-lg-58 {
+    bottom: 58% !important;
   }
   .bottom-lg-60 {
     bottom: 60% !important;
@@ -23627,6 +23829,9 @@ textarea.form-control-lg {
   }
   .bottom-lg-80 {
     bottom: 80% !important;
+  }
+  .bottom-lg-81 {
+    bottom: 81% !important;
   }
   .bottom-lg-82 {
     bottom: 82% !important;
@@ -23697,8 +23902,14 @@ textarea.form-control-lg {
   .start-lg-50 {
     left: 50% !important;
   }
+  .start-lg-53 {
+    left: 53% !important;
+  }
   .start-lg-55 {
     left: 55% !important;
+  }
+  .start-lg-58 {
+    left: 58% !important;
   }
   .start-lg-60 {
     left: 60% !important;
@@ -23714,6 +23925,9 @@ textarea.form-control-lg {
   }
   .start-lg-80 {
     left: 80% !important;
+  }
+  .start-lg-81 {
+    left: 81% !important;
   }
   .start-lg-82 {
     left: 82% !important;
@@ -23784,8 +23998,14 @@ textarea.form-control-lg {
   .end-lg-50 {
     right: 50% !important;
   }
+  .end-lg-53 {
+    right: 53% !important;
+  }
   .end-lg-55 {
     right: 55% !important;
+  }
+  .end-lg-58 {
+    right: 58% !important;
   }
   .end-lg-60 {
     right: 60% !important;
@@ -23801,6 +24021,9 @@ textarea.form-control-lg {
   }
   .end-lg-80 {
     right: 80% !important;
+  }
+  .end-lg-81 {
+    right: 81% !important;
   }
   .end-lg-82 {
     right: 82% !important;
@@ -25231,8 +25454,14 @@ textarea.form-control-lg {
   .top-xl-50 {
     top: 50% !important;
   }
+  .top-xl-53 {
+    top: 53% !important;
+  }
   .top-xl-55 {
     top: 55% !important;
+  }
+  .top-xl-58 {
+    top: 58% !important;
   }
   .top-xl-60 {
     top: 60% !important;
@@ -25248,6 +25477,9 @@ textarea.form-control-lg {
   }
   .top-xl-80 {
     top: 80% !important;
+  }
+  .top-xl-81 {
+    top: 81% !important;
   }
   .top-xl-82 {
     top: 82% !important;
@@ -25318,8 +25550,14 @@ textarea.form-control-lg {
   .bottom-xl-50 {
     bottom: 50% !important;
   }
+  .bottom-xl-53 {
+    bottom: 53% !important;
+  }
   .bottom-xl-55 {
     bottom: 55% !important;
+  }
+  .bottom-xl-58 {
+    bottom: 58% !important;
   }
   .bottom-xl-60 {
     bottom: 60% !important;
@@ -25335,6 +25573,9 @@ textarea.form-control-lg {
   }
   .bottom-xl-80 {
     bottom: 80% !important;
+  }
+  .bottom-xl-81 {
+    bottom: 81% !important;
   }
   .bottom-xl-82 {
     bottom: 82% !important;
@@ -25405,8 +25646,14 @@ textarea.form-control-lg {
   .start-xl-50 {
     left: 50% !important;
   }
+  .start-xl-53 {
+    left: 53% !important;
+  }
   .start-xl-55 {
     left: 55% !important;
+  }
+  .start-xl-58 {
+    left: 58% !important;
   }
   .start-xl-60 {
     left: 60% !important;
@@ -25422,6 +25669,9 @@ textarea.form-control-lg {
   }
   .start-xl-80 {
     left: 80% !important;
+  }
+  .start-xl-81 {
+    left: 81% !important;
   }
   .start-xl-82 {
     left: 82% !important;
@@ -25492,8 +25742,14 @@ textarea.form-control-lg {
   .end-xl-50 {
     right: 50% !important;
   }
+  .end-xl-53 {
+    right: 53% !important;
+  }
   .end-xl-55 {
     right: 55% !important;
+  }
+  .end-xl-58 {
+    right: 58% !important;
   }
   .end-xl-60 {
     right: 60% !important;
@@ -25509,6 +25765,9 @@ textarea.form-control-lg {
   }
   .end-xl-80 {
     right: 80% !important;
+  }
+  .end-xl-81 {
+    right: 81% !important;
   }
   .end-xl-82 {
     right: 82% !important;
@@ -26939,8 +27198,14 @@ textarea.form-control-lg {
   .top-xxl-50 {
     top: 50% !important;
   }
+  .top-xxl-53 {
+    top: 53% !important;
+  }
   .top-xxl-55 {
     top: 55% !important;
+  }
+  .top-xxl-58 {
+    top: 58% !important;
   }
   .top-xxl-60 {
     top: 60% !important;
@@ -26956,6 +27221,9 @@ textarea.form-control-lg {
   }
   .top-xxl-80 {
     top: 80% !important;
+  }
+  .top-xxl-81 {
+    top: 81% !important;
   }
   .top-xxl-82 {
     top: 82% !important;
@@ -27026,8 +27294,14 @@ textarea.form-control-lg {
   .bottom-xxl-50 {
     bottom: 50% !important;
   }
+  .bottom-xxl-53 {
+    bottom: 53% !important;
+  }
   .bottom-xxl-55 {
     bottom: 55% !important;
+  }
+  .bottom-xxl-58 {
+    bottom: 58% !important;
   }
   .bottom-xxl-60 {
     bottom: 60% !important;
@@ -27043,6 +27317,9 @@ textarea.form-control-lg {
   }
   .bottom-xxl-80 {
     bottom: 80% !important;
+  }
+  .bottom-xxl-81 {
+    bottom: 81% !important;
   }
   .bottom-xxl-82 {
     bottom: 82% !important;
@@ -27113,8 +27390,14 @@ textarea.form-control-lg {
   .start-xxl-50 {
     left: 50% !important;
   }
+  .start-xxl-53 {
+    left: 53% !important;
+  }
   .start-xxl-55 {
     left: 55% !important;
+  }
+  .start-xxl-58 {
+    left: 58% !important;
   }
   .start-xxl-60 {
     left: 60% !important;
@@ -27130,6 +27413,9 @@ textarea.form-control-lg {
   }
   .start-xxl-80 {
     left: 80% !important;
+  }
+  .start-xxl-81 {
+    left: 81% !important;
   }
   .start-xxl-82 {
     left: 82% !important;
@@ -27200,8 +27486,14 @@ textarea.form-control-lg {
   .end-xxl-50 {
     right: 50% !important;
   }
+  .end-xxl-53 {
+    right: 53% !important;
+  }
   .end-xxl-55 {
     right: 55% !important;
+  }
+  .end-xxl-58 {
+    right: 58% !important;
   }
   .end-xxl-60 {
     right: 60% !important;
@@ -27217,6 +27509,9 @@ textarea.form-control-lg {
   }
   .end-xxl-80 {
     right: 80% !important;
+  }
+  .end-xxl-81 {
+    right: 81% !important;
   }
   .end-xxl-82 {
     right: 82% !important;
