@@ -16445,6 +16445,7 @@ textarea.form-control-lg {
 
 .bg-position-rc {
   background-position: right center;
+  background-size: contain;
   background-repeat: no-repeat;
   background-color: #e6e6e2;
 }
