@@ -30,25 +30,19 @@ body{
 .background {
     background: url("images/bg2.png") no-repeat;
     /* opacity: 0.6; */
-    /* background-size: contain; */
-    /* -webkit-background-size: contain; */
+    background-size: cover;
+    -webkit-background-size: cover;
     background-position: center;
     background-position-x: 50%;
     background-position-y: 50%;
     position: fixed;
     height: 100%;
     width: 100%;
-/* 
-    @media (max-width:768px) {
-        background-image: url("../images/background-md.png");
-        background-position: 80%;
-        background-position-x: 80%;
-    } */
 }
 </style>
 <body>
 <div class="background"></div>
-<nav class="navbar navbar-expand-lg navbar-light bg-brown c border-bottom border-white">
+<nav class="navbar navbar-expand-lg navbar-light bg-brown border-bottom border-white">
     <div class="container-md container-fluid px-3 px-md-0">
             <a class="navbar-brand" href="index.html" class="text">
                 <img src="images/logo-white.png" alt="logo" width="200" class="pb-1">
@@ -133,7 +127,6 @@ body{
                     <h2 class="fw-bold mb-3">注意事項</h2>
                 </div>
                 <div class="d-flex flex-column align-items-lg-center">
-                    <!-- <h2 class="fw-bold mb-3 text-secondary">ATTENTION.</h2> -->
                     <ul class="fw-bold list-unstyled animate__animated animate__zoomIn">
                         <li class="mb-1"><i class="bi bi-1-circle"></i> 嫁接完成後<span class="text-dark">不要擦睫毛膏及夾睫毛</span></li>
                         <li class="mb-1"><i class="bi bi-2-circle"></i> 卸妝時盡量<span class="text-dark">不要使用油性卸妝油</span></li>
@@ -196,7 +189,7 @@ body{
         </div>
     </section>
     <!--價目表  -->
-    <section class="bg-secondary bg-brown bg-opacity-50 py-5 mb-1 rounded-start-pill">
+    <section class="bg-secondary bg-brown bg-opacity-50 py-5 mb-1 rounded-start-pill position-relative">
         <div class="container">
             <div class="row flex-row-reverse pb-3 pb-md-5">
                 <div class="col-5 col-lg-4 mb-3 mb-md-0 me-lg-auto d-none d-md-block">
@@ -439,7 +432,7 @@ body{
         <a href=".zip" class="btn-up text-decoration-none position-fixed bottom-10 end-3"></a>
     </section>
 </main>
-<footer class="footer">
+<footer class="footer position-relative">
     <div class="bg-light-gray">
         <div class="container pt-5 pt-mb-5 pb-1 pb-md-4">
             <div class="row row-cols-1 row-cols-md-3 justify-content-center">
