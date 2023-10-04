@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet/all.css">
 </head>
@@ -29,7 +30,6 @@ body{
 }
 .background {
     background: url("images/bg2.png") no-repeat;
-    /* opacity: 0.6; */
     background-size: cover;
     -webkit-background-size: cover;
     background-position: center;
@@ -82,35 +82,35 @@ body{
     <!--注意事項 -->
     <section class="container-fluid position-relative pb-5">
         <div class="container">
-            <span class="d-none d-md-block font-deco position-absolute top-md-58 top-lg-40 start-md-40 end-0 z-4">日式美睫</span>
-            <img src="./images/circle-bg-gray.png" class="img-fluid top-30 start-60 start-xl-70 position-absolute z-1 d-none d-lg-block opacity-50" alt="" width="300">
-            <img src="./images/circle-bg-broen.png" class="img-fluid top-60 start-70 start-xl-80 position-absolute z-1 d-none d-lg-block opacity-75" alt="" width="200">
+            <span class="d-none d-md-block font-deco position-absolute top-md-58 top-lg-40 start-md-40 end-0 z-4 animate__animated animate__zoomIn">日式美睫</span>
+            <img src="./images/circle-bg-gray.png" class="img-fluid top-30 start-60 start-xl-70 position-absolute z-1 d-none d-lg-block opacity-50" alt="deco-circle-image" width="300">
+            <img src="./images/circle-bg-broen.png" class="img-fluid top-60 start-70 start-xl-80 position-absolute z-1 d-none d-lg-block opacity-75" alt="deco-circle-image" width="200">
             <div class="row flex-row-reverse justify-content-center justify-content-lg-between position-relative">
                 <div class="col-md-11 col-lg-5 z-3">
-                    <img src="images/lash-header.png" class="img-fluid rounded-bottom-pill shadow" alt="">
+                    <img src="images/lash-header.png" class="img-fluid rounded-bottom-pill shadow animate__animated animate__zoomIn" alt="eyelash-image">
                     <div class="d-flex justify-content-end position-absolute me-n2 top-30 end-0 d-lg-none">
                         <a href="reserved.html" class="deco-link-transition fw-bold fs-3 shadow"><i class="fa-solid fa-arrow-left-long"></i> 立即預約<span class="fs-6 d-block">Reservation Now</span></a>                       
                     </div>
                 </div>
                 <div class="col-md-11 col-lg-7 align-self-end mt-md-n4 mt-lg-0 py-4 py-lg-5">
-                    <div class="row justify-content-center z-3">
+                    <div class="row justify-content-center z-3 animate__animated animate__zoomIn">
                         <div class="position-relative">
-                            <img src="./images/circle-bg.png" class="img-fluid" alt="">
+                            <img src="./images/circle-bg.png" class="img-fluid" alt="deco-circle-image">
                             <div class="position-absolute top-50 start-18 translate-middle">
                                 <div class="mb-2 mb-md-3">
-                                    <img src="images/eyelash1.png" class="img-fluid d-block mx-auto" alt="" width="80">
+                                    <img src="images/eyelash1.png" class="img-fluid d-block mx-auto" alt="eyelash-image" width="80">
                                 </div>
                                 <p class="text-center">讓睫毛<br class="d-lg-none">纖長濃密</p>
                             </div>
                             <div class="position-absolute top-45 start-50 translate-middle">
                                 <div class="mb-2 mb-md-3">
-                                    <img src="images/eyelash2.png" class="img-fluid d-block mx-auto" alt="" width="80">
+                                    <img src="images/eyelash2.png" class="img-fluid d-block mx-auto" alt="eyelash-image" width="80">
                                 </div>
                                 <p class="text-center">打造自然<br class="d-lg-none">有神的雙眼</p>
                             </div>
                             <div class="position-absolute top-45 start-80 start-md-82 translate-middle">
                                 <div class="mb-2 mb-md-3">
-                                    <img src="images/eyelash3.png" class="img-fluid d-block mx-auto" alt="" width="80">
+                                    <img src="images/eyelash3.png" class="img-fluid d-block mx-auto" alt="eyelash-image" width="80">
                                 </div>
                                 <p class="text-center">縮短<br class="d-lg-none">化妝時間</p>
                             </div>
@@ -122,7 +122,7 @@ body{
         <div class="row">
             <div class="col-lg-7 bg-light-brown bg-opacity-50 py-5 px-4 px-md-5 rounded-end-pill shadow z-3 position-relative">
                 <span class="d-md-none font-deco position-absolute top-0 end-3 z-5 translate-middle-y">日式美睫</span>
-                <div>
+                <div class="animate__animated animate__zoomIn">
                     <p class="display-3 text-secondary fw-bold">ATTENTION.</p>
                     <h2 class="fw-bold mb-3">注意事項</h2>
                 </div>
@@ -148,14 +148,14 @@ body{
     <!-- 施作流程 -->
     <section>
         <div class="container py-4">
-            <div class="mb-4 position-relative animate__animated animate__zoomIn">
+            <div class="mb-4 position-relative" data-aos="fade-up">
                 <p class="display-3 text-secondary fw-bold text-center text-md-start">PROCESS.</p>
                 <h2 class="fw-bold text-center text-md-start">施作流程</h2>
             </div>
-            <div class="row align-items-center justify-content-center py-3 animate__animated animate__zoomIn">
+            <div class="row align-items-center justify-content-center py-3" data-aos="fade-up">
                 <div class="col-10 col-md-5 mb-5 mb-md-0 d-flex justify-content-center">     
                     <div>
-                        <img src="images/eyelash5.png" class="img-fluid rounded-circle shadow animate__animated animate__zoomIn" alt="eyelash-img" width="300">
+                        <img src="images/eyelash5.png" class="img-fluid rounded-circle shadow" alt="eyelash-image" width="300">
                     </div>  
                 </div>
                 <div class="col-10 col-md-7">
@@ -164,10 +164,10 @@ body{
                         根據您的預算，選擇自然或著豔麗的造型，一起挑選出最適合您的睫毛樣式。</p>
                 </div>
             </div>
-            <div class="row  align-items-center justify-content-center py-3 animate__animated animate__zoomIn">
+            <div class="row  align-items-center justify-content-center py-3" data-aos="fade-up">
                 <div class="col-10 col-md-5 mb-5 mb-md-0 d-flex justify-content-center">     
                     <div>
-                        <img src="images/eyelash6.png" class="img-fluid rounded-circle shadow" alt="eyelash-img" width="300">
+                        <img src="images/eyelash6.png" class="img-fluid rounded-circle shadow" alt="eyelash-image" width="300">
                     </div>  
                 </div>
                 <div class="col-10 col-md-7">
@@ -175,10 +175,10 @@ body{
                     <p class="fs-5">挑選出適合的睫毛樣式後，接著開始清潔眼部和眼妝，將睫毛梳順，並將下睫毛貼上透氣膠帶固定。</p>
                 </div>
             </div>
-            <div class="row align-items-center justify-content-center py-3 animate__animated animate__zoomIn">
+            <div class="row align-items-center justify-content-center py-3 animate__animated animate__zoomIn" data-aos="fade-up">
                 <div class="col-10 col-md-5 mb-5 mb-md-0 d-flex justify-content-center">     
                     <div>
-                        <img src="images/eyelash7.png" class="img-fluid rounded-circle shadow" alt="eyelash-img" width="300">
+                        <img src="images/eyelash7.png" class="img-fluid rounded-circle shadow" alt="eyelash-image" width="300">
                     </div>
                 </div>
                 <div class="col-10 col-md-7">
@@ -189,18 +189,18 @@ body{
         </div>
     </section>
     <!--價目表  -->
-    <section class="bg-secondary bg-brown bg-opacity-50 py-5 mb-1 rounded-start-pill position-relative">
+    <section class="bg-secondary bg-brown bg-opacity-50 py-5 mb-1 rounded-start-pill position-relative"> 
         <div class="container">
             <div class="row flex-row-reverse pb-3 pb-md-5">
                 <div class="col-5 col-lg-4 mb-3 mb-md-0 me-lg-auto d-none d-md-block">
                     <img src="./images/arrow-big.png" class="img-fluid mt-n7" alt="arrow-image">
                 </div>
-                <div class="col-lg-5 ms-auto">
+                <div class="col-lg-5 ms-auto" data-aos="fade-up">
                     <p class="display-3 text-secondary fw-bold">PRICE LIST.</p>
                     <h2 class="fw-bold">價目表</h2>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" data-aos="fade-up">
                 <div class="ms-auto col-md-6 col-lg-5">
                     <table class="table table-hover table-light-gray table-bordered border-white caption-top">
                         <caption class="text-bg-brown text-center fs-5">日式美睫</caption>
@@ -239,7 +239,7 @@ body{
                         <tbody>
                             <tr>
                                 <th class="text-secondary">抗菌扁毛</th>
-                                <td>+$200</td>
+                                <td>+$300</td>
                             </tr>
                         </tbody>   
                     </table>
@@ -283,11 +283,11 @@ body{
     <!-- 常見問答 -->
     <section class="py-4 mb-5 position-relative">
         <div class="container">
-            <div class="mb-5">
+            <div class="mb-5" data-aos="fade-up">
                 <p class="display-3 text-secondary fw-bold text-center">Q&A.</p>
                 <h2 class="fw-bold text-center">常見問答</h2>
             </div>
-            <div class="accordion fs-5 animate__animated animate__zoomIn" id="accordionExample">
+            <div class="accordion fs-5" id="accordionExample" data-aos="fade-up">
                 <div class="accordion-item">
                     <h2 class="accordion-header border-bottom" id="headingOne">
                         <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -389,13 +389,13 @@ body{
     </section>
     <!-- 作品 -->
     <section class="pb-5">
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper" data-aos="fade-up">
             <div class="d-md-none">
                 <p class="fs-1 text-secondary fw-bold text-center">PORTFOLIO.</p>
                 <h2 class="fw-bold text-center">作品</h2>
             </div>
             <div class="swiper-wrapper d-flex py-5">
-                <div class="align-self-center me-3 me-lg-5 d-none d-md-block">
+                <div class="align-self-center me-3 me-lg-5 d-none d-md-block" data-aos="fade-up">
                     <p class="fs-1 text-secondary fw-bold text-center">PORTFOLIO.</p>
                     <h2 class="fw-bold text-center">作品</h2>
                 </div>
@@ -429,18 +429,17 @@ body{
     </section>
     <!-- GoToTop -->
     <section class="slideUp">
-        <a href=".zip" class="btn-up text-decoration-none position-fixed bottom-10 end-3"></a>
+        <a href=".zip" class="btn-up position-fixed bottom-10 end-3"></a>
     </section>
 </main>
-<footer class="footer position-relative">
-    <div class="bg-light-gray">
-        <div class="container pt-5 pt-mb-5 pb-1 pb-md-4">
+<footer class="footer bg-light-gray position-relative" data-aos="fade-up">
+    <div class="container pt-5 pt-mb-5 pb-1 pb-md-4">
             <div class="row row-cols-1 row-cols-md-3 justify-content-center">
                 <div class="col d-flex flex-column align-items-center info">
                     <h3>- 聯絡資訊 -</h3>
                     <ul class="list-unstyled text-center text-md-start mt-2"> 
-                        <li><a href="tel:+886-912345678" class="text-decoration-none link-secondary">0912345678</a></li>
-                        <li><a href="mailto:hexschool@gmail.com" class="text-decoration-none link-secondary">immstudio@gmail.com</a></li>
+                        <li><a href="tel:+886-912345678" class="link-secondary">0912345678</a></li>
+                        <li><a href="mailto:hexschool@gmail.com" class="link-secondary">immstudio@gmail.com</a></li>
                         <li>新竹市東大路二段</li>
                     </ul>
                 </div>
@@ -455,20 +454,23 @@ body{
                 <div class="col d-flex flex-column align-items-center socialMedia">
                     <img src="images/logo-brown.png" class="img-fluid w-75" alt="footer-logo">
                 <ul class="list-unstyled d-flex justify-content-center mt-2">
-                    <li><a href="#" class="text-decoration-none link-secondary fs-2"><i class="bi bi-facebook me-3"></i></a></li>
-                    <li><a href="#" class="text-decoration-none link-secondary fs-2"><i class="bi bi-line me-3"></i></a></li>
-                    <li><a href="#" class="text-decoration-none link-secondary fs-2"><i class="bi bi-instagram me-3"></i></a></li>
+                    <li><a href="#" class="link-secondary fs-2"><i class="bi bi-facebook me-3"></i></a></li>
+                    <li><a href="#" class="link-secondary fs-2"><i class="bi bi-line me-3"></i></a></li>
+                    <li><a href="#" class="link-secondary fs-2"><i class="bi bi-instagram me-3"></i></a></li>
                 </ul>
                 </div>
             </div>
-        </div>
-        <p class="text-center text-bg-brown text-secondary fs-6 py-2 mb-0 font-spacing  w-100">Copyright © 2023 imm.studio.All rights reserved.</p>
     </div>
+    <p class="text-center text-bg-brown text-secondary fs-6 py-2 font-spacing  w-100">Copyright © 2023 imm.studio.All rights reserved.</p>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 <script src="javascript/jquery-3.6.4.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="javascript/js.js"></script>
+<script>
+    AOS.init();
+</script>
 <script>
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 4,
