@@ -38,7 +38,7 @@ $(document).ready(function () {
         }
     );
 
-    // Q&A選單
+    // Q&A選單內容切換
     $('.accordionEyelash').click(function () {
             // over
             $('#accordionEyelash').removeClass('d-none');
@@ -95,16 +95,14 @@ var indexSwiper = new Swiper(".indexSwiper", {
     grabCursor: true,
   });
 
+//  Q&A NavTab選單切換
 let navTabs = document.querySelector('.nav-tabs')
 let navTabsItem = document.querySelectorAll('.nav-tabs li');
-// console.log(navTabs);
-// console.log(navTabsItem);
 navTabs.addEventListener('click',e=>{
+    e.preventDefault();
     console.log(e.target);
     navTabsItem.forEach(item=>{
         item.children[0].classList.remove('active');
     })
-    // console.log(navTabs);
     e.target.classList.add('active');
-    // console.log(navTabs);
 })
