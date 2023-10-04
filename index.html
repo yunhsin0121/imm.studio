@@ -29,8 +29,8 @@ body{
     /* font-family: 'Noto Serif TC', serif; */
 }
 .background {
-    background: url("images/bg2.png") no-repeat;
-    opacity: 0.6;
+    /* background: url("images/bg2.png") no-repeat; */
+    /* opacity: 0.6; */
     background-size: cover;
     -webkit-background-size: cover;
     background-position: center;
@@ -39,16 +39,9 @@ body{
     position: fixed;
     height: 100%;
     width: 100%;
-
-    @media (max-width:768px) {
-        background-image: url("../images/background-md.png");
-        background-position: 80%;
-        background-position-x: 80%;
-    }
 }
 </style>
 <body> 
-    <!-- <div class="background d-md-none"></div> -->
     <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top border-bottom border-white">
         <div class="container-md container-fluid px-3 px-md-0">
                 <a class="navbar-brand" href="index.html" class="text">
@@ -86,6 +79,7 @@ body{
         </div>
     </nav>
     <!-- header -->
+    <div class="background" style="background-image: url(images/bg2.jpg)"></div>
     <header class="mb-5 bg-attachment-fixed" style="background-image: url(images/bg2.jpg)">
         <div class="container">
             <div class="row">
