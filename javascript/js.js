@@ -38,3 +38,36 @@ $(document).ready(function () {
         }
      );
 });
+
+AOS.init();
+var portfolioSwiper = new Swiper(".portfolioSwiper", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    centeredSlides: true,
+    cssMode:true,
+    mousewheel: {
+        invert: true,
+    }   ,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        320: {
+        slidesPerView: 1,
+        spaceBetween: 30
+        },
+        768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+        },
+        991: {
+        slidesPerView: 3,
+        spaceBetween: 20
+        },
+    }
+});
+var indexSwiper = new Swiper(".indexSwiper", {
+    effect: "cards",
+    grabCursor: true,
+  });

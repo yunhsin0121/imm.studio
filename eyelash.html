@@ -16,10 +16,6 @@
     <link rel="stylesheet" href="stylesheet/all.css">
 </head>
 <style>
-    @supports (-webkit-touch-callout: inherit) {
-	.header {
-		background-attachment: scroll !important;
-	}}
 @font-face{
         font-family: 'ThePeakFontBeta';
         src: url('./fonts/ThePeakFontBeta_V0_101.ttf');
@@ -95,7 +91,7 @@ body{
                 <div class="col-md-11 col-lg-7 align-self-end mt-md-n4 mt-lg-0 py-4 py-lg-5">
                     <div class="row justify-content-center z-3 animate__animated animate__zoomIn">
                         <div class="position-relative">
-                            <img src="./images/circle-bg.png" class="img-fluid" alt="deco-circle-image">
+                            <img src="./images/circle-bg-4.png" class="img-fluid" alt="deco-circle-image">
                             <div class="position-absolute top-50 start-18 translate-middle">
                                 <div class="mb-2 mb-md-3">
                                     <img src="images/eyelash1.png" class="img-fluid d-block mx-auto" alt="eyelash-image" width="80">
@@ -389,7 +385,7 @@ body{
     </section>
     <!-- 作品 -->
     <section class="pb-5">
-        <div class="swiper mySwiper" data-aos="fade-up">
+        <div class="swiper mySwiper portfolioSwiper" data-aos="fade-up">
             <div class="d-md-none">
                 <p class="fs-1 text-secondary fw-bold text-center">PORTFOLIO.</p>
                 <h2 class="fw-bold text-center">作品</h2>
@@ -468,37 +464,5 @@ body{
 <script src="javascript/jquery-3.6.4.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="javascript/js.js"></script>
-<script>
-    AOS.init();
-</script>
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        centeredSlides: true,
-        cssMode:true,
-        mousewheel: {
-            invert: true,
-        }   ,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        breakpoints: {
-            320: {
-            slidesPerView: 1,
-            spaceBetween: 30
-            },
-            768: {
-            slidesPerView: 2,
-            spaceBetween: 20
-            },
-            991: {
-            slidesPerView: 3,
-            spaceBetween: 20
-            },
-        }
-    });
-  </script>
 </body>
 </html>

@@ -14,11 +14,6 @@
     <link rel="stylesheet" href="stylesheet/all.css">
 </head>
 <style>
-/* @supports (-webkit-touch-callout: inherit) {
-	.header {
-		background-attachment: scroll !important;
-	}
-} */
 @font-face{
         font-family: 'ThePeakFontBeta';
         src: url('./fonts/ThePeakFontBeta_V0_101.ttf');
@@ -249,7 +244,7 @@ body{
                         </div>
                     </div>
                     <div class="col-9 col-md-6 mb-3 mb-lg-5" data-aos="zoom-in">
-                        <div class="swiper mySwiper">
+                        <div class="swiper mySwiper indexSwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide shadow">
                                     <div class="card border-0 position-relative">
@@ -362,14 +357,5 @@ body{
     <script src="javascript/jquery-3.6.4.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="javascript/js.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          effect: "cards",
-          grabCursor: true,
-        });
-      </script>
     </body>
 </html>
