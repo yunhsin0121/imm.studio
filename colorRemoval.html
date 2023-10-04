@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>無創除色-imm.studio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -14,11 +15,6 @@
     <link rel="stylesheet" href="stylesheet/all.css">
 </head>
 <style>
-    @supports (-webkit-touch-callout: inherit) {
-	.header {
-		background-attachment: scroll !important;
-	}
-}
 @font-face{
         font-family: 'ThePeakFontBeta';
         src: url('./fonts/ThePeakFontBeta_V0_101.ttf');
@@ -65,269 +61,327 @@ body{
             </div>
         </div>
     </nav>
-<main>
-    <section class="bg-cover pb-5 mb-5" style="background-image: url(images/bg8.png);">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-10 col-md-4 animate__animated animate__fadeInDown">
-                    <img src="images/colorRemoval-header.png" class="img-fluid rounded-bottom-pill" alt="">
-                </div>
-                <div class="col-12 col-md-2 z-3 mt-n7 mt-md-3  mt-lg-6 animate__animated animate__zoomIn">
-                    <div class="bg-brown bg-opacity-75 p-4 p-md-3 mb-4 mb-md-3 d-inline-block ms-md-n6 shadow">
-                        <h2 class="fw-bold text-white">無創除色</h2>
+    <main class="bg-attachment-fixed" style="background-image: url(images/bg2.png) z-3">
+        <!--注意事項 -->
+        <section class="container-fluid position-relative pb-5">
+            <div class="container">
+                <span class="d-none d-md-block font-deco position-absolute top-md-58 top-lg-40 start-md-40 end-0 z-4 animate__animated animate__zoomIn">無創除色</span>
+                <img src="./images/circle-bg-broen.png" class="img-fluid top-30 start-60 start-xl-70 position-absolute z-1 d-none d-lg-block opacity-50" alt="deco-circle-image" width="300">
+                <img src="./images/circle-bg-gray.png" class="img-fluid top-60 start-70 start-xl-80 position-absolute z-1 d-none d-lg-block opacity-75" alt="deco-circle-image" width="200">
+                <div class="row flex-row-reverse justify-content-center justify-content-lg-between position-relative">
+                    <div class="col-md-11 col-lg-4 z-3">
+                        <img src="images/colorRemoval-header.png" class="img-fluid rounded-bottom-pill shadow animate__animated animate__zoomIn" alt="eyelash-image">
+                        <div class="d-flex justify-content-end position-absolute me-n2 top-30 end-0 d-lg-none">
+                            <a href="reserved.html" class="deco-link-transition fw-bold fs-3 shadow"><i class="fa-solid fa-arrow-left-long"></i> 立即預約<span class="fs-6 d-block">Reservation Now</span></a>                       
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 align-self-center">
-                    <div class="row justify-content-center ms-n6 ms-md-n8 gx-0 animate__animated animate__zoomIn">
-                        <div class="col-4 position-relative me-n5 me-md-n5 me-lg-n5">
-                            <img src="images/circle-brown.png" class="img-fluid" alt="">
-                            <p class="text-center text-white position-absolute top-40 start-50 translate-middle w-75 z-2">利用光點除色的方式破壞頑固色素</p>
-                        </div>
-                        <div class="col-5 position-relative me-n5 align-self-end">
-                            <img src="images/circle-brown.png" class="img-fluid" alt="">
-                            <p class="text-center text-white position-absolute top-50 start-50 translate-middle w-75 z-3">顏色會隨著身體代謝後消失</p>
-                        </div>
-                        <div class="col-4 position-relative me-n6">
-                            <img src="images/circle-brown.png" class="img-fluid" alt="">
-                            <p class="text-center text-white  position-absolute top-40 start-50 translate-middle w-75">不會造成表皮創傷也無修復期</p>
+                    <div class="col-md-11 col-lg-8 align-self-end mt-md-n4 mt-lg-0 py-4 py-lg-5">
+                        <div class="row justify-content-center z-3 animate__animated animate__zoomIn">
+                            <div class="position-relative">
+                                <img src="./images/circle-bg-4.png" class="img-fluid" alt="deco-circle-image">
+                                <div class="position-absolute top-50 start-18 translate-middle">
+                                    <!-- <div class="mb-2 mb-md-3">
+                                        <img src="images/colorRemoval1.png" class="img-fluid d-block mx-auto" alt="eyelash-image" width="80">
+                                    </div> -->
+                                    <p class="text-center">不傷毛髮皮膚、<br>不結痂、不流血</p>
+                                </div>
+                                <div class="position-absolute top-45 start-50 translate-middle">
+                                    <!-- <div class="mb-2 mb-md-2">
+                                        <img src="images/colorRemoval2.png" class="img-fluid d-block mx-auto" alt="eyelash-image" width="80">
+                                    </div> -->
+                                    <p class="text-center">可碰水且無修復期<br>隔天即可正常上妝</p>
+                                </div>
+                                <div class="position-absolute top-45 start-80 start-md-82 translate-middle">
+                                    <!-- <div class="mb-2 mb-md-3">
+                                        <img src="images/colorRemoval4.png" class="img-fluid d-block mx-auto" alt="eyelash-image" width="80">
+                                    </div> -->
+                                    <p class="text-center">紅、藍、橘眉皆可有效淡化<br>且術後會持續代謝</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="mb-5">
-        <div class="container">
-            <div class="mb-4 position-relative animate__animated animate__zoomIn">
-                <img src="images/header-bg1.png" class="img-fluid d-block mx-auto" alt="" width="250">
-                <h2 class="text-center mb-0 position-absolute top-30 start-50 translate-middle-x">優點</h2>
-                <span class="text-secondary fw-bold text-center fs-5 position-absolute top-60 start-55">ADVANTAGE</span>
-            </div>
-            <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 list-unstyled justify-content-center">
-                <li class="col-6">
-                    <div class="d-flex flex-column align-items-center justify-content-center pt-3 pt-md-5 h-100 text-center mb-3 border-0 shadow rounded-top-pill bg-light-gray bg-opacity-50 animate__animated animate__fadeInUp">
-                        <div class="col-4 col-md-12 mb-3">
-                            <img src="images/colorRemoval1.png" class="img-fluid" alt="" width="80">
-                        </div>
-                        <div class="col-8 col-md-12 p-0 p-md-3">
-                            <p>不傷毛髮皮膚、<br class="d-none d-md-block">不結痂、不流血</p>
-                        </div>
+            <div class="row">
+                <div class="col-lg-7 bg-brown bg-opacity-50 py-5 px-4 px-md-5 rounded-end-pill shadow z-3 position-relative">
+                    <span class="d-md-none font-deco position-absolute top-0 end-3 z-5 translate-middle-y">無創除色</span>
+                    <div class="animate__animated animate__zoomIn">
+                        <p class="display-3 text-secondary fw-bold">ATTENTION.</p>
+                        <h2 class="fw-bold mb-3">注意事項</h2>
                     </div>
-                </li>
-                <li class="col-6">
-                    <div class="d-flex flex-column align-items-center justify-content-center pt-3 pt-md-5 h-100 text-center mb-3 border-0 shadow rounded-top-pill bg-light-gray bg-opacity-50 animate__animated animate__fadeInUp">
-                        <div class="col-4 col-md-12 mb-3">
-                            <img src="images/colorRemoval2.png" class="img-fluid" alt="" width="80">
-                        </div>
-                        <div class="col-8 col-md-12 p-0 p-md-3">
-                            <p>可碰水且無修復期<br class="d-none d-md-block">隔天即可正常上妝</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-6">
-                    <div class="d-flex flex-column align-items-center justify-content-center pt-3 pt-md-5 h-100 text-center mb-3 border-0 shadow rounded-top-pill bg-light-gray bg-opacity-50 animate__animated animate__fadeInUp">
-                        <div class="col-4 col-md-12 mb-3 mb-lg-5">
-                            <img src="images/colorRemoval3.png" class="img-fluid" alt="" width="80">
-                        </div>
-                        <div class="col-8 col-md-12 p-0 p-md-3 mt-md-n4 mt-lg-n5">
-                            <p class="mb-0">非藥水侵入式洗眉<br class="d-none d-md-block">非傳統式洗眉</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-6">
-                    <div class="d-flex flex-column align-items-center justify-content-center pt-3 pt-md-5 h-100 text-center mb-3 border-0 shadow rounded-top-pill bg-light-gray bg-opacity-50 animate__animated animate__fadeInUp">
-                        <div class="col-4 col-md-12 mb-3">
-                            <img src="images/colorRemoval4.png" class="img-fluid" alt="" width="80">
-                        </div>
-                        <div class="col-8 col-md-12 p-0 p-md-3">
-                            <p class="mb-0">紅、藍、橘眉皆可有效淡化<br class="d-none d-md-block">且術後會持續代謝</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="bg-cover" style="background-image: url(images/bg1.png);">
-        <div class="container py-4 lh-lg text-secondary">
-            <h2 class="text-center display-5 mb-3 animate__animated animate__zoomIn">ATTENTION</h2>
-            <div class="d-flex justify-content-center">
-                <ol class="animate__animated animate__zoomIn">
-                    <li>擁有<span class="text-dark">高血壓、糖尿病、心臟病、蟹足腫、特殊敏感體質、懷孕、哺乳期、精神相關疾病、免疫系統失調</span>，不能操作</li>
-                    <li>若<span class="text-dark">眉毛部位痘痘較多或皮膚發炎過敏</span>等，需痊癒後才可操作</li>
-                    <li><span class="text-dark">操作前一個月內，有進行過臉部雷射、臉部手術或者眉毛、額頭及眼周部位有注射過玻尿酸及肉毒</span>，不能操作</li>
-                </ol>
-            </div>
-        </div>
-    </section>
-    <section class="bg-5">
-        <div class="container py-4">
-            <div class="mb-4 position-relative animate__animated animate__zoomIn">
-                <img src="images/header-bg1.png" class="img-fluid d-block mx-auto" alt="" width="250">
-                <h2 class="text-center mb-0 position-absolute top-30 start-50 translate-middle-x">流程</h2>
-                <span class="text-secondary fw-bold text-center fs-5 position-absolute top-60 start-55">PROCESS</span>
-            </div>
-            <div class="row align-items-center justify-content-center py-3 animate__animated animate__zoomIn">
-                <div class="col-10 col-md-5 mb-5 mb-md-0 d-flex justify-content-center">     
-                    <div class="position-relative">
-                        <img src="images/colorReomval5.png" class="img-fluid rounded-circle shadow" alt="eyelash-img" width="300">
-                        <img src="images/number-circle1.png" class="img-fluid position-absolute top-10 start-0 translate-middle-y" width="80" alt="number-img">
-                        <img src="images/header-bg2.png" class="img-fluid position-absolute top-80 start-45" alt="" width="200">
-                        <h3 class="text-white text-center mb-0 position-absolute top-90 start-75 translate-middle-y">討論</h3>
-                    </div>  
-                </div>
-                <div class="col-10 col-md-7">
-                    <p class="fs-5">了解您想除色之部位，依據顏色的深淺來判斷約需要幾次療程才能將顏色完全清除乾淨。</p>
-                </div>
-            </div>
-            <div class="row flex-row-reverse align-items-center justify-content-center py-3 animate__animated animate__zoomIn">
-                <div class="col-10 col-md-5 mb-5 mb-md-0 d-flex justify-content-center">     
-                    <div class="position-relative">
-                        <img src="images/colorReomval6.png" class="img-fluid rounded-circle shadow" alt="eyelash-img" width="300">
-                        <img src="images/number-circle2.png" class="img-fluid position-absolute top-10 start-70 translate-middle-y" width="80" alt="number-img">
-                        <img src="images/header-bg2.png" class="img-fluid position-absolute top-80 end-45" alt="" width="200">
-                        <h3 class="text-white text-center mb-0 position-absolute top-90 end-55 translate-middle-y">前置作業</h3>
-                    </div>  
-                </div>
-                <div class="col-10 col-md-7">
-                    <p class="fs-5">會先清潔除色部位的皮膚，接著開始除色療程，利用溫和的光療破壞且打散頑固色素，讓顏色隨著身體代謝後消失，幾週後上層的色料被代謝掉後，底下深層的顏色會被帶上來，到時就可再進行下次療程。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-cover py-4 mb-5" style="background-image: url(images/bg8.png);">
-            <div class="card container col-12 col-lg-8 py-4 text-center mt-3 shadow border-0 animate__animated animate__zoomIn"> 
-                <div class="card-header">
-                    <h2 class="text-center text-secondary display-5 py-2 mb-0">PRICE LIST</h2>
-                </div>
-                <div class="card-body">
-                    <table class="table table-hover table-light-gray table-bordered border border-white caption-top">
-                        <caption class="text-bg-brown text-center fs-5">無創除色</caption>
-                        <tr>
-                            <th class="text-secondary">單次</th>
-                            <td>$2000</td>
-                        </tr>
-                        <tr>
-                            <th class="text-secondary">3堂課程</th>
-                            <td>$5100</td>    
-                        </tr>
-                        <tr>
-                            <th class="text-secondary">5堂課程</th>
-                            <td>$7500</td>
-                        </tr> 
-                    </table>  
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="question mb-5">
-        <div class="container py-4">
-            <div class="mb-4 position-relative animate__animated animate__zoomIn">
-                <img src="images/header-bg1.png" class="img-fluid d-block mx-auto" alt="" width="250">
-                <h2 class="text-center mb-0 position-absolute top-30 start-50 translate-middle-x">常見問答</h2>
-                <span class="text-secondary fw-bold text-center fs-5 position-absolute top-60 start-55">Q&A</span>
-            </div>
-            <div class="accordion border border-5 border-light-gray border-opacity-50 rounded-3" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Q1.請問會傷害原本的毛髮嗎？會需要將眉毛剃除嗎？
-                        </button>
-                    </h2> 
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            療程只針對色素起作用，並不會傷害毛囊，因此原本的毛髮不會受到影響喔！
-                        </div>
+                    <div class="d-flex flex-column align-items-lg-center">
+                        <ul class="fw-bold list-unstyled animate__animated animate__zoomIn">
+                            <li class="mb-1"><i class="bi bi-1-circle"></i>有高血壓、糖尿病、心臟病、蟹足腫、特殊敏感體質、懷孕、哺乳期、精神相關疾病、免疫系統失調，不能操作</li>
+                            <li class="mb-1"><i class="bi bi-2-circle"></i>眉毛部位痘痘較多或皮膚發炎過敏等，需痊癒後才可操作</li>
+                            <li class="mb-1"><i class="bi bi-3-circle"></i>操作前一個月內，進行過臉部雷射、臉部手術或者眉毛、額頭及眼周部位有注射過玻尿酸及肉毒，不能操作</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Q2.一次就可以將除色完成嗎？每次除色療程需間隔多久？
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        除色次數需確認底色深淺而定，通常為3~5次，即可除色完成，舊式的紋繡通常操作都會過深，除色次數可能會比較多，每次療程約間隔 3週，就可以進行下一次除色療程。 
+                <div class="col d-none d-lg-flex align-items-md-end align-items-lg-center">
+                    <div class="d-flex justify-content-end position-absolute top-45 end-0 z-5">
+                        <a href="reserved.html" class="deco-link-transition fw-bold fs-3 shadow"><i class="fa-solid fa-arrow-left-long"></i> 立即預約<span class="fs-6 d-block">Reservation Now</span></a>                       
                     </div>
-                  </div>
+                    <img src="./images/arrow-big.png" class="img-fluid" width="300" alt="arrow-image">
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Q3.療程完後我會去要注意什麼？
+            </div>
+        </section>
+        <!-- 施作流程 -->
+        <section>
+            <div class="container py-4">
+                <div class="mb-4 position-relative" data-aos="fade-up">
+                    <p class="display-3 text-secondary fw-bold text-center text-md-start">PROCESS.</p>
+                    <h2 class="fw-bold text-center text-md-start">施作流程</h2>
+                </div>
+                <div class="row align-items-center justify-content-center py-3 animate__animated animate__zoomIn" data-aos="fade-up">
+                    <div class="col-10 col-md-5 mb-5 mb-md-0 d-flex justify-content-center">     
+                        <div>
+                            <img src="images/colorReomval5.png" class="img-fluid rounded-circle shadow" alt="eyelash-image" width="300">
+                        </div>  
+                    </div>
+                    <div class="col-10 col-md-7">
+                        <h3 class="text-secondary fw-bold mb-3"><i class="bi bi-1-circle"></i> 討論</h3>
+                        <p class="fs-5">了解您想除色之部位，依據顏色的深淺來判斷約需要幾次療程才能將顏色完全清除乾淨。</p>
+                    </div>
+                </div>
+                <div class="row  align-items-center justify-content-center py-3 animate__animated animate__zoomIn" data-aos="fade-up">
+                    <div class="col-10 col-md-5 mb-5 mb-md-0 d-flex justify-content-center">     
+                        <div>
+                            <img src="images/colorReomval6.png" class="img-fluid rounded-circle shadow" alt="eyelash-image" width="300">
+                        </div>  
+                    </div>
+                    <div class="col-10 col-md-7">
+                        <h3 class="text-secondary fw-bold mb-3"><i class="bi bi-2-circle"></i> 操作</h3>
+                        <p class="fs-5">會先清潔除色部位的皮膚，接著開始除色療程，利用溫和的光療破壞且打散頑固色素，讓顏色隨著身體代謝後消失，幾週後上層的色料被代謝掉後，底下深層的顏色會被帶上來，到時就可再進行下次療程。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--價目表  -->
+        <section class="bg-brown bg-opacity-50 py-5 mb-1 rounded-start-pill position-relative"> 
+            <div class="container">
+                <div class="row flex-row-reverse pb-3 pb-md-5">
+                    <div class="col-5 col-lg-4 mb-3 mb-md-0 me-lg-auto d-none d-md-block">
+                        <img src="./images/arrow-big.png" class="img-fluid mt-n7" alt="arrow-image">
+                    </div>
+                    <div class="col-lg-5 ms-auto" data-aos="fade-up">
+                        <p class="display-3 text-secondary fw-bold">PRICE LIST.</p>
+                        <h2 class="fw-bold">價目表</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center" data-aos="fade-up">
+                    <div class="mx-auto col-md-8">
+                        <table class="table table-hover table-light-gray table-bordered border-white caption-top">
+                            <caption class="text-bg-brown text-center fs-5">無創除色</caption>                        <tbody>
+                                <tr>
+                                    <tr>
+                                        <th class="text-secondary">單次</th>
+                                        <td>$2000</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-secondary">3堂課程</th>
+                                        <td>$5100</td>    
+                                    </tr>
+                                    <tr>
+                                        <th class="text-secondary">5堂課程</th>
+                                        <td>$7500</td>
+                                    </tr>   
+                                </tr>
+                        </table>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <!-- 常見問答 -->
+        <section class="py-4 mb-5 position-relative">
+            <div class="container">
+                <div class="mb-5" data-aos="fade-up">
+                    <p class="display-3 text-secondary fw-bold text-center">Q&A.</p>
+                    <h2 class="fw-bold text-center">常見問答</h2>
+                </div>
+                <div class="accordion fs-5" id="accordionExample" data-aos="fade-up">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header border-bottom" id="headingOne">
+                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Q1.請問會傷害原本的毛髮嗎？會需要將眉毛剃除嗎？
+                            </button>
+                        </h2> 
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body border-bottom">
+                                療程只針對色素起作用，並不會傷害毛囊，因此原本的毛髮不會受到影響喔！
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header border-bottom" id="headingTwo">
+                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Q2.一次就可以將除色完成嗎？每次除色療程需間隔多久？?
                         </button>
                     </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            前三天可每天持續冰敷數次，若隔天眼皮有出現水腫現象，表示冰敷不夠，需更頻繁冰敷避免引起水泡生成。並且術後每 2~3小時擦一次術後修復精華液，隔日早晚擦，共擦 3 天。
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body border-bottom">
+                            除色次數需確認底色深淺而定，通常為3~5次，即可除色完成，舊式的紋繡通常操作都會過深，
+                            除色次數可能會比較多，每次療程約間隔3週，就可以進行下一次除色療程。
+                        </div>
                     </div>
-                </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Q4.療程結束後多久才可以化妝嗎？
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            此無創除色技術是不傷毛髮皮膚、不結痂、不流血，因此沒有修復期，24小時後即可正常上妝喔！
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header border-bottom" id="headingThree">
+                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Q3.療程完後我會去要注意什麼？
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body border-bottom">
+                                前三天可每天持續冰敷數次，若隔天眼皮有出現水腫現象，表示冰敷不夠，需更頻繁冰敷避免引起水泡生成。
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header border-bottom" id="headingFour">
+                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Q4.療程結束後多久才可以化妝嗎？
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body border-bottom">
+                                此無創除色技術是不傷毛髮皮膚、不結痂、不流血，因此沒有修復期，24小時後即可正常上妝喔！
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="bg-cover" style="background-image: url(images/bg1.png);">
-        <div class="container p-4 animate__animated animate__zoomIn">
-            <h2 class="text-center text-secondary display-5 mb-3">PORTFOLIO</h2>
-            <ul class="row row-cols-2 row-cols-lg-4 list-unstyled flex-nowrap overflow-auto px-3 py-4">
-                <li class="col"><img src="images/works-eyebrow.jpg" class="img-fluid rounded shadow" alt=""></li>
-                <li class="col"><img src="images/works-eyebrow.jpg" class="img-fluid rounded shadow" alt=""></li>
-                <li class="col"><img src="images/works-eyebrow.jpg" class="img-fluid rounded shadow" alt=""></li>
-                <li class="col"><img src="images/works-eyebrow.jpg" class="img-fluid rounded shadow" alt=""></li>
-                <li class="col"><img src="images/works-eyebrow.jpg" class="img-fluid rounded shadow" alt=""></li>
-                <li class="col"><img src="images/works-eyebrow.jpg" class="img-fluid rounded shadow" alt=""></li>
-            </ul>
-        </div>
-    </section>
-    <section class="slideUp">
-        <a href=".zip" class="btn-up text-decoration-none position-fixed bottom-10 end-3"></a>
-    </section>
+        </section>
+        <!-- <section class="mb-5">
+            <div class="container">
+                <div class="mb-4 position-relative animate__animated animate__zoomIn">
+                    <img src="images/header-bg1.png" class="img-fluid d-block mx-auto" alt="" width="250">
+                    <h2 class="text-center mb-0 position-absolute top-30 start-50 translate-middle-x">優點</h2>
+                    <span class="text-secondary fw-bold text-center fs-5 position-absolute top-60 start-55">ADVANTAGE</span>
+                </div>
+                <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 list-unstyled justify-content-center">
+                    <li class="col-6">
+                        <div class="d-flex flex-column align-items-center justify-content-center pt-3 pt-md-5 h-100 text-center mb-3 border-0 shadow rounded-top-pill bg-light-gray bg-opacity-50 animate__animated animate__fadeInUp">
+                            <div class="col-4 col-md-12 mb-3">
+                                <img src="images/colorRemoval1.png" class="img-fluid" alt="" width="80">
+                            </div>
+                            <div class="col-8 col-md-12 p-0 p-md-3">
+                                <p>不傷毛髮皮膚、<br class="d-none d-md-block">不結痂、不流血</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-6">
+                        <div class="d-flex flex-column align-items-center justify-content-center pt-3 pt-md-5 h-100 text-center mb-3 border-0 shadow rounded-top-pill bg-light-gray bg-opacity-50 animate__animated animate__fadeInUp">
+                            <div class="col-4 col-md-12 mb-3">
+                                <img src="images/colorRemoval2.png" class="img-fluid" alt="" width="80">
+                            </div>
+                            <div class="col-8 col-md-12 p-0 p-md-3">
+                                <p>可碰水且無修復期<br class="d-none d-md-block">隔天即可正常上妝</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-6">
+                        <div class="d-flex flex-column align-items-center justify-content-center pt-3 pt-md-5 h-100 text-center mb-3 border-0 shadow rounded-top-pill bg-light-gray bg-opacity-50 animate__animated animate__fadeInUp">
+                            <div class="col-4 col-md-12 mb-3 mb-lg-5">
+                                <img src="images/colorRemoval3.png" class="img-fluid" alt="" width="80">
+                            </div>
+                            <div class="col-8 col-md-12 p-0 p-md-3 mt-md-n4 mt-lg-n5">
+                                <p class="mb-0">非藥水侵入式洗眉<br class="d-none d-md-block">非傳統式洗眉</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-6">
+                        <div class="d-flex flex-column align-items-center justify-content-center pt-3 pt-md-5 h-100 text-center mb-3 border-0 shadow rounded-top-pill bg-light-gray bg-opacity-50 animate__animated animate__fadeInUp">
+                            <div class="col-4 col-md-12 mb-3">
+                                <img src="images/colorRemoval4.png" class="img-fluid" alt="" width="80">
+                            </div>
+                            <div class="col-8 col-md-12 p-0 p-md-3">
+                                <p class="mb-0">紅、藍、橘眉皆可有效淡化<br class="d-none d-md-block">且術後會持續代謝</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section> -->
+        <!-- 作品 -->
+        <section class="pb-5">
+            <div class="swiper mySwiper portfolioSwiper" data-aos="fade-up">
+                <div class="d-md-none">
+                    <p class="fs-1 text-secondary fw-bold text-center">PORTFOLIO.</p>
+                    <h2 class="fw-bold text-center">作品</h2>
+                </div>
+                <div class="swiper-wrapper d-flex py-5">
+                    <div class="align-self-center me-3 me-lg-5 d-none d-md-block" data-aos="fade-up">
+                        <p class="fs-1 text-secondary fw-bold text-center">PORTFOLIO.</p>
+                        <h2 class="fw-bold text-center">作品</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/guest4.png" class="img-fluid" alt="guest-image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/guest2.png" class="img-fluid" alt="guest-image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/guest1.png" class="img-fluid" alt="guest-image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/guest3.png" class="img-fluid" alt="guest-image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/guest1.png" class="img-fluid" alt="guest-image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/guest2.png" class="img-fluid" alt="guest-image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/guest1.png" class="img-fluid" alt="guest-image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/guest3.png" class="img-fluid" alt="guest-image">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- GoToTop -->
+        <section class="slideUp">
+            <a href=".zip" class="btn-up text-decoration-none position-fixed bottom-10 end-3"></a>
+        </section>
 </main>
-<footer class="footer bg-light-gray">
+<footer class="footer bg-light-gray position-relative" data-aos="fade-up">
     <div class="container pt-5 pt-mb-5 pb-1 pb-md-4">
-        <div class="row row-cols-1 row-cols-md-3 justify-content-center">
-            <div class="col d-flex flex-column align-items-center info">
-                <h3>- 聯絡資訊 -</h3>
-                <ul class="list-unstyled text-center text-md-start mt-2"> 
-                    <li><a href="tel:+886-912345678" class="text-decoration-none link-secondary">0912345678</a></li>
-                    <li><a href="mailto:hexschool@gmail.com" class="text-decoration-none link-secondary">immstudio@gmail.com</a></li>
-                    <li>新竹市東大路二段</li>
+            <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+                <div class="col d-flex flex-column align-items-center info">
+                    <h3>- 聯絡資訊 -</h3>
+                    <ul class="list-unstyled text-center text-md-start mt-2"> 
+                        <li><a href="tel:+886-912345678" class="link-secondary">0912345678</a></li>
+                        <li><a href="mailto:hexschool@gmail.com" class="link-secondary">immstudio@gmail.com</a></li>
+                        <li>新竹市東大路二段</li>
+                    </ul>
+                </div>
+                <div class="col d-flex flex-column align-items-center mt-2 mt-md-0">
+                    <h3>- 營業時間 -</h3>
+                    <ul class="list-unstyled mt-2">
+                        <li>平日10:00 ~ 21:00 </li>
+                        <li>週日10:00 ~ 19:00</li>
+                        <li>皆採預約制</li>
+                    </ul>
+                </div>
+                <div class="col d-flex flex-column align-items-center socialMedia">
+                    <img src="images/logo-brown.png" class="img-fluid w-75" alt="footer-logo">
+                <ul class="list-unstyled d-flex justify-content-center mt-2">
+                    <li><a href="#" class="link-secondary fs-2"><i class="bi bi-facebook me-3"></i></a></li>
+                    <li><a href="#" class="link-secondary fs-2"><i class="bi bi-line me-3"></i></a></li>
+                    <li><a href="#" class="link-secondary fs-2"><i class="bi bi-instagram me-3"></i></a></li>
                 </ul>
+                </div>
             </div>
-            <div class="col d-flex flex-column align-items-center mt-2 mt-md-0">
-                <h3>- 營業時間 -</h3>
-                <ul class="list-unstyled mt-2">
-                    <li>平日10:00 ~ 21:00 </li>
-                    <li>週日10:00 ~ 19:00</li>
-                    <li>皆採預約制</li>
-                </ul>
-            </div>
-            <div class="col d-flex flex-column align-items-center socialMedia">
-                <img src="images/logo-brown.png" class="img-fluid w-75" alt="footer-logo">
-            <ul class="list-unstyled d-flex justify-content-center mt-2">
-                <li><a href="#" class="text-decoration-none link-secondary fs-2"><i class="bi bi-facebook me-3"></i></a></li>
-                <li><a href="#" class="text-decoration-none link-secondary fs-2"><i class="bi bi-line me-3"></i></a></li>
-                <li><a href="#" class="text-decoration-none link-secondary fs-2"><i class="bi bi-instagram me-3"></i></a></li>
-            </ul>
-            </div>
-        </div>
     </div>
-    <p class="text-center text-bg-brown text-secondary fs-6 py-2 mb-0 font-spacing  w-100">Copyright © 2023 imm.studio.All rights reserved.</p>
+    <p class="text-center text-bg-brown text-secondary fs-6 py-2 font-spacing  w-100">Copyright © 2023 imm.studio.All rights reserved.</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 <script src="javascript/jquery-3.6.4.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="javascript/js.js"></script>
 </body>
 </html>
