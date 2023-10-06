@@ -60,6 +60,29 @@ $(document).ready(function () {
         $('#accordionColorRemoval').siblings().removeClass('d-block');
         $('#accordionColorRemoval').siblings().addClass('d-none');
     });
+
+    // 預約切換
+    $('#server').click(function () {
+        // over
+        $('.server').removeClass('d-none');
+        $('.server').addClass('d-block');
+        $('.server').siblings().removeClass('d-block');
+        $('.server').siblings().addClass('d-none');
+    });
+    $('#guest-info').click(function () {
+        // over
+        $('.guest-info').removeClass('d-none');
+        $('.guest-info').addClass('d-block');
+        $('.guest-info').siblings().removeClass('d-block');
+        $('.guest-info').siblings().addClass('d-none');
+    });
+    $('#guest-info-check').click(function () {
+        // over
+        $('.guest-info-check').removeClass('d-none');
+        $('.guest-info-check').addClass('d-block');
+        $('.guest-info-check').siblings().removeClass('d-block');
+        $('.guest-info-check').siblings().addClass('d-none');
+    });
 });
 
 AOS.init();
@@ -106,3 +129,11 @@ navTabs.addEventListener('click',e=>{
     })
     e.target.classList.add('active');
 })
+
+// 預約切換
+// let guestInfo = document.querySelector('.guest-info');
+// let submitBtn = document.querySelector('.submit-btn');
+// submitBtn.addEventListener('click',item=>{
+//     console.log(e.target)
+//     // guestInfo.addAttribute('.d-none');
+// })
