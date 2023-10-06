@@ -63,14 +63,14 @@
     </nav>
     <main>
         <div class="container py-5">
-            <div class="mb-3" data-aos="fade-up">
+            <div class="mb-3 animate__animated animate__zoomIn">
                 <p class="display-3 text-secondary fw-bold text-center">ONLINE BOOKING.</p>
                 <h2 class="fw-bold text-center">線上預約</h2>
             </div>
-            <p class="text-center mb-5">
+            <p class="text-center mb-5 animate__animated animate__zoomIn">
                 歡迎您下方預約，<br class="d-block d-md-none">體驗 imm.studio 的服務，<br class="d-block d-md-none">我們將協助您散發光彩與自信！
             </p>
-            <ul class="nav nav-tabs align-items-center mb-5">
+            <ul class="nav nav-tabs align-items-center mb-5 animate__animated animate__zoomIn">
                 <li class="nav-item w-35">
                   <a class="nav-link text-center fs-md-5 active d-block" href="#" id="server">選擇服務</a>
                 </li>
@@ -78,11 +78,11 @@
                   <a class="nav-link text-center fs-md-5" href="#" id="guest-info">填寫資料</a>
                 </li>
                 <li class="nav-item w-35">
-                  <a class="nav-link text-center fs-md-5" href="#" id="guest-info-check">確認資料</a>
+                  <a class="nav-link text-center fs-md-5" href="#" id="guest-info-check">完成預約</a>
                 </li>
             </ul>
             <div>
-                <div class="server row justify-content-center">
+                <div class="server row justify-content-center animate__animated animate__zoomIn">
                     <div class="p-4 col-12 animate__animated animate__zoomIn">
                         <h3 class="text-secondary text-center mb-5">選擇服務</h3>
                         <form action="#" class="needs-validation" novalidate>
@@ -94,7 +94,7 @@
                                             <h3 class="card-title fs-5 text-center">日式美睫</h3>
                                             <div class="form-check px-0">
                                                 <input type="radio" class="btn-check" class="btn-check" name="option" id="option1" autocomplete="off" required>
-                                                <label class="btn btn-outline-brown w-100" for="option1">立刻預約</label>
+                                                <label class="btn btn-outline-brown w-100" for="option1">選擇</label>
                                                 <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請選擇一個項目</div>
                                             </div>
                                         </div>
@@ -107,7 +107,7 @@
                                             <h3 class="card-title fs-5 text-center">粉霧眉</h3>
                                             <div class="form-check px-0">
                                                 <input type="radio" class="btn-check" class="btn-check" name="option" id="option2" autocomplete="off">
-                                                <label class="btn btn-outline-brown w-100" for="option2" value="eyebrow">立刻預約</label>
+                                                <label class="btn btn-outline-brown w-100" for="option2" value="eyebrow">選擇</label>
                                                 <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請選擇一個項目</div>
                                             </div>
                                         </div>
@@ -120,7 +120,7 @@
                                             <h3 class="card-title fs-5 text-center">無創除色</h3>
                                             <div class="form-check px-0">
                                                 <input type="radio" class="btn-check" class="btn-check" name="option" id="option3" autocomplete="off">
-                                                <label class="btn btn-outline-brown w-100" for="option3">立刻預約</label>
+                                                <label class="btn btn-outline-brown w-100" for="option3">選擇</label>
                                                 <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請選擇一個項目</div>
                                             </div>
                                             
@@ -134,11 +134,11 @@
                         </form>
                     </div>
                 </div> 
-                <div class="guest-info d-none">
+                <div class="guest-info d-none animate__animated animate__zoomIn">
                     <form action="#" class="col-12 needs-validation" novalidate>
-                        <div class="row">
+                        <div class="row justify-content-center">
                             <h3 class="text-secondary text-center mb-5">填寫資料</h3>
-                            <div class="col-lg-6 mb-3 mb-lg-0">            
+                            <div class="col-8">            
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control border-bottom" id="name" name="name"  placeholder="預約人姓名" required>
                                     <label for="name">預約人姓名</label>
@@ -158,10 +158,8 @@
                                     <input type="date" class="form-select border-bottom" id="date" name="date" value="BeautyLin@gmail.com" required>
                                     <label for="date">預約日期</label>
                                 </div>
-                            </div>   
-                            <div class="col-lg-6">
                                 <h3 class="fs-5 fw-bold mb-3">預約須知:</h3>
-                                <ul class="list-unstyled">
+                                <ul class="list-unstyled mb-3">
                                     <li><i class="bi bi-1-circle"></i> 預約成功若要取消，則<a href="#" role="button"id="example"  class="link-secondary popover-test" title="訂金" data-bs-content="日式美睫：$800 粉霧眉：$2500 無創除色：$2000">訂金</a>將不退還</li>
                                     <li><i class="bi bi-2-circle"></i> 若要改期，請於一週前 <a href="#" class="link-success">LINE</a>客服告知，未於時間內告知，訂金不退還</li>
                                     <li><i class="bi bi-3-circle"></i> 只能改期一次，要再改期視同於前次預約直接取消，訂金將不退還</li>
@@ -169,25 +167,23 @@
                                     <li><i class="bi bi-5-circle"></i> 工作室<span class="text-danger">不開放攜伴</span>，僅限預約操作者入內</li>
                                     <li><i class="bi bi-6-circle"></i> 預約當天操作結束後的支付方式為<span class="text-danger">現金支付</span></li>
                                 </ul>
-                                <div class="form-check mb-3">
+                                <div class="form-check mb-5">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
                                     <label class="form-check-label" for="flexCheckDefault">
                                         我已了解並同意<span class="text-danger">預約須知</span>的所有內容
                                     </label>
                                     <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請確認內容</div>
                                 </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-outline-brown w-50">完成預約</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-flex justify-content-end">
-                            <button type="submit" class="btn btn-outline-brown w-25 submit-btn">完成預約</button>
                         </div>
                     </form>
                 </div>
-                <div class="guest-info-check d-none">
-                    <h3 class="text-secondary text-center mb-5">確認資料</h3>
-                    <p class="text-center mb-5">謝謝您的預約，如果您對我們的服務感興趣或有任何疑問，請隨時聯繫我們。
-                        我們期待著能夠與您一同創造美麗的故事！
-                    </p> 
+                <div class="guest-info-check d-none animate__animated animate__zoomIn">
+                    <h3 class="text-secondary text-center mb-5">完成預約</h3>
+                    <p class="text-center mb-5">謝謝您的預約，如果您對我們的服務有任何疑問，請隨時聯繫我們，期待著能夠與您一同創造美麗的故事！</p> 
                     <div class="row align-items-center">
                         <div class="col-lg-6 bg-light-gray bg-opacity-50 rounded-end-pill justify-content-center">
                             <div class="py-5 px-3 d-flex flex-column align-items-center">
