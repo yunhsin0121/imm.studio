@@ -13,31 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet/all.css">
 </head>
-<style>
-@font-face{
-        font-family: 'ThePeakFontBeta';
-        src: url('./fonts/ThePeakFontBeta_V0_101.ttf');
-    }
-body{
-    font-family: 'ThePeakFontBeta';
-    letter-spacing:2px;
-    /* font-family: 'Noto Serif TC', serif; */
-}
-.background {
-    /* background: url("images/bg2.png") no-repeat; */
-    /* opacity: 0.6; */
-    background-size: cover;
-    -webkit-background-size: cover;
-    background-position: center;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-}
-</style>
 <body> 
-    <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top border-bottom border-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top">
         <div class="container-md container-fluid px-3 px-md-0">
                 <a class="navbar-brand" href="index.html" class="text">
                     <img src="images/logo-white.png" alt="logo" width="200" class="pb-1">
@@ -75,23 +52,23 @@ body{
     </nav>
     <!-- header -->
     <header class="bg-attachment-fixed" style="background-image: url(images/bg2.jpg)">
-        <div class="background" style="background-image: url(images/bg2.jpg)"></div>
+        <div class="attachment-background" style="background-image: url(images/bg2.jpg)"></div>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-7 mb-n9 mb-md-0 z-3">
                     <div class="header-text py-5 animate__animated animate__fadeInDown">
                         <div class="d-flex mb-3 mb-lg-5">
                             <div class="deco-row-line me-3 mt-2 d-none d-md-block"></div>
-                            <p class="fw-bold fs-5 text-secondary text-uppercase  d-none d-md-block">We create beauty for you.</p>
+                            <p class="fw-bold text-secondary text-uppercase  d-none d-md-block">We create beauty for you.</p>
                         </div>
-                        <h2 class="fw-bold display-6 text-secondary mb-3 mb-lg-5 d-none d-md-block">我們為您創造美麗!</h2>
+                        <h2 class="fw-bold text-secondary mb-3 mb-lg-5 d-none d-md-block">我們為您創造美麗!</h2>
                         <div class="header-icon d-flex justify-content-around mb-3 mb-md-4">
                             <a href="eyebrow.html" class="animate__animated animate__zoomIn"><img src="images/header-icon1.png" alt="" class="img-fluid rounded-circle shadow" width="200"></a>
                             <a href="eyelash.html" class="animate__animated animate__zoomIn"><img src="images/header-icon2.png" alt="" class="img-fluid rounded-circle shadow" width="300"></a>
                             <a href="colorRemoval.html" class="animate__animated animate__zoomIn"><img src="images/header-icon3.png" alt="" class="img-fluid rounded-circle shadow" width="200"></a>
                         </div>
                         <div class="d-flex justify-content-end me-n4">
-                            <a href="reservation.html" class="deco-link-transition fw-bold fs-3 d-none d-md-block shadow"><i class="fa-solid fa-arrow-left-long"></i> 立即預約<span class="fs-6 d-block">Reservation Now</span></a>                       
+                            <a href="reservation.html" class="deco-link-transition text-center fw-bold fs-4 d-none d-md-block shadow"><i class="fa-solid fa-arrow-left-long"></i> 線上預約 <br>ONLINE BOOKING</a>                       
                         </div>
                     </div>
                 </div>
@@ -101,7 +78,7 @@ body{
                         <div class="text-dark top-30 start-0 position-absolute d-md-none">
                             <p class="fw-bold  text-uppercase ms-3">We create beauty for you.</p>
                             <h2 class="fw-bold mb-4 ms-2">我們為您創造美麗!</h2>
-                            <a href="reservation.html" class="deco-link-small-transition fw-bold fs-4 d-inline-block d-md-none shadow">立即預約 <i class="fa-solid fa-arrow-right-long"></i> <span class="fs-6 d-block">Reservation Now</span></a>
+                            <a href="reservation.html" class="deco-link-small-transition text-center fw-bold fs-4 d-inline-block d-md-none shadow">線上預約 <i class="fa-solid fa-arrow-right-long"></i><br>ONLINE BOOKING</a>
                         </div>
                     </div>
                 </div>
@@ -113,11 +90,11 @@ body{
         <section class="bg-light py-7 position-relative">
             <div class="container">
                 <div class="row g-3 justify-content-center">
-                    <div class="col-10 col-md-4 d-flex flex-column align-items-center" data-aos="fade-up">
+                    <div class="col-10 col-lg-5 d-flex flex-column align-items-center" data-aos="fade-up">
                         <h2 class="fw-bold mb-4">還在為這些煩腦嗎？</h2>
                         <img src="images/why2.png" class="img-fluid" alt="" style="width: 200px;">
                     </div>
-                    <div class="col-10 col-md-8 fs-5" data-aos="fade-up">
+                    <div class="col-10 col-lg-7" data-aos="fade-up">
                         <div class="animate__animated animate__zoomIn">
                             <p class="bg-light-gray py-3 px-2 mb-5 d-inline-block shadow">本身的睫毛又短又稀疏，<br class="d-block d-md-none">
                                 素顏眼睛超無神
@@ -158,12 +135,9 @@ body{
                     <div class="col-12 col-md-6 px-0">
                         <div class="d-flex align-items-center">
                         <div class="bg-light-gray rounded-end-pill p-5 p-md-5 p-xxl-7 shadow w-100">
-                            <p class="fw-bold fs-lg-5">
+                            <p class="text-secondary lh-lg">
                                 使用高品質材料和先進技術，<br>為您打造理想的睫毛及眉型設計，<br>
-                                讓每位顧客在我們工作室中都能享受別具一格的美妝體驗，
-                                展現屬於自己的美麗與自信！
-                                <!-- 如果您對我們的服務感興趣或有任何疑問，請隨時聯繫我們。我們期待著能夠為您帶來獨特的美麗體驗。
-                                謝謝您選擇我們，讓我們一同創造美麗的故事！ -->
+                                讓每位顧客在我們工作室中都能享受別具一格的美妝體驗，<br class="d-none d-lg-block">展現屬於自己的美麗與自信！
                             </p>
                         </div>
                     </div>
@@ -190,7 +164,7 @@ body{
                             </div>  
                         </div>
                         <div class="col-10 col-md-8">
-                            <p class="fs-5">採用單根嫁接手法，使用接近真睫毛的柔細材質，並且不傷害原生的睫毛，
+                            <p>採用單根嫁接手法，使用接近真睫毛的柔細材質，並且不傷害原生的睫毛，
                                     呈現出根根分明、自然清新且輕盈的效果。</p>
                         </div>
                     </div>
@@ -202,7 +176,7 @@ body{
                             </div> 
                         </div>
                         <div class="col-10 col-md-8">
-                            <p class="fs-5">透過多層次設計手法，使用單點針刺法，有型無框的設計展現如輕刷眉粉般的時尚立體眉型，
+                            <p>透過多層次設計手法，使用單點針刺法，有型無框的設計展現如輕刷眉粉般的時尚立體眉型，
                                     兼顧細緻度與留色度，過程不痛讓你一覺起來就美麗。</p>
                         </div>
                     </div>
@@ -214,7 +188,7 @@ body{
                             </div> 
                         </div>
                         <div class="col-10 col-md-8">
-                            <p class="fs-5">利用光點除色的方式破壞頑固色素，並讓顏色隨著身體代謝後消失，
+                            <p>利用光點除色的方式破壞頑固色素，並讓顏色隨著身體代謝後消失，
                                     不會造成表皮創傷，除色後還是能正常化妝洗臉，且無修復期。</p>
                         </div>
                     </div>
@@ -222,17 +196,29 @@ body{
             </div>        
         </section>
         <!-- 最新活動 -->
-        <section class="bg-light position-relative">
+        <section class="bg-light position-relative pb-md-5">
             <div class="py-5 rounded-end-lg-pill bg-attachment-fixed shadow" style="background-image: url(images/bg2.png)">
-                <div class="row flex-row-reverse justify-content-center align-items-center gx-0">
+                <div class="row flex-row-reverse justify-content-center justify-content-md-between align-items-center gx-0">
                     <div class="col-12 col-md-6 mb-3 mb-md-0" data-aos="zoom-in">
                         <div class="bg-light-brown bg-opacity-50 ps-md-7 px-5 py-md-5 py-3 mb-lg-3 d-flex flex-column align-items-center align-items-md-start rounded-start-pill position-relative shadow-md">
                             <h3 class="fw-bold mb-3">最新活動</h3>
                             <ul class="list-unstyled">
-                                <li><i class="bi bi-1-circle"></i>睫毛初次嫁接享<span class="text-danger">8</span>折 (含spa泡泡洗)</li>
-                                <li><i class="bi bi-2-circle"></i>精緻妝感霧眉單次<span class="text-danger">$3299</span></li>
-                                <li><i class="bi bi-3-circle"></i>日式美睫(黑色圓毛)100本<span class="text-danger">$799</span></li>
-                                <li><i class="bi bi-exclamation-circle"></i>每個項目<span class="text-danger">優惠不得併用</span>，本店享有最終變更活動之權利</p></li>
+                                <li class="d-flex align-items-start mb-2">
+                                    <i class="bi bi-1-circle me-1"></i>
+                                    <span> 睫毛初次嫁接享<span class="text-danger">8</span>折</span>
+                                </li>
+                                <li class="d-flex align-items-start mb-2">
+                                    <i class="bi bi-2-circle me-1"></i>
+                                    <span> 精緻妝感霧眉單次<span class="text-danger">$3299</span></span>
+                                </li>
+                                <li class="d-flex align-items-start mb-2">
+                                    <i class="bi bi-3-circle me-1"></i>
+                                    <span> 日式美睫(黑色圓毛)100本<span class="text-danger">$799</span></span>
+                                </li>
+                                <li class="d-flex align-items-start mb-2">
+                                    <i class="bi bi-exclamation-circle me-1"></i>
+                                    <span> 每個項目<span class="text-danger">優惠不得併用</span>，本店享有最終變更活動之權利</span>
+                                </li>
                             </ul>
                         </div>
                         <div class="d-none d-lg-block">
@@ -242,62 +228,101 @@ body{
                             <a href="#" class="p-3 link-gray-bg">會員Membership <i class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                     </div>
-                    <div class="col-9 col-md-6 mb-3 mb-lg-5" data-aos="zoom-in">
+                    <div class="col-9 col-md-6 col-lg-5 mb-3 mb-lg-5" data-aos="zoom-in">
                         <div class="swiper mySwiper indexSwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide shadow">
                                     <div class="card border-0 position-relative">
                                         <img src="./images/guest1.png" class="img-fluid" alt="">
-                                        <p class="position-absolute top-80 start-10 translate-middle-y text-white fs-3">日式美睫</p>
+                                        <p class="position-absolute top-80 start-10 translate-middle-y text-white">上睫毛120本<br>(黑色)</p>
                                         <div class="card-img-overlay top-auto p-0 d-none d-md-block">
                                             <div class="bg-white bg-opacity-75 p-2 p-md-3">
-                                                <h3 class="fw-bold fs-md-5 fs-6 text-center">上睫毛120本(黑色)</h3>
+                                                <h3 class="fw-bold fs-md-5 fs-6 text-center">日式美睫</h3>
                                             </div>
                                         </div>
                                         <div class="bg-light-gray bg-opacity-50 px-1 py-2 p-md-3 d-md-none">
-                                            <h3 class="fw-bold fs-md-5 fs-6 text-center">上睫毛120本(黑色)</h3>
+                                            <h3 class="fw-bold fs-md-5 fs-6 text-center">日式美睫</h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide shadow">
                                     <div class="card border-0 position-relative">
                                         <img src="./images/guest2.png" class="img-fluid" alt="">
-                                        <p class="position-absolute top-80 start-55 start-md-60 translate-middle-y fs-3 text-light">日式美睫</p>
+                                        <p class="position-absolute top-80 start-55 start-md-55 translate-middle-y text-light">上睫毛100本<br>(黑色)</p>
                                         <div class="card-img-overlay top-auto p-0 d-none d-md-block">
                                             <div class="bg-white bg-opacity-75 p-2 p-md-3">
-                                                <h3 class="fw-bold fs-md-5 fs-6 text-center">上睫毛100本(黑色)</h3>
+                                                <h3 class="fw-bold fs-md-5 fs-6 text-center">日式美睫</h3>
                                             </div>
                                         </div>
                                         <div class="bg-light-gray bg-opacity-50 px-1 py-2 p-md-3 d-md-none">
-                                            <h3 class="fw-bold fs-md-5 fs-6 text-center">上睫毛100本(黑色)</h3>
+                                            <h3 class="fw-bold fs-md-5 fs-6 text-center">日式美睫</h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide shadow">
                                     <div class="card border-0 position-relative">
                                         <img src="./images/guest3.png" class="img-fluid" alt="">
-                                        <p class="position-absolute top-80 start-10 translate-middle-y text-white fs-3">日式美睫</p>
+                                        <p class="position-absolute top-80 start-10 translate-middle-y text-white">上睫毛120本<br>(摩卡)</p>
                                         <div class="card-img-overlay top-auto p-0 d-none d-md-block">
                                             <div class="bg-white bg-opacity-75 p-2 p-md-3">
-                                                <h3 class="fw-bold fs-md-5 fs-6 text-center">上睫毛120本(摩卡)</h3>
+                                                <h3 class="fw-bold fs-md-5 fs-6 text-center">日式美睫</h3>
                                             </div>
                                         </div>
                                         <div class="bg-light-gray bg-opacity-50 px-1 py-2 p-md-3 d-md-none">
-                                            <h3 class="fw-bold fs-md-5 fs-6 text-center">上睫毛120本(摩卡)</h3>
+                                            <h3 class="fw-bold fs-md-5 fs-6 text-center">日式美睫</h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide shadow">
                                     <div class="card border-0 position-relative">
-                                        <p class="position-absolute top-80 start-50 start-md-60 translate-middle-y text-white fs-3">日式美睫</p>
+                                        <p class="position-absolute top-80 start-50 start-md-60 translate-middle-y text-white">上睫毛100本<br>(淺棕)</p>
                                         <img src="./images/guest4.png" class="img-fluid" alt="">
                                         <div class="card-img-overlay top-auto p-0 d-none d-md-block">
                                             <div class="bg-white bg-opacity-75 p-2 p-md-3">
-                                                <h3 class="fw-bold fs-md-5 fs-6 text-center">上睫毛100本(淺棕)</h3>
+                                                <h3 class="fw-bold fs-md-5 fs-6 text-center">日式美睫</h3>
                                             </div>
                                         </div>
                                         <div class="bg-light-gray bg-opacity-50 px-1 py-2 p-md-3 d-md-none">
-                                            <h3 class="fw-bold fs-md-5 fs-6 text-center">上睫毛100本(淺棕)</h3>
+                                            <h3 class="fw-bold fs-md-5 fs-6 text-center">日式美睫</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide shadow">
+                                    <div class="card border-0">
+                                        <img src="./images/guest5.png" class="img-fluid" alt="">
+                                        <div class="card-img-overlay top-auto p-0 d-none d-md-block">
+                                            <div class="bg-white bg-opacity-75 p-2 p-md-3">
+                                                <h3 class="fw-bold fs-md-5 fs-6 text-center">粉霧眉</h3>
+                                            </div>
+                                        </div>
+                                        <div class="bg-light-gray bg-opacity-50 px-1 py-2 p-md-3 d-md-none">
+                                            <h3 class="fw-bold fs-md-5 fs-6 text-center">粉霧眉</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide shadow">
+                                    <div class="card border-0">
+                                        <img src="./images/guest6.png" class="img-fluid" alt="">
+                                        <div class="card-img-overlay top-auto p-0 d-none d-md-block">
+                                            <div class="bg-white bg-opacity-75 p-2 p-md-3">
+                                                <h3 class="fw-bold fs-md-5 fs-6 text-center">粉霧眉</h3>
+                                            </div>
+                                        </div>
+                                        <div class="bg-light-gray bg-opacity-50 px-1 py-2 p-md-3 d-md-none">
+                                            <h3 class="fw-bold fs-md-5 fs-6 text-center">粉霧眉</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide shadow">
+                                    <div class="card border-0">
+                                        <img src="./images/guest7.png" class="img-fluid" alt="">
+                                        <div class="card-img-overlay top-auto p-0 d-none d-md-block">
+                                            <div class="bg-white bg-opacity-75 p-2 p-md-3">
+                                                <h3 class="fw-bold fs-md-5 fs-6 text-center">粉霧眉</h3>
+                                            </div>
+                                        </div>
+                                        <div class="bg-light-gray bg-opacity-50 px-1 py-2 p-md-3 d-md-none">
+                                            <h3 class="fw-bold fs-md-5 fs-6 text-center">粉霧眉</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -324,18 +349,18 @@ body{
         <div class="container pt-5 pt-mb-5 pb-1 pb-md-4">
                 <div class="row row-cols-1 row-cols-md-3 justify-content-center">
                     <div class="col d-flex flex-column align-items-center info">
-                        <h3>- 聯絡資訊 -</h3>
-                        <ul class="list-unstyled text-center text-md-start mt-2"> 
-                            <li><a href="tel:+886-912345678" class="link-secondary">0912345678</a></li>
-                            <li><a href="mailto:hexschool@gmail.com" class="link-secondary">immstudio@gmail.com</a></li>
-                            <li>新竹市東大路二段</li>
+                        <h3 class="fw-bold mb-2">聯絡資訊</h3>
+                        <ul class="list-unstyled text-center text-md-start"> 
+                            <li><a href="tel:+886-912345678" class="link-secondary"><i class="bi bi-telephone-fill fs-4 me-1"></i>0912345678</a></li>
+                            <li><a href="mailto:hexschool@gmail.com" class="link-secondary"><i class="bi bi-envelope-at-fill fs-4 me-1"></i>IMMSTUDIO@gmail.com</a></li>
+                            <li><i class="bi bi-house-door-fill fs-4 me-1"></i>新竹市東大路二段</li>
                         </ul>
                     </div>
                     <div class="col d-flex flex-column align-items-center mt-2 mt-md-0">
-                        <h3>- 營業時間 -</h3>
-                        <ul class="list-unstyled mt-2">
-                            <li>平日10:00 ~ 21:00 </li>
-                            <li>週日10:00 ~ 19:00</li>
+                        <h3 class="fw-bold mb-2">營業時間</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">平日10:00 ~ 21:00 </li>
+                            <li class="mb-2">週日10:00 ~ 19:00</li>
                             <li>皆採預約制</li>
                         </ul>
                     </div>

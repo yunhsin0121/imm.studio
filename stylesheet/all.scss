@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Serif+TC:wght@400;700&family=Yatra+One&display=swap');
 @import "../node_modules/bootstrap/scss/functions";
 @import"../helpers/variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import"../components/utilities";
-@import"../components/_grid.scss";
+@import"../components/_base";
+@import"../components/_grid";
 @import"../components/_bg-position";
+@import"../components/_attachment-background";
 @import"../components/_font-family";
 @import"../components/_text-indent";
 @import"../components/_text-block";

@@ -16,29 +16,10 @@
     <link rel="stylesheet" href="stylesheet/all.css">
 </head>
 <style>
-@font-face{
-        font-family: 'ThePeakFontBeta';
-        src: url('./fonts/ThePeakFontBeta_V0_101.ttf');
-    }
-body{
-    font-family: 'ThePeakFontBeta';
-    letter-spacing:2px;
-}
-.background {
-    background: url("images/bg2.png") no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    background-position: center;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-}
 </style>
 <body>
-<div class="background"></div>
-<nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top border-bottom border-white">
+<div class="attachment-background" style="background: url(./images/bg2.png)"></div>
+<nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top">
     <div class="container-md container-fluid px-3 px-md-0">
             <a class="navbar-brand" href="index.html" class="text">
                 <img src="images/logo-white.png" alt="logo" width="200" class="pb-1">
@@ -78,16 +59,15 @@ body{
     <!--注意事項 -->
     <section class="container-fluid position-relative pb-5">
         <div class="container">
-            <span class="d-none d-lg-block display-1 position-absolute top-40 start-43 z-4 animate__animated animate__zoomIn">日式美睫</span>
+            <span class="d-none d-lg-block display-2 position-absolute top-40 start-43 z-4 animate__animated animate__zoomIn">日式美睫</span>
             <div class="row flex-row-reverse justify-content-center justify-content-lg-between position-relative">
                 <div class="col-md-11 col-lg-5 z-3 position-relative">
                     <img src="images/imm-lash.png" class="img-fluid rounded-bottom-pill shadow animate__animated animate__zoomIn" alt="eyelash-image">
-                    <!-- <a href="reservation.html" class="deco-link-small-transition fw-bold fs-4 d-inline-block d-md-none shadow top-10 start-0 position-absolute">立即預約 <i class="fa-solid fa-arrow-right-long"></i> <span class="fs-6 d-block">Reservation Now</span></a> -->
                 </div>
                 <div class="col-md-11 col-lg-7 align-self-center z-3">
                     <div class="row justify-content-center position-relative py-5 animate__animated animate__zoomIn">
                         <span class="display-1 text-end position-absolute top-0 translate-middle-y z-4 animate__animated animate__zoomIn d-lg-none">日式美睫</span>
-                        <p class="fs-5 text-center text-secondary">
+                        <p class="text-center text-secondary lh-lg">
                             使用極細的人工睫毛 <br>
                             和優質的材料 <br class="d-md-none">
                             過程中安全且舒適<br>
@@ -106,32 +86,32 @@ body{
                 <!-- <span class="d-md-none font-deco position-absolute top-0 end-3 z-5 translate-middle-y">日式美睫</span> -->
                 <div class="animate__animated animate__zoomIn">
                     <p class="display-3 text-light fw-bold text-lg-center">ATTENTION.</p>
-                    <h2 class="fw-bold mb-3 text-lg-center">注意事項</h2>
+                    <h2 class="fw-bold mb-3 mb-lg-5 text-lg-center">注意事項</h2>
                 </div>
                 <div class="d-flex flex-column align-items-lg-center">
-                    <ul class="fs-5 list-unstyled animate__animated animate__zoomIn">
+                    <ul class="list-unstyled animate__animated animate__zoomIn">
                         <li class="d-flex align-items-start mb-2">
-                            <i class="bi bi-1-circle"></i>
+                            <i class="bi bi-1-circle me-1"></i>
                             <span> 卸妝時盡量不要使用油性卸妝油</span>
                         </li>
                         <li class="d-flex align-items-start mb-2">
-                            <i class="bi bi-2-circle"></i>
+                            <i class="bi bi-2-circle me-1"></i>
                             <span> 嫁接完成後，2天內若有5~20根睫毛掉落，屬於睫毛本身正常代謝情況</span>
                         </li>
                         <li class="d-flex align-items-start mb-2">
-                            <i class="bi bi-3-circle"></i>
+                            <i class="bi bi-3-circle me-1"></i>
                             <span> 三天內，不要去高溫場所，以免黑膠溶解或導致睫毛變形</span>
                         </li>
                         <li class="d-flex align-items-start mb-2">
-                            <i class="bi bi-4-circle"></i>
+                            <i class="bi bi-4-circle me-1"></i>
                             <span> 四小時內睫毛不可以碰到水，以免影響黑膠黏著度</span>
                         </li>
                         <li class="d-flex align-items-start mb-2">
-                            <i class="bi bi-5-circle"></i>
+                            <i class="bi bi-5-circle me-1"></i>
                             <span> 應避免揉眼睛，否則真睫毛可能會斷裂</span>
                         </li>
                         <li class="d-flex align-items-start mb-2">
-                            <i class="bi bi-6-circle"></i>
+                            <i class="bi bi-6-circle me-1"></i>
                             <span> 嫁接完成後不要擦睫毛膏及夾睫毛</span>
                         </li>
                     </ul>
@@ -139,7 +119,7 @@ body{
             </div>
             <div class="col d-flex align-items-md-end align-items-lg-center">
                 <div class="d-flex justify-content-end position-absolute top-15 top-lg-50 end-0 z-5">
-                    <a href="reserved.html" class="deco-link-transition fw-bold fs-3 shadow"><i class="fa-solid fa-arrow-left-long"></i> 立即預約<span class="fs-6 d-block">Reservation Now</span></a>                       
+                    <a href="reserved.html" class="deco-link-transition fw-bold shadow"><i class="fa-solid fa-arrow-left-long"></i> 線上預約 <br>ONLINE BOOKING</a>                       
                 </div>
             </div>
         </div>
@@ -159,7 +139,7 @@ body{
                 </div>
                 <div class="col-10 col-md-7">
                     <h3 class="text-secondary fw-bold mb-3"><i class="bi bi-1-circle"></i> 討論</h3>
-                    <p class="fs-5">操作前與美睫師討論要選擇的睫毛材料及顏色，
+                    <p>操作前與美睫師討論要選擇的睫毛材料及顏色，
                         根據您的預算，選擇自然或著豔麗的造型，一起挑選出最適合您的睫毛樣式。</p>
                 </div>
             </div>
@@ -171,7 +151,7 @@ body{
                 </div>
                 <div class="col-10 col-md-7">
                     <h3 class="text-secondary fw-bold mb-3"><i class="bi bi-2-circle"></i> 前置作業</h3>
-                    <p class="fs-5">挑選出適合的睫毛樣式後，接著開始清潔眼部和眼妝，將睫毛梳順，並將下睫毛貼上透氣膠帶固定。</p>
+                    <p>挑選出適合的睫毛樣式後，接著開始清潔眼部和眼妝，將睫毛梳順，並將下睫毛貼上透氣膠帶固定。</p>
                 </div>
             </div>
             <div class="row align-items-center justify-content-center py-3 animate__animated animate__zoomIn" data-aos="fade-up">
@@ -182,7 +162,7 @@ body{
                 </div>
                 <div class="col-10 col-md-7">
                     <h3 class="text-secondary fw-bold mb-3"><i class="bi bi-3-circle"></i> 操作</h3>
-                    <p class="fs-5">先用酒精將所有工具消毒，用夾子夾取睫毛並沾上黑膠，依照眼中眼尾眼頭的順序，將睫毛嫁接在真睫毛的根部，嫁接完成後，將睫毛梳順及可。</p>
+                    <p>先用酒精將所有工具消毒，用夾子夾取睫毛並沾上黑膠，依照眼中眼尾眼頭的順序，將睫毛嫁接在真睫毛的根部，嫁接完成後，將睫毛梳順及可。</p>
                 </div>
             </div>
         </div>
@@ -190,11 +170,8 @@ body{
     <!--價目表  -->
     <section class="bg-light-brown bg-opacity-50 py-5 mb-1 rounded-start-pill position-relative"> 
         <div class="container">
-            <div class="row flex-row-reverse pb-3 pb-md-5">
-                <div class="col-5 col-lg-4 mb-3 mb-md-0 me-lg-auto d-none d-md-block">
-                    <img src="./images/arrow-lightgray.png" class="img-fluid mt-n7" alt="arrow-image">
-                </div>
-                <div class="col-lg-5 ms-auto" data-aos="fade-up">
+            <div class="row pb-3 pb-md-5">
+                <div class="col-11 ms-auto" data-aos="fade-up">
                     <p class="display-3 text-secondary fw-bold text-center text-sm-start">PRICE LIST.</p>
                     <h2 class="fw-bold text-center text-sm-start">價目表</h2>
                 </div>
@@ -286,10 +263,10 @@ body{
                 <p class="display-3 text-secondary fw-bold text-center">Q&A.</p>
                 <h2 class="fw-bold text-center">常見問答</h2>
             </div>
-            <div class="accordion fs-5" id="accordionExample" data-aos="fade-up">
+            <div class="accordion" id="accordionExample" data-aos="fade-up">
                 <div class="accordion-item">
                     <h2 class="accordion-header border-bottom" id="headingOne">
-                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Q1.嫁接睫毛完後，多久需要再重接睫毛呢？
                         </button>
                     </h2> 
@@ -301,7 +278,7 @@ body{
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header border-bottom" id="headingTwo">
-                    <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Q2.請問如果本身的睫毛很稀疏還是可以接睫毛呢?
                     </button>
                   </h2>
@@ -313,7 +290,7 @@ body{
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header border-bottom" id="headingThree">
-                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             Q3.請問接睫毛整個過程需要花多久時間呢？
                         </button>
                     </h2>
@@ -325,7 +302,7 @@ body{
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header border-bottom" id="headingFour">
-                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                             Q4.嫁接睫毛會不會傷害真睫毛嗎？
                         </button>
                     </h2>
@@ -337,7 +314,7 @@ body{
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header border-bottom" id="headingFive">
-                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                             Q5.嫁接睫毛後眼睛紅腫怎麼辦？
                         </button>
                     </h2>
@@ -349,31 +326,31 @@ body{
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header border-bottom" id="headingSix">
-                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                             Q6.請問可以自行卸掉假睫毛嗎？
                         </button>
                     </h2>
                     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                        <div class="accordion-body border-bottom fs-5">
+                        <div class="accordion-body border-bottom">
                             由於假睫毛上塗有黑膠，建議還是尋找專業的美睫師使用專用卸除劑來去除喔！
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header border-bottom" id="headingSeven">
-                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                             Q7.請問接睫毛之後要怎麼卸妝？
                         </button>
                     </h2>
                     <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                        <div class="accordion-body border-bottom fs-5">
+                        <div class="accordion-body border-bottom">
                             建議使用卸妝水或卸妝乳，絕對不要使用卸妝油，因為油容易讓黑膠失效，導致假睫毛掉落。
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header border-bottom" id="headingEight">
-                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                             Q8.請問嫁接睫毛時會有不適感嗎？接完會有異物感嗎？
                         </button>
                     </h2>
