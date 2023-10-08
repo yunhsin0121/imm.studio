@@ -1,7 +1,10 @@
+@import "./utilities";
+@import "../helpers/variables";
 .deco-link-transition{
     position:relative;
     padding :15px;
     color:#000;
+    // background-color: $theme-colors-rgb;
     background-color:#BAB2AB;
     opacity:0.8;
     border-radius:40px 0px 0px 40px;

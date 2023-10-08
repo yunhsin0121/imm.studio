@@ -16480,46 +16480,6 @@ img {
      object-fit: cover;
 }
 
-.bg-position- {
-  background-position: bottom 1000px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.bg-position-bc {
-  background-position: bottom center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #e6e6e2;
-}
-
-.bg-position-cc {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: #e6e6e2;
-}
-
-.bg-position-rc {
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-color: #e6e6e2;
-}
-
-.bg-position-br {
-  background-position: bottom right;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.bg-position-lb {
-  background-position: left bottom;
-}
-
-.bg-position-lc {
-  background-position: left center;
-  background-size: cover;
-}
-
 .bg-attachment-fixed {
   background-attachment: fixed;
 }
@@ -16548,10 +16508,6 @@ img {
   width: 100%;
 }
 
-@font-face {
-  font-family: "NotoSerif";
-  src: url("./fonts/NotoSerifHK-VariableFont_wght.ttf");
-}
 .text-indent {
   text-indent: 2rem;
 }
@@ -16561,49 +16517,6 @@ img {
   text-indent: 10px;
   white-space: nowrap;
   overflow: hidden;
-}
-
-.de-co::after {
-  content: "";
-  width: calc(100% - 150px);
-  height: 2px;
-  top: 50%;
-  margin-left: 20px;
-  position: absolute;
-  background: #BAB2AB;
-}
-
-.de-co-long-top::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  top: 10%;
-  position: absolute;
-  background: #8A8A8B;
-}
-
-.de-co-long-bottom::after {
-  content: "";
-  width: calc(100% - 150px);
-  height: 2px;
-  bottom: 10%;
-  position: absolute;
-  background: #8A8A8B;
-}
-
-.deco-row-line {
-  border-top: 3px solid #6c757e;
-  width: 10%;
-}
-
-.deco-box {
-  width: 150px;
-  height: 150px;
-  background: white;
-  /* background: #b0a7a0; */
-  z-index: 0;
-  opacity: 0.6;
-  position: absolute;
 }
 
 .deco-bg {
@@ -16704,119 +16617,6 @@ img {
   color: #fff;
   border-radius: 0px;
   transition: 0.6s ease-in;
-}
-
-.font-deco {
-  font-size: 100px;
-  letter-spacing: 10px;
-  line-height: 1;
-  color: #414040;
-  font-family: "ThePeakFontBeta";
-}
-@media (max-width: 997px) {
-  .font-deco {
-    font-size: 110px;
-    letter-spacing: 5px;
-  }
-}
-@media (max-width: 767px) {
-  .font-deco {
-    font-size: 60px;
-    color: #636260;
-  }
-}
-
-.calendar {
-  width: 350px;
-  margin: 50px auto 0;
-}
-
-.calendar__month {
-  font-size: 20px;
-  font-weight: 800;
-  padding: 10px 0;
-  width: 100%;
-  position: relative;
-}
-
-.cal-month__previous,
-.cal-month__next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-}
-.cal-month__previous:hover,
-.cal-month__next:hover {
-  background-color: #42A5F5;
-  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.75);
-  border-radius: 50%;
-  font-weight: 800;
-  color: #111;
-}
-
-.cal-month__next {
-  right: 0;
-}
-
-.cal-month__current {
-  text-align: center;
-  color: #e1e1e1;
-}
-
-.cal-head__day,
-.cal-body__day {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  float: left;
-}
-
-.cal-body__week,
-.calendar__head {
-  display: block;
-  height: 50px;
-  width: 350px;
-}
-
-.calendar__head {
-  line-height: 50px;
-  position: relative;
-}
-.calendar__head:after {
-  content: " ";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: #90CAF9;
-}
-
-.cal-body__day {
-  color: #d85050;
-  line-height: 50px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.cal-day__month--current {
-  color: #e1e1e1;
-}
-
-.cal-day__day--today {
-  font-weight: 800;
-  color: #2196f3;
-}
-
-.cal-day__day--selected {
-  background-color: #2196f3;
-  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.75);
-  border-radius: 50%;
-  color: #111;
 }
 
 .form-check {
