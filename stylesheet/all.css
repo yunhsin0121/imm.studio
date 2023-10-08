@@ -16585,7 +16585,7 @@ img {
   text-decoration: underline !important;
 }
 
-.deco-link-transition {
+.deco-link-left-pill-transition {
   position: relative;
   padding: 15px;
   color: #000;
@@ -16595,24 +16595,24 @@ img {
   transition: 0.4s ease-in;
 }
 
-.deco-link-transition:hover {
+.deco-link-left-pill-transition:hover {
   padding: 15px 20px;
   color: #fff;
   border-radius: 0px;
   transition: 0.6s ease-in;
 }
 
-.deco-link-small-transition {
+.deco-link-right-pill-transition {
   position: relative;
   padding: 15px;
   color: #000;
   background-color: #BAB2AB;
   opacity: 0.8;
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 0px 40px 40px 0px;
   transition: all 0.4s ease-in;
 }
 
-.deco-link-small-transition:hover {
+.deco-link-right-pill-transition:hover {
   padding: 15px 25px;
   color: #fff;
   border-radius: 0px;
