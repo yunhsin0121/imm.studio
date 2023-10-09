@@ -306,19 +306,17 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
+$primary:       $brown;
+// **$blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
-$yellow:        $yellow!default;
-$light-yellow:  $light-yellow!default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
-$light-gray:    $light-gray!default;
-$brown:         $brown!default;
-$light-brown:    $light-brown!default;
+$light-primary: $light-brown!default;
+$light-secondary: $light-gray!default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -326,16 +324,13 @@ $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,
-  "yellow":     $yellow,
-  "light-yellow":$light-yellow,
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "light-gray": $light-gray,
-  "brown":      $brown,
-  "light-brown": $light-brown,
+  "light-primary": $light-primary,
+  "light-secondary": $light-secondary,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -830,8 +825,7 @@ $table-variants: (
   "danger":     shift-color($danger, $table-bg-scale),
   "light":      $light,
   "dark":       $dark,
-  "brown":      $brown,
-  "light-gray": $light-gray,
+  "light-secondary": $light-secondary,
 ) !default;
 // scss-docs-end table-loop
 
