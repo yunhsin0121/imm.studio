@@ -1,25 +1,19 @@
 $(document).ready(function () {
-    $('.navbar .nav-link,.navbar-toggler,header .btn,.header-icon a img,.serviceItems .btn,.reserved a,.reserve button,footer .info li,footer .socialMedia li,.btn-up,.login .btn,.login a').hover(function () {
+    // 按鈕特效
+    $('.navbar .nav-link,.navbar-toggler,header .btn,.header-icon a img,footer .info li,footer .socialMedia li,.btn-up,.login .btn,.login a').hover(function () {
             $(this).toggleClass('animate__animated  animate__pulse');
         });
     $('.navbar-brand').hover(function () {
         $(this).toggleClass('animate__animated animate__headShake');
     });  
-    $('.question button').hover(function () {
-        $(this).toggleClass('accordion-item-hover');
-    }); 
-    $('.reserved .link-secondary,.login .link-secondary').hover(function () {
-        $(this).toggleClass('link-hover-decoration');
-    });
-    // 上拉按鈕
-    $("a[href$='.zip']").addClass('fa-solid fa-circle-chevron-up text-brown fs-1') ;
 
+    // GoToTop按鈕
+    $("a[href$='.zip']").addClass('fa-solid fa-circle-chevron-up text-brown fs-1') ;
     $('.btn-up').click(function (e) { 
         e.preventDefault();
         $('html,body').animate({
             scrollTop:0},100);
     });
-
     $('.btn-up').hide();
     $(window).scroll(function(){
         if($(window).scrollTop()>100){
@@ -29,14 +23,6 @@ $(document).ready(function () {
             $('.btn-up').fadeOut();
         }
     });
-    $('.circle-link').hover(function () {
-            // over
-            $('.circle-item').addClass('is-active');
-        }, function () {
-            // out
-            $('.circle-item').removeClass('is-active');
-        }
-    );
 
     // Q&A選單內容切換
     $('.accordionEyelash').click(function () {
@@ -129,11 +115,3 @@ navTabs.addEventListener('click',e=>{
     })
     e.target.classList.add('active');
 })
-
-// 預約切換
-// let guestInfo = document.querySelector('.guest-info');
-// let submitBtn = document.querySelector('.submit-btn');
-// submitBtn.addEventListener('click',item=>{
-//     console.log(e.target)
-//     // guestInfo.addAttribute('.d-none');
-// })
