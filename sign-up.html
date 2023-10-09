@@ -42,7 +42,7 @@
                         <a class="nav-link btn btn-light-gray text-secondary" href="q&a.html">Q&A</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-light-gray text-dark" href="reservation.html">預約</a>
+                        <a class="nav-link btn btn-light-gray text-dark" href="online-booking.html">預約</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-light-gray text-dark" href="login.html">會員</a>
@@ -62,8 +62,8 @@
                 <div class="row">
                     <div class="col-lg-6 mb-3 mb-lg-0">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control border-bottom" id="name" placeholder="姓名" required>
-                            <label for="name">姓名</label>
+                            <input type="text" class="form-control border-bottom" id="signUpName" placeholder="姓名" required>
+                            <label for="signUpName">姓名</label>
                             <div class="valid-feedback"></div>
                             <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
                         </div>
@@ -81,34 +81,34 @@
                             </div>
                             <div class="col">
                                 <div class="form-floating mb-3">
-                                    <input type="date" class="form-control border-bottom" id="born" placeholder="生日" required>
-                                    <label for="born">生日</label>
+                                    <input type="date" class="form-control border-bottom" id="signUpBorn" placeholder="生日" required>
+                                    <label for="signUpBorn">生日</label>
                                     <div class="valid-feedback"></div>
                                     <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
                                 </div>
                             </div>   
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="number" class="form-control border-bottom" id="tel" placeholder="手機號碼"  required>
-                            <label for="tel">手機號碼</label>
+                            <input type="number" class="form-control border-bottom" id="signUpTel" placeholder="手機號碼"  required>
+                            <label for="signUpTel">手機號碼</label>
                             <div class="valid-feedback"></div>
                             <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control border-bottom" id="email" placeholder="電子郵件" required>
-                            <label for="email">電子郵件</label>
+                            <input type="email" class="form-control border-bottom" id="signUpEmail" placeholder="電子郵件" required>
+                            <label for="signUpEmail">電子郵件</label>
                             <div class="valid-feedback"></div>
                             <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="password" class="form-control border-bottom" id="password" placeholder="設定密碼" required>
-                            <label for="password">設定密碼(6到10位數且含英文及數字)</label>
+                            <input type="password" class="form-control border-bottom" id="signUpPassword" placeholder="設定密碼" required>
+                            <label for="signUpPassword">設定密碼(6到10位數且含英文及數字)</label>
                             <div class="valid-feedback"></div>
                             <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="password" class="form-control border-bottom" id="password" placeholder="再次輸入密碼" required>
-                            <label for="password">再次輸入密碼</label>
+                            <input type="password" class="form-control border-bottom" id="signUpPasswordCheck" placeholder="再次輸入密碼" required>
+                            <label for="signUpPasswordCheck">再次輸入密碼</label>
                             <div class="valid-feedback"></div>
                             <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請重新輸入</div>
                         </div>
@@ -123,9 +123,10 @@
                             <p class="text-indent">依個人資料保護法第3條規定，您就您的個人資料享有查詢或請求閱覽、請求製給複製本、請求補充或更正、請求停止蒐集、處理或利用、請求刪除之權利。
                                     您可以透過本工作室的官方社群軟體私訊客服要求行使上開權利，將於接收您的請求後，儘速處理。但因本網站執行職務、業務所必須，以及依相關法令規定，必須存檔備查之交易資料，不在此限。</p>
                         </div>
-                        <input type="checkbox" name="privacyPolicy" id="privacyPolicy" class="form-check-input form-check-inline me-2" required>已閱讀並接收隱私權政策之內容
-                            <div class="valid-feedback"></div>
-                            <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請確認內容</div>
+                        <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
+                        <label class="form-check-label" for="privacyPolicy">已閱讀並接收<span class="fw-bold">註冊須知</span>的內容</label>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請確認內容</div>
                         <button type="submit" class="deco-link-pill-transition border-0 fw-bold w-100 py-2 mt-5">送出</button>
                     </div>
                 </div>
