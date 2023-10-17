@@ -65,13 +65,13 @@
             </p>
             <ul class="nav nav-tabs align-items-center mb-5 animate__animated animate__zoomIn">
                 <li class="nav-item w-35">
-                  <a class="nav-link text-center fs-md-5 active d-block" href="#" id="server">選擇服務</a>
+                  <a class="nav-link text-center fs-md-5 active d-block serverLink">選擇服務</a>
                 </li>
                 <li class="nav-item w-30">
-                  <a class="nav-link text-center fs-md-5" href="#" id="guest-info">填寫資料</a>
+                  <a class="nav-link text-center fs-md-5 guestInfoLink">填寫資料</a>
                 </li>
                 <li class="nav-item w-35">
-                  <a class="nav-link text-center fs-md-5" href="#" id="guest-info-check">完成預約</a>
+                  <a class="nav-link text-center fs-md-5 guestInfoCheckLink">完成預約</a>
                 </li>
             </ul>
             <div>
@@ -79,21 +79,15 @@
                     <div class="p-4 col-12 animate__animated animate__zoomIn">
                         <h3 class="text-secondary text-center mb-5">選擇服務</h3>
                         <form action="#" class="needs-validation" novalidate>
-                            <div class="row justify-content-center mb-3 mb-md-0">
+                            <div class="row justify-content-center mb-3 mb-md-0 chooseServer">
                                 <div class="col-12 col-md-3 mb-4">
                                     <div class="row flex-md-column align-items-center justify-content-center">
                                         <div class="col">
                                             <img src="images/index-eyelash.png" class="img-fluid rounded-circle shadow"  alt="">
                                         </div>
-                                        <div class="col">
-                                            <div class="py-3">
-                                                <h3 class="fs-5 text-center mb-3">日式美睫</h3>
-                                                <div class="form-check px-0">
-                                                    <input type="radio" class="btn-check" class="btn-check" name="option" id="servicesOption1" autocomplete="off" required>
-                                                    <label class="btn btn-outline-primary w-100" for="servicesOption1">選擇</label>
-                                                    <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請選擇一個項目</div>
-                                                </div>
-                                            </div>
+                                        <div class="col py-3">
+                                            <h3 class="fs-5 text-center mb-4">日式美睫</h3>
+                                            <button class="btn btn-outline-primary w-100 eyelashBtn" data-name="eyelash">選擇</button>
                                         </div>
                                     </div>   
                                 </div>
@@ -102,15 +96,9 @@
                                         <div class="col">
                                             <img src="images/index-eyebrow.png" class="img-fluid rounded-circle shadow"  alt="">
                                         </div>
-                                        <div class="col">
-                                            <div class="py-3">
-                                                <h3 class="fs-5 text-center mb-3">粉霧眉</h3>
-                                                <div class="form-check px-0">
-                                                    <input type="radio" class="btn-check" class="btn-check" name="option" id="servicesOption2" autocomplete="off">
-                                                    <label class="btn btn-outline-primary w-100" for="servicesOption2" value="eyebrow">選擇</label>
-                                                    <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請選擇一個項目</div>
-                                                </div>
-                                            </div>
+                                        <div class="col py-3">
+                                            <h3 class="fs-5 text-center mb-4">粉霧眉</h3>
+                                            <button class="btn btn-outline-primary w-100 eyebrowBtn" data-name="eyebrow">選擇</button>
                                         </div>
                                     </div>
                                 </div>
@@ -119,26 +107,20 @@
                                         <div class="col"> 
                                             <img src="images/index-colorRemoval.png" class="img-fluid rounded-circle shadow"  alt="">
                                         </div>
-                                        <div class="col">
-                                            <div class="py-3">
-                                                <h3 class="fs-5 text-center mb-3">無創除色</h3>
-                                                <div class="form-check px-0">
-                                                    <input type="radio" class="btn-check" name="option" id="servicesOption3" autocomplete="off">
-                                                    <label class="btn btn-outline-primary w-100" for="servicesOption3">選擇</label>
-                                                    <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請選擇一個項目</div>
-                                                </div>
-                                            </div>
+                                        <div class="col py-3">
+                                            <h3 class="fs-5 text-center mb-4">無創除色</h3>
+                                            <button class="btn btn-outline-primary w-100 colorRemovalBtn" data-name="colorRemoval">選擇</button>
                                         </div>
                                     </div>
                                     <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請選擇一個項目</div>
                                 </div>
                                 <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請選擇一個項目</div>
                             </div>
-                            <button type="submit" class="deco-link-pill-transition w-50 w-md-20 border-0 fw-bold d-block ms-auto">填寫資料 <i class="fa-solid fa-arrow-right-long"></i></button>
+                            <a href="#" class="deco-link-pill-transition text-center w-50 w-md-20 border-0 fw-bold d-block ms-auto nextBtn">填寫資料 <i class="fa-solid fa-arrow-right-long"></i></a>
                         </form>
                     </div>
                 </div> 
-                <div class="guest-info d-none animate__animated animate__zoomIn">
+                <div class="guest-info d-none animate__animated animate__zoomIn d-none">
                     <form action="#" class="col-12 needs-validation" novalidate>
                         <div class="row justify-content-center">
                             <h3 class="text-secondary text-center mb-5">填寫資料</h3>
@@ -167,12 +149,12 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <select class="form-select border-bottom py-2">
+                                            <select class="form-select border-bottom py-2" id="time">
                                                 <option selected>預約時間</option>
-                                                <option value="1">10:00</option>
-                                                <option value="2">13:00</option>
-                                                <option value="3">16:00</option>
-                                                <option value="4">19:00</option>
+                                                <option value="10:00">10:00</option>
+                                                <option value="13:00">13:00</option>
+                                                <option value="16:00">16:00</option>
+                                                <option value="19:00">19:00</option>
                                             </select>
                                         </div>
                                     </div>
@@ -205,27 +187,27 @@
                                     </li>
                                 </ul>
                                 <div class="form-check mb-5">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" value="" id="confirmTerms" required>
+                                    <label class="form-check-label" for="confirmTerms">
                                         我已了解並同意<span class="text-danger">預約須知</span>的所有內容
                                     </label>
                                     <div class="invalid-feedback"><i class="bi bi-x-lg me-1"></i>請確認內容</div>
                                 </div>
                                 <div class="d-flex justify-content-center">
-                                    <button type="submit" class="deco-link-pill-transition border-0 fw-bold w-50">完成預約</button>
+                                    <button type="submit" class="deco-link-pill-transition border-0 fw-bold w-50 finishBtn">完成預約</button>
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="guest-info-check d-none animate__animated animate__zoomIn">
+                <div class="guest-info-check d-none animate__animated animate__zoomIn d-none">
                     <h3 class="text-secondary text-center mb-5">完成預約</h3>
                     <p class="text-center mb-5">謝謝您的預約，如果您對我們的服務有任何疑問，請隨時聯繫我們，期待著能夠與您一同創造美麗的故事！</p> 
                     <div class="row align-items-center">
                         <div class="col-lg-6 bg-light-secondary bg-opacity-50 rounded-end-pill justify-content-center">
                             <div class="py-5 px-3 d-flex flex-column align-items-center">
                                 <p class="mb-3 fs-5">以下是您的預約資訊：</p>
-                                <ul class="list-unstyled">
+                                <ul class="list-unstyled info">
                                     <li class="mb-3 d-flex align-items-center">
                                         <h4 class="text-secondary fs-6 me-3">預約人姓名:</h4>
                                         <p class="fw-bold">林小美</p>

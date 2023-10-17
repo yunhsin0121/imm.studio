@@ -46,29 +46,6 @@ $(document).ready(function () {
         $('#accordionColorRemoval').siblings().removeClass('d-block');
         $('#accordionColorRemoval').siblings().addClass('d-none');
     });
-
-    // 預約切換
-    $('#server').click(function () {
-        // over
-        $('.server').removeClass('d-none');
-        $('.server').addClass('d-block');
-        $('.server').siblings().removeClass('d-block');
-        $('.server').siblings().addClass('d-none');
-    });
-    $('#guest-info').click(function () {
-        // over
-        $('.guest-info').removeClass('d-none');
-        $('.guest-info').addClass('d-block');
-        $('.guest-info').siblings().removeClass('d-block');
-        $('.guest-info').siblings().addClass('d-none');
-    });
-    $('#guest-info-check').click(function () {
-        // over
-        $('.guest-info-check').removeClass('d-none');
-        $('.guest-info-check').addClass('d-block');
-        $('.guest-info-check').siblings().removeClass('d-block');
-        $('.guest-info-check').siblings().addClass('d-none');
-    });
 });
 
 AOS.init();
@@ -105,13 +82,88 @@ var indexSwiper = new Swiper(".indexSwiper", {
   });
 
 //  Q&A NavTab選單切換
-let navTabs = document.querySelector('.nav-tabs')
-let navTabsItem = document.querySelectorAll('.nav-tabs li');
-navTabs.addEventListener('click',e=>{
+let serverLink = document.querySelector('.serverLink');
+let guestInfoLink = document.querySelector('.guestInfoLink');
+let guestInfoCheckLink = document.querySelector('.guestInfoCheckLink');
+let nextBtn = document.querySelector('.nextBtn');
+let server = document.querySelector('.server');
+let guestInfo = document.querySelector('.guest-info');
+let guestInfoCheck = document.querySelector('.guest-info-check');
+let chooseServer = document.querySelector('.chooseServer');
+let chooseServerMenu = document.querySelectorAll('.chooseServer button');
+server.addEventListener('click',e=>{
     e.preventDefault();
-    console.log(e.target);
-    navTabsItem.forEach(item=>{
-        item.children[0].classList.remove('active');
+    if(e.target.nodeName === 'BUTTON'){
+    chooseServerMenu.forEach(item=>{
+        console.log(item);
+        item.classList.remove('active');
     })
-    e.target.classList.add('active');
+        e.target.classList.add('active');
+    }
+})
+
+let eyelashBtn = document.querySelector('.eyelashBtn');
+let eyebrowBtn = document.querySelector('.eyebrowBtn');
+let colorRemovalBtn = document.querySelector('.colorRemovalBtn');
+nextBtn.addEventListener('click',e=>{
+    e.preventDefault();
+    chooseServerMenu.forEach(item=>{
+       if(item.classList.contains('active')){
+        server.classList.add('d-none');
+        guestInfo.classList.add('d-block');
+        guestInfo.classList.remove('d-none');
+        serverLink.classList.remove('active');
+        guestInfoLink.classList.add('active');
+    }
+    })
+    if((eyelashBtn.classList.contains('active') == false)&& (eyebrowBtn.classList.contains('active') == false)&&(colorRemovalBtn.classList.contains('active') == false)){
+        alert('請選擇一項服務項目')
+    }
+})
+// 表單
+let guestName = document.getElementById('name');
+let tel = document.getElementById('tel');
+let email = document.getElementById('email');
+let date = document.getElementById('date');
+let time = document.getElementById('time');
+let confirmTerms = document.getElementById('confirmTerms');
+let finishBtn = document.querySelector('.finishBtn');
+let info = document.querySelector('.info');
+
+finishBtn.addEventListener('click',e=>{
+    e.preventDefault();
+    if((guestName.value.trim() === '')||(tel.value.trim() === '')||(email.value.trim() === '')||(date.value === '')||(time.value === '')){
+        alert('尚有資料未正確填寫')
+    }else if(confirmTerms.checked == false){
+        alert('請確認預約須知的內容')
+    }else{
+        alert('已成功預約，請至信箱確認訊息通知')
+        info.innerHTML= `<li class="mb-3 d-flex align-items-center">
+        <h4 class="text-secondary fs-6 me-3">預約人姓名:</h4>
+        <p class="fw-bold">${guestName.value}</p>
+    </li>
+    <li class="mb-3 d-flex align-items-center">
+        <h4 class="text-secondary fs-6 me-3">手機號碼:</h4>
+        <p class="fw-bold">${tel.value}</p>
+    </li>
+    <li class="mb-3 d-flex align-items-center">
+        <h4 class="text-secondary fs-6 me-3">電子郵件:</h4>
+        <p class="fw-bold">${email.value}</p>
+    </li>
+    <li class="mb-3 d-flex align-items-center">
+        <h4 class="text-secondary fs-6 me-3">預約日期:</h4>
+        <p class="fw-bold">${date.value}</p>
+    </li>
+    <li class="mb-3 d-flex align-items-center">
+        <h4 class="text-secondary fs-6 me-3">預約時間:</h4>
+        <p class="fw-bold">${time.value}</p>
+    </li>`
+        server.classList.add('d-none');
+        guestInfo.classList.add('d-none');
+        guestInfo.classList.remove('d-block');
+        guestInfoCheck.classList.add('d-block');
+        guestInfoCheck.classList.remove('d-none');
+        guestInfoLink.classList.remove('active');
+        guestInfoCheckLink.classList.add('active');
+    }
 })

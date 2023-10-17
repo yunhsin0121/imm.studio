@@ -4054,7 +4054,7 @@ textarea.form-control-lg {
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: #212529;
-  --bs-nav-link-hover-color: #6c757d;
+  --bs-nav-link-hover-color: #212529;
   --bs-nav-link-disabled-color: var(--bs-secondary-color);
   display: flex;
   flex-wrap: wrap;
@@ -4095,7 +4095,7 @@ textarea.form-control-lg {
   --bs-nav-tabs-border-width: var(--bs-border-width);
   --bs-nav-tabs-border-color: var(--bs-border-color);
   --bs-nav-tabs-border-radius: 0px;
-  --bs-nav-tabs-link-hover-border-color: var(--bs-secondary-bg) var(--bs-secondary-bg) var(--bs-border-color);
+  --bs-nav-tabs-link-hover-border-color: transparent;
   --bs-nav-tabs-link-active-color: #6c757d;
   --bs-nav-tabs-link-active-bg: #eaeaea;
   --bs-nav-tabs-link-active-border-color: var(--bs-border-color) var(--bs-border-color) #eaeaea;
@@ -15714,6 +15714,11 @@ img {
   color: white;
   transition: 0.6s all;
   font-size: 22px;
+}
+
+.btn.active {
+  background-color: #BAB2AB;
+  color: black;
 }
 
 .swiper {
