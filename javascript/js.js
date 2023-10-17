@@ -91,6 +91,8 @@ let guestInfo = document.querySelector('.guest-info');
 let guestInfoCheck = document.querySelector('.guest-info-check');
 let chooseServer = document.querySelector('.chooseServer');
 let chooseServerMenu = document.querySelectorAll('.chooseServer button');
+let project = document.querySelector('.project');
+let projectName = '';
 server.addEventListener('click',e=>{
     e.preventDefault();
     if(e.target.nodeName === 'BUTTON'){
@@ -99,6 +101,9 @@ server.addEventListener('click',e=>{
         item.classList.remove('active');
     })
         e.target.classList.add('active');
+        projectName =  e.target.dataset.name;
+        console.log(projectName)
+        project.textContent = `選擇的施作項目：${projectName}`;
     }
 })
 
@@ -139,23 +144,27 @@ finishBtn.addEventListener('click',e=>{
     }else{
         alert('已成功預約，請至信箱確認訊息通知')
         info.innerHTML= `<li class="mb-3 d-flex align-items-center">
-        <h4 class="text-secondary fs-6 me-3">預約人姓名:</h4>
+        <p class="text-secondary me-3">施作項目:</p>
+        <p class="fw-bold fs-5 text-primary">${projectName}</p>
+    </li>
+    <li class="mb-3 d-flex align-items-center">
+        <p class="text-secondary me-3">預約人姓名:</p>
         <p class="fw-bold">${guestName.value}</p>
     </li>
     <li class="mb-3 d-flex align-items-center">
-        <h4 class="text-secondary fs-6 me-3">手機號碼:</h4>
+        <p class="text-secondary me-3">手機號碼:</p>
         <p class="fw-bold">${tel.value}</p>
     </li>
     <li class="mb-3 d-flex align-items-center">
-        <h4 class="text-secondary fs-6 me-3">電子郵件:</h4>
+        <p class="text-secondary me-3">電子郵件:</p>
         <p class="fw-bold">${email.value}</p>
     </li>
     <li class="mb-3 d-flex align-items-center">
-        <h4 class="text-secondary fs-6 me-3">預約日期:</h4>
+        <p class="text-secondary me-3">預約日期:</p>
         <p class="fw-bold">${date.value}</p>
     </li>
     <li class="mb-3 d-flex align-items-center">
-        <h4 class="text-secondary fs-6 me-3">預約時間:</h4>
+        <p class="text-secondary me-3">預約時間:</h4>
         <p class="fw-bold">${time.value}</p>
     </li>`
         server.classList.add('d-none');
