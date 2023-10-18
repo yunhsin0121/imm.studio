@@ -15636,6 +15636,35 @@ img {
      object-fit: cover;
 }
 
+.nav-item {
+  position: relative;
+}
+.nav-item .nav-item-en {
+  opacity: 0;
+  color: black;
+  font-weight: bold;
+  transition: opacity 0.6s ease-out;
+}
+.nav-item .nav-item-ch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  color: #6c757d;
+  opacity: 1;
+  font-weight: bold;
+  transition: opacity 0.6s ease-out;
+}
+.nav-item:hover .nav-item-en {
+  opacity: 1;
+  transition: opacity 0.6s ease-in;
+}
+.nav-item:hover .nav-item-ch {
+  opacity: 0;
+  transition: opacity 0.6s ease-in;
+}
+
 .bg-attachment-fixed {
   background-attachment: fixed;
 }
