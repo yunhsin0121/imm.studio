@@ -15797,6 +15797,29 @@ img {
   transition: 0.6s ease-in;
 }
 
+.booking-list {
+  background-color: #BAB2AB;
+  color: white;
+  padding: 32px;
+  margin: 0px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .booking-list {
+    padding: 16px;
+    margin: 0px 16px;
+    font-size: 16px;
+  }
+}
+
+.booking-list.active {
+  color: #BAB2AB;
+  background-color: transparent;
+  border: 2px solid #BAB2AB;
+  box-shadow: 0px 0px 5px 0px #BAB2AB;
+}
+
 .form-check {
   display: block;
   min-height: 1.5rem;

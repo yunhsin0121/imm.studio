@@ -27,6 +27,8 @@ $(document).ready(function () {
     // Q&A選單內容切換
     $('.accordionEyelash').click(function () {
             // over
+            $(this).parent().siblings().children().removeClass('active')
+            $(this).addClass('active')
             $('#accordionEyelash').removeClass('d-none');
             $('#accordionEyelash').addClass('d-block');
             $('#accordionEyelash').siblings().removeClass('d-block');
@@ -34,6 +36,8 @@ $(document).ready(function () {
     });
     $('.accordionEyebrow').click(function () {
         // over
+        $(this).parent().siblings().children().removeClass('active')
+        $(this).addClass('active')
         $('#accordionEyebrow').removeClass('d-none');
         $('#accordionEyebrow').addClass('d-block');
         $('#accordionEyebrow').siblings().removeClass('d-block');
@@ -41,6 +45,8 @@ $(document).ready(function () {
     });
     $('.accordionColorRemoval').click(function () {
         // over
+        $(this).parent().siblings().children().removeClass('active')
+        $(this).addClass('active')
         $('#accordionColorRemoval').removeClass('d-none');
         $('#accordionColorRemoval').addClass('d-block');
         $('#accordionColorRemoval').siblings().removeClass('d-block');
@@ -81,7 +87,7 @@ var indexSwiper = new Swiper(".indexSwiper", {
     grabCursor: true,
   });
 
-//  Q&A NavTab選單切換
+// ONLINE BOOKING
 let serverLink = document.querySelector('.serverLink');
 let guestInfoLink = document.querySelector('.guestInfoLink');
 let guestInfoCheckLink = document.querySelector('.guestInfoCheckLink');
