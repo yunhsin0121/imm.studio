@@ -14,6 +14,38 @@
     <link rel="icon" type="image/x-icon" href="./images/imm-logo.ico">
     <link rel="stylesheet" href="stylesheet/all.css">
 </head>
+<style>
+.nav-item {
+  position: relative;
+  .nav-item-en {
+    opacity: 0;
+    color: black;
+    font-weight: bold;
+    transition: opacity 0.6s ease-out;
+  }
+  .nav-item-ch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    color: #6c757d;
+    opacity: 1;
+    font-weight: bold;
+    transition: opacity 0.6s ease-out;
+  }
+  &:hover {
+    .nav-item-en {
+      opacity: 1;
+      transition: opacity 0.6s ease-in;
+    }
+    .nav-item-ch {
+      opacity: 0;
+      transition: opacity 0.6s ease-in;
+    }
+}
+}
+</style>
 <body> 
     <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
         <div class="container-md container-fluid px-3 px-md-0">
@@ -25,41 +57,46 @@
                 <span class="fa-solid fa-bars fs-1 text-white"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-center align-items-lg-center">
-                    <li class="nav-item me-lg-3">
-                        <a class="nav-link btn btn-light-secondary text-secondary fw-bold" aria-current="page" href="eyelash.html">日式美睫</a>
+                <ul class="navbar-nav text-center align-items-lg-center mx-auto">
+                    <li class="nav-item w-lg-20">
+                        <a class="nav-link nav-item-en py-2 py-lg-1 px-2" href="eyelash.html">EYELASH</a>
+                        <a class="nav-link nav-item-ch py-2 py-lg-1 px-2" href="eyelash.html">日式美睫</a>
                     </li>
-                    <li class="nav-item me-lg-3">
-                        <a class="nav-link btn btn-light-secondary text-secondary fw-bold" href="eyebrow.html">粉霧眉</a>
+                    <li class="nav-item w-lg-20">
+                        <a class="nav-link nav-item-en py-2 py-lg-1 px-2" href="eyebrow.html">EYEBROW</a>
+                        <a class="nav-link nav-item-ch py-2 py-lg-1 px-2" href="eyebrow.html">粉霧眉</a>
                     </li>
-                    <li class="nav-item me-lg-3">
-                        <a class="nav-link btn btn-light-secondary text-secondary fw-bold" href="colorRemoval.html">無創除色</a>
+                    <li class="nav-item w-lg-20">
+                        <a class="nav-link nav-item-en py-2 py-lg-1 px-2" href="colorRemoval.html">COLOR <br class="d-none d-lg-block">REMOVAL</a>
+                        <a class="nav-link nav-item-ch py-2 py-lg-3 px-2" href="colorRemoval.html">無創除色</a>
                     </li>
-                    <li class="nav-item me-lg-3">
-                        <a class="nav-link btn btn-light-secondary text-secondary fw-bold" href="price.html">價目表</a>
+                    <li class="nav-item w-lg-20">
+                        <a class="nav-link nav-item-en py-2 py-lg-1 px-2" href="price-list.html">PRICE <br class="d-none d-lg-block">LIST</a>
+                        <a class="nav-link nav-item-ch py-2 py-lg-3 px-2" href="price-list.html">價目表</a>
                     </li>
-                    <li class="nav-item me-lg-3">
-                        <a class="nav-link btn btn-light-secondary text-secondary fw-bold" href="q&a.html">Q&A</a>
+                    <li class="nav-item w-lg-15">
+                        <a class="nav-link nav-item-en py-2 py-lg-1 px-2" href="q&a.html">Q & A</a>
+                        <a class="nav-link nav-item-ch py-2 py-lg-1 px-2" href="q&a.html">問與答</a>
                     </li>
-                    <div class="d-flex flex-column flex-lg-row justify-content-between  align-items-lg-center">
-                        <li class="nav-item me-lg-2 my-2">
-                            <a class="deco-link-pill-transition bg-light-secondary d-block w-100 px-lg-3 py-2 fw-bold" href="online-booking.html">預約</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="deco-link-pill-transition bg-light-secondary d-block w-100 px-lg-3 py-2 fw-bold" href="login.html">會員</a>
-                        </li>
-                    </div>
+                </ul>
+                <ul class="list-unstyled mb-0 d-flex flex-column flex-lg-row justify-content-between align-items-lg-center ms-auto">
+                    <li class="nav-item text-center me-lg-2 my-2">
+                        <a class="deco-link-pill-transition bg-light-secondary d-block w-100 px-lg-3 py-2 fw-bold" href="online-booking.html">預約</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="deco-link-pill-transition bg-light-secondary d-block w-100 px-lg-3 py-2 fw-bold" href="login.html">會員</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- header -->
-    <div class="attachment-background" style="background-image: url(images/deco-bg-1.jpg)"></div>
+    <!-- <div class="attachment-background" style="background-image: url(images/deco-bg-1.jpg)"></div> -->
     <header class="bg-attachment-fixed bg-cover" style="background-image: url(images/deco-bg-1.jpg)" >
         <div class="container pt-7">
             <div class="row">
                 <div class="col-md-6 col-lg-7 mb-n9 mb-md-0 z-3">
-                    <div class="py-5 animate__animated animate__fadeInDown">
+                    <div class="py-5" data-aos="fade-down" data-aos-duration="1500">
                         <h2 class="fs-3 fw-bold text-secondary text-uppercase mb-3 d-none d-md-block">We create beauty for you.</h2>
                         <h2 class="fw-bold text-secondary mb-3 mb-lg-5 d-none d-md-block">我們為您創造美麗!</h2>
                         <div class="header-icon d-flex justify-content-around mb-3 mb-md-4">
@@ -72,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-5 d-flex align-items-end z-0 animate__animated animate__fadeInUp">
+                <div class="col-md-6 col-lg-5 d-flex align-items-end z-0" data-aos="fade-up" data-aos-duration="1500">
                     <div class="position-relative">
                         <img src="images/header-bg.jpg" alt="" class="img-fluid rounded-top-pill d-block ms-auto" width="500">
                         <div class="text-dark top-30 start-0 position-absolute d-md-none">
@@ -90,22 +127,22 @@
         <section class="bg-light py-7 position-relative">
             <div class="container">
                 <div class="row g-3 justify-content-center">
-                    <div class="col-10 col-lg-5 d-flex flex-column align-items-center" data-aos="fade-up">
+                    <div class="col-10 col-lg-5 d-flex flex-column align-items-center" data-aos="fade-up" data-aos-duration="1500">
                         <h2 class="fw-bold mb-4">還在為這些煩腦嗎？</h2>
                         <img src="images/index-deco-img.png" class="img-fluid" alt="" style="width: 200px;">
                     </div>
-                    <div class="col-10 col-lg-7" data-aos="fade-up">
-                        <div class="animate__animated animate__zoomIn">
+                    <div class="col-10 col-lg-7" data-aos="fade-up" data-aos-duration="1500">
+                        <div>
                             <p class="bg-light-secondary py-3 px-2 mb-5 d-inline-block shadow">本身的睫毛又短又稀疏，<br class="d-block d-md-none">
                                 素顏眼睛超無神
                             </p>
                         </div>
-                        <div class="d-flex justify-content-end animate__animated animate__zoomIn">
+                        <div class="d-flex justify-content-end">
                             <p class="bg-light-secondary py-3 px-2 mb-5 d-inline-block shadow">眉毛稀疏眉型不對稱，<br class="d-block d-md-none">
                                 要先畫眉毛才敢出門
                             </p>
                         </div>
-                        <div class="animate__animated animate__zoomIn">
+                        <div>
                             <p class="bg-light-secondary py-3 px-2 d-inline-block shadow">用過舊式的紋繡技術， <br class="d-block d-md-none">
                                 導致眉毛變成紅、藍、橘眉
                             </p>
@@ -119,23 +156,23 @@
         <section class="bg-attachment-fixed position-relative" style="background-image: url(images/deco-eyelash-1.png)">
             <div class="bg-light bg-opacity-75" >
             <div class="container-fluid position-relative">
-                <div class="position-absolute top-30 top-md-75 top-lg-70 start-50 start-md-30 start-lg-40 translate-middle-y">
-                    <h2 class="fs-1 fs-lg-big z-3" data-aos="zoom-in">ABOUT US.</h2>
+                <div class="position-absolute top-30 top-md-75 top-lg-70 start-50 start-md-30 start-lg-40 translate-middle-y z-5">
+                    <h2 class="fs-1 fs-lg-big" data-aos="fade-up" data-aos-duration="1500">ABOUT US.</h2>
                 </div>
                 <div class="row align-items-center flex-md-row-reverse">
                     <div class="col-md-6 mb-n3 mb-md-0">
                         <div class="row flex-column">
-                            <div class="col-7 mb-md-n5 z-3" data-aos="zoom-in">
+                            <div class="col-7 mb-md-n5" data-aos="fade-down" data-aos-duration="1500">
                                 <img src="./images/deco-eyelash-2.png" class="img-fluid shadow rounded-bottom-pill" alt="deco-image">
                             </div>
-                            <div class="col-7 ms-auto d-none d-md-block"  data-aos="zoom-in">
+                            <div class="col-7 ms-auto d-none d-md-block" data-aos="fade-up" data-aos-duration="1500">
                                 <img src="./images/deco-eyelash-3.png" class="img-fluid shadow rounded-top-pill" alt="deco-image">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 px-0">
                         <div class="d-flex align-items-center">
-                        <div class="bg-light-secondary rounded-end-pill p-4 p-md-5 p-xxl-7 shadow w-100">
+                        <div class="bg-light-secondary rounded-end-pill p-4 p-md-5 p-xxl-7 shadow w-100" data-aos="fade-up" data-aos-duration="1500">
                             <p class="lh-lg">
                                 我們是使用高品質材料和先進技術，<br>為您打造理想的睫毛及眉型設計，<br>
                                 讓每位顧客在我們工作室中都能享受別具一格的美妝體驗，<br class="d-none d-lg-block">展現屬於自己的美麗與自信！
@@ -155,9 +192,9 @@
         <!--我們提供這些服務！  -->
         <section class="serviceItems py-7 bg-light position-relative">
             <div class="container">
-                <h2 class="text-center fw-bold mb-3" data-aos="fade-up">我們提供這些服務！</h2>
+                <h2 class="text-center fw-bold mb-3" data-aos="fade-up" data-aos-duration="1500">我們提供這些服務！</h2>
                 <div class="d-flex flex-column align-items-center">
-                    <div class="row align-items-center justify-content-center py-3" data-aos="fade-up">
+                    <div class="row align-items-center justify-content-center py-3" data-aos="fade-up" data-aos-duration="1500">
                         <div class="col-md-4 mb-5 mb-md-0 d-flex justify-content-center">     
                             <div class="position-relative">
                                 <img src="images/index-eyelash.png" class="img-fluid rounded-circle shadow" alt="eyelash-img" width="300">
@@ -168,7 +205,7 @@
                             <p>採用單根嫁接手法，使用接近真睫毛的柔細材質，並且不傷害原生的睫毛，呈現出根根分明、自然清新且輕盈的效果。</p>
                         </div>
                     </div>
-                    <div class="row align-items-center justify-content-center flex-row-reverse py-3" data-aos="fade-up">
+                    <div class="row align-items-center justify-content-center flex-row-reverse py-3" data-aos="fade-up" data-aos-duration="2000">
                         <div class="col-md-4 mb-5 mb-md-0 d-flex justify-content-center">                                
                             <div class="position-relative">
                                 <img src="images/index-eyebrow.png" class="img-fluid rounded-circle shadow" alt="eyebrow-img" width="300">
@@ -179,7 +216,7 @@
                             <p>透過多層次設計手法，使用單點針刺法，有型無框的設計展現如輕刷眉粉般的時尚立體眉型，兼顧細緻度與留色度，過程不痛讓你一覺起來就美麗。</p>
                         </div>
                     </div>
-                    <div class="row align-items-center justify-content-center py-3" data-aos="fade-up">
+                    <div class="row align-items-center justify-content-center py-3" data-aos="fade-up" data-aos-duration="2000">
                         <div class="col-md-4 mb-5 mb-md-0 d-flex justify-content-center">                                
                             <div class="position-relative">
                                 <img src="images/index-colorRemoval.png" class="img-fluid rounded-circle shadow" alt="colorRemoval-img" width="300">
@@ -197,7 +234,7 @@
         <section class="bg-light pb-md-5 position-relative">
             <div class="py-3 py-md-5 rounded-end-lg-pill bg-attachment-fixed shadow" style="background-image: url(images/deco-bg-2.png)">
                 <div class="row flex-row-reverse justify-content-center justify-content-md-between align-items-center gx-0">
-                    <div class="col-md-6 mb-3 mb-md-0" data-aos="zoom-in">
+                    <div class="col-md-6 mb-3 mb-md-0" data-aos="fade-up" data-aos-duration="1500">
                         <div class="bg-light-primary bg-opacity-50 ps-md-7 px-5 py-md-5 py-3 mb-lg-3 d-flex flex-column align-items-center align-items-md-start rounded-start-pill position-relative shadow-md">
                             <h3 class="fw-bold mb-3">最新活動</h3>
                             <ul class="list-unstyled">
@@ -219,14 +256,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="d-none d-lg-block">
+                        <div class="d-none d-lg-block" data-aos="fade-up" data-aos-duration="1500">
                             <p class="fs-1 mb-3">THANK YOU FOR YOUR SUPPORT.</p>
                             <h2 class="fw-bold fs-4 mb-5">加入會員，立即預約</h2>
                             <a href="online-booking.html" class="p-3 deco-link-pill-transition fw-bold me-3 ms-n3">線上預約<i class="fa-solid fa-arrow-right-long"></i></a>
                             <a href="sign-up.html" class="p-3 deco-link-pill-transition fw-bold">加入會員 <i class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                     </div>
-                    <div class="col-8 col-md-6 col-lg-5 mb-3 mb-lg-5" data-aos="zoom-in">
+                    <div class="col-8 col-md-6 col-lg-5 mb-3 mb-lg-5" data-aos="fade-up" data-aos-duration="1500">
                         <div class="swiper mySwiper indexSwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide shadow">
@@ -323,7 +360,7 @@
                             </div>
                           </div>
                     </div>
-                    <div class="col-12" data-aos="zoom-in">
+                    <div class="col-12" data-aos="fade-up" data-aos-duration="1500">
                         <div class="p-3 px-md-5 d-lg-none text-center">
                             <p class="fs-md-1 fs-3 mb-3">THANK YOU FOR YOUR SUPPORT.</p>
                             <h2 class="fw-bold fs-md-4 fs-6 mb-3 mb-lg-5">加入會員，立即預約</h2>
