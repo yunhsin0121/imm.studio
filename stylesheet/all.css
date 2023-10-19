@@ -15669,6 +15669,16 @@ img {
   transition: opacity 0.6s ease-in;
 }
 
+.nav-bg-hover {
+  background-color: rgba(186, 178, 171, 0.7803921569);
+  transition: 0.4s ease-in;
+}
+
+.nav-bg-hover:hover {
+  background-color: #BAB2AB;
+  transition: 0.4s ease-in;
+}
+
 .bg-attachment-fixed {
   background-attachment: fixed;
 }
