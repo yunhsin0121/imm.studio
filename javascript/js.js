@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     // btn-up按鈕
     $("a[href$='.zip']").addClass('fa-solid fa-circle-chevron-up text-brown fs-1') ;
-    $('.btn-up').click(function (e) { 
+    $('.btn-up,.nextBtn,.finishBtn').click(function (e) { 
         e.preventDefault();
         $('html,body').animate({
             scrollTop:0},100);
@@ -107,8 +107,10 @@ server.addEventListener('click',e=>{
     if(e.target.nodeName === 'BUTTON'){
     chooseServerMenu.forEach(item=>{
         console.log(item);
+        item.textContent = '選擇';
         item.classList.remove('active');
     })
+        e.target.textContent = '已選擇';
         e.target.classList.add('active');
         projectName =  e.target.dataset.name;
         console.log(projectName)
