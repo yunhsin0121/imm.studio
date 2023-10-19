@@ -1,13 +1,13 @@
 $(document).ready(function () {
     // 按鈕特效
     $('.navbar .nav-link,.navbar-toggler,header .btn,.header-icon a img,footer .info li,footer .socialMedia li,.btn-up,.login .btn,.login a').hover(function () {
-            $(this).toggleClass('animate__animated  animate__pulse');
-        });
+        $(this).toggleClass('animate__animated  animate__pulse');
+    });
     $('.navbar-brand').hover(function () {
         $(this).toggleClass('animate__animated animate__headShake');
     });  
 
-    // GoToTop按鈕
+    // btn-up按鈕
     $("a[href$='.zip']").addClass('fa-solid fa-circle-chevron-up text-brown fs-1') ;
     $('.btn-up').click(function (e) { 
         e.preventDefault();
@@ -54,7 +54,10 @@ $(document).ready(function () {
     });
 });
 
+// js
+// AOS特效
 AOS.init();
+// Swiper輪播
 var portfolioSwiper = new Swiper(".portfolioSwiper", {
     slidesPerView: 4,
     spaceBetween: 20,
@@ -87,7 +90,7 @@ var indexSwiper = new Swiper(".indexSwiper", {
     grabCursor: true,
   });
 
-// ONLINE BOOKING
+// ONLINE BOOKING頁面
 let serverLink = document.querySelector('.serverLink');
 let guestInfoLink = document.querySelector('.guestInfoLink');
 let guestInfoCheckLink = document.querySelector('.guestInfoCheckLink');
